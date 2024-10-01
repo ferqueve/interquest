@@ -130,7 +130,8 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         #chartContainer {
-            width: 300px;
+            width: 200px; /* Reducido de 300px a 200px */
+            height: 200px; /* Añadido para mantener la proporción */
             margin: 20px auto;
         }
     </style>
@@ -247,6 +248,7 @@
             const progressPercentage = (currentQuestion / TOTAL_QUESTIONS) * 100;
             const progressBar = document.getElementById('progress-bar');
             progressBar.style.width = `${progressPercentage}%`;
+            progressBar.setAttribute('aria-valuenow', progressPercentage);
         }
 
         function nextQuestion() {
