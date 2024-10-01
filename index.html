@@ -93,7 +93,8 @@
         const TOTAL_QUESTIONS = 20;
         const POINTS_PER_QUESTION = 2;
         const TOTAL_POINTS = TOTAL_QUESTIONS * POINTS_PER_QUESTION;
-        const TOTAL_QUESTION_SETS = 5;
+        const TOTAL_QUESTION_SETS = 6;
+        const BASE_URL = 'https://ferqueve.github.io/interquest/api/';
 
         let questions = [];
         let currentQuestion = 0;
@@ -102,14 +103,21 @@
         async function loadQuestions() {
             try {
                 const randomSet = Math.floor(Math.random() * TOTAL_QUESTION_SETS) + 1;
-                const response = await fetch(`questions${randomSet}.json`);
+                const response = await fetch(`${BASE_URL}questions${randomSet}.json`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
                 questions = await response.json();
+                console.log(`Cargado el conjunto de preguntas ${randomSet}`);
                 renderQuestion();
                 updateScoreDisplay();
                 updateProgressBar();
             } catch (error) {
                 console.error('Error al cargar las preguntas:', error);
-                document.getElementById('question-container').innerHTML = '<p class="text-danger">Error al cargar las preguntas. Por favor, intenta recargar la página.</p>';
+                document.getElementById('question-container').innerHTML = `
+                    <p class="text-danger">Error al cargar las preguntas. Por favor, intenta recargar la página.</p>
+                    <p>Detalles del error: ${error.message}</p>
+                `;
             }
         }
 

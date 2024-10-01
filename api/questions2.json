@@ -66,7 +66,7 @@
     "explanation": "CORS significa Cross-Origin Resource Sharing, un mecanismo que permite que recursos restringidos en una página web sean solicitados desde otro dominio fuera del dominio que sirvió el primer recurso."
   },
   {
-    "question": "En HTML5, ¿cuál es el propósito del elemento <canvas>?",
+    "question": "En HTML5, ¿cuál es el propósito del elemento canvas?",
     "options": [
       "Crear formularios interactivos",
       "Mostrar vídeos",
@@ -74,7 +74,7 @@
       "Definir una sección de navegación"
     ],
     "correct": 2,
-    "explanation": "El elemento <canvas> en HTML5 se utiliza para dibujar gráficos vía scripting (usualmente JavaScript)."
+    "explanation": "El elemento canvas en HTML5 se utiliza para dibujar gráficos vía scripting (usualmente JavaScript)."
   },
   {
     "question": "¿Qué es un closure en JavaScript?",
