@@ -58,4 +58,4 @@ Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cambi
 
 ---
 
-¿Tienes alguna pregunta sobre el cuestionario? ¡No dudes en abrir un issue!
+
