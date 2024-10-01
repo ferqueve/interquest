@@ -1,0 +1,211 @@
+[
+  {
+    "question": "¿Qué es el 'memoization' en programación?",
+    "options": [
+      "Una técnica para convertir funciones en métodos de clase",
+      "Un proceso para optimizar la memoria del navegador",
+      "Una técnica de optimización que almacena los resultados de operaciones costosas",
+      "Un método para crear copias profundas de objetos"
+    ],
+    "correct": 2,
+    "explanation": "Memoization es una técnica de optimización que consiste en almacenar los resultados de operaciones costosas y devolver el resultado almacenado cuando se vuelve a hacer la misma operación, mejorando así el rendimiento."
+  },
+  {
+    "question": "En CSS, ¿qué hace la propiedad 'transform'?",
+    "options": [
+      "Cambia el tipo de fuente de un elemento",
+      "Modifica la posición, escala, rotación o deformación de un elemento",
+      "Transforma texto en mayúsculas o minúsculas",
+      "Convierte un elemento inline en block"
+    ],
+    "correct": 1,
+    "explanation": "La propiedad transform en CSS permite modificar el espacio coordinado del modelo de formato visual. Con ella, los elementos pueden ser trasladados, rotados, escalados o sesgados."
+  },
+  {
+    "question": "¿Qué es un 'Higher-Order Component' (HOC) en React?",
+    "options": [
+      "Un componente que renderiza otros componentes",
+      "Una función que toma un componente y devuelve un nuevo componente",
+      "Un componente con estado interno",
+      "Un componente que utiliza hooks"
+    ],
+    "correct": 1,
+    "explanation": "Un Higher-Order Component en React es una función que toma un componente y devuelve un nuevo componente, típicamente con funcionalidad adicional o modificada."
+  },
+  {
+    "question": "En el contexto de bases de datos, ¿qué es un índice?",
+    "options": [
+      "Una lista de todas las tablas en la base de datos",
+      "Una estructura de datos que mejora la velocidad de las operaciones de recuperación de datos",
+      "Un tipo especial de tabla que almacena metadatos",
+      "Una consulta SQL predefinida"
+    ],
+    "correct": 1,
+    "explanation": "En bases de datos, un índice es una estructura de datos que mejora la velocidad de las operaciones de recuperación de datos en una tabla de base de datos al proporcionar un acceso rápido a filas."
+  },
+  {
+    "question": "¿Qué es el 'tree shaking' en el contexto de JavaScript moderno?",
+    "options": [
+      "Una técnica para ordenar el árbol DOM",
+      "Un proceso de eliminación de código muerto",
+      "Un método para optimizar las animaciones en el navegador",
+      "Una forma de estructurar los componentes en React"
+    ],
+    "correct": 1,
+    "explanation": "Tree shaking es una técnica de optimización en JavaScript moderno que elimina el código que no se utiliza (código muerto) del bundle final, reduciendo así el tamaño del archivo."
+  },
+  {
+    "question": "En Git, ¿qué es un 'detached HEAD state'?",
+    "options": [
+      "Cuando Git no puede encontrar el archivo HEAD",
+      "Cuando se está trabajando directamente en un commit específico en lugar de una rama",
+      "Un error que ocurre al fusionar ramas",
+      "Cuando se elimina accidentalmente la rama principal"
+    ],
+    "correct": 1,
+    "explanation": "Un 'detached HEAD state' en Git ocurre cuando se está trabajando directamente en un commit específico en lugar de la punta de una rama. Esto puede suceder, por ejemplo, al hacer checkout a un commit específico."
+  },
+  {
+    "question": "¿Qué es el patrón de diseño 'Observer' en programación?",
+    "options": [
+      "Un patrón para crear objetos sin especificar su clase exacta",
+      "Un patrón que define una dependencia uno a muchos entre objetos",
+      "Un patrón para estructurar clases en una jerarquía",
+      "Un patrón para manejar solicitudes en una cadena de manejadores"
+    ],
+    "correct": 1,
+    "explanation": "El patrón Observer define una dependencia uno a muchos entre objetos, de modo que cuando un objeto cambia su estado, todos sus dependientes son notificados y actualizados automáticamente."
+  },
+  {
+    "question": "En CSS, ¿qué es un 'pseudo-elemento'?",
+    "options": [
+      "Un selector que selecciona todos los elementos",
+      "Una palabra clave que se añade a un selector para estilizar una parte específica del elemento",
+      "Un tipo de animación CSS",
+      "Una regla que solo se aplica en navegadores móviles"
+    ],
+    "correct": 1,
+    "explanation": "Un pseudo-elemento en CSS es una palabra clave añadida a un selector que permite estilizar una parte específica del elemento seleccionado, como ::before o ::after."
+  },
+  {
+    "question": "¿Qué es 'lazy loading' en el desarrollo web?",
+    "options": [
+      "Una técnica para cargar imágenes de baja resolución primero",
+      "Un método para optimizar consultas de base de datos",
+      "Una técnica para retrasar la carga de recursos no críticos",
+      "Un patrón de diseño para manejar operaciones asíncronas"
+    ],
+    "correct": 2,
+    "explanation": "Lazy loading es una técnica de optimización web que consiste en retrasar la carga o inicialización de recursos no críticos en el momento de la carga de la página. Los recursos se cargan solo cuando se necesitan."
+  },
+  {
+    "question": "En JavaScript, ¿qué es el 'prototype chain'?",
+    "options": [
+      "Una serie de funciones encadenadas",
+      "El mecanismo por el cual los objetos heredan características de otros objetos",
+      "Una estructura de datos para almacenar propiedades de objetos",
+      "Un método para encadenar promesas"
+    ],
+    "correct": 1,
+    "explanation": "El prototype chain en JavaScript es el mecanismo por el cual los objetos heredan características (propiedades y métodos) de otros objetos, formando una cadena de prototipos."
+  },
+  {
+    "question": "¿Qué es una 'race condition' en programación concurrente?",
+    "options": [
+      "Un algoritmo para ordenar datos rápidamente",
+      "Una situación donde el comportamiento de un programa depende de la secuencia o temporización de eventos incontrolables",
+      "Una técnica para optimizar bucles",
+      "Un método para manejar excepciones en código asíncrono"
+    ],
+    "correct": 1,
+    "explanation": "Una race condition es una situación en programación concurrente donde el comportamiento de un programa depende de la secuencia o temporización relativa de eventos incontrolables, lo que puede llevar a resultados inesperados o erróneos."
+  },
+  {
+    "question": "En el contexto de seguridad web, ¿qué es XSS?",
+    "options": [
+      "Extra Style Sheets",
+      "Extended Server Scripts",
+      "Cross-Site Scripting",
+      "XML Signature Service"
+    ],
+    "correct": 2,
+    "explanation": "XSS (Cross-Site Scripting) es una vulnerabilidad de seguridad que permite a un atacante inyectar scripts del lado del cliente en páginas web vistas por otros usuarios, lo que puede llevar a robo de datos o manipulación de la página."
+  },
+  {
+    "question": "¿Qué es el 'critical rendering path' en el rendimiento web?",
+    "options": [
+      "La ruta más rápida para cargar una página web",
+      "Un algoritmo para optimizar el renderizado de SVG",
+      "La secuencia de pasos que el navegador sigue para convertir HTML, CSS y JavaScript en píxeles en la pantalla",
+      "Una técnica para priorizar la carga de recursos críticos"
+    ],
+    "correct": 2,
+    "explanation": "El critical rendering path es la secuencia de pasos que el navegador sigue para convertir HTML, CSS y JavaScript en píxeles en la pantalla. Optimizar este proceso es crucial para mejorar el rendimiento de carga de una página web."
+  },
+  {
+    "question": "En React, ¿qué es el 'virtual DOM'?",
+    "options": [
+      "Una versión simplificada del DOM para mejorar el rendimiento",
+      "Un DOM que solo existe en memoria y no en el navegador",
+      "Una representación virtual del DOM real que React usa para optimizar las actualizaciones",
+      "Un tipo especial de componente React"
+    ],
+    "correct": 2,
+    "explanation": "El virtual DOM en React es una representación ligera en memoria del DOM real. React lo utiliza para realizar cálculos y comparaciones antes de actualizar el DOM real, lo que resulta en una mejora significativa del rendimiento."
+  },
+  {
+    "question": "¿Qué es un 'memory leak' en programación?",
+    "options": [
+      "Un error que ocurre cuando se accede a memoria no asignada",
+      "Una técnica para liberar memoria no utilizada",
+      "Un problema donde un programa falla en liberar memoria que ya no necesita",
+      "Un método para optimizar el uso de memoria en aplicaciones"
+    ],
+    "correct": 2,
+    "explanation": "Un memory leak (fuga de memoria) es un tipo de error de gestión de recursos donde un programa falla en liberar memoria que ya no necesita, lo que puede llevar a un aumento gradual en el uso de memoria y potencialmente a problemas de rendimiento."
+  },
+  {
+    "question": "En CSS, ¿qué es un 'media query'?",
+    "options": [
+      "Una técnica para importar estilos de otros archivos CSS",
+      "Un método para aplicar estilos basados en características del dispositivo o del navegador",
+      "Una función para consultar el estado de elementos multimedia en la página",
+      "Un selector que se aplica solo a elementos de medios como video o audio"
+    ],
+    "correct": 1,
+    "explanation": "Un media query en CSS es una técnica que permite aplicar estilos basados en características del dispositivo o del navegador, como el ancho de la pantalla, la orientación o la resolución, facilitando el diseño responsive."
+  },
+  {
+    "question": "¿Qué es el 'event delegation' en JavaScript?",
+    "options": [
+      "Una técnica para crear eventos personalizados",
+      "Un método para manejar eventos en elementos padre en lugar de elementos individuales",
+      "Un patrón para organizar manejadores de eventos en aplicaciones grandes",
+      "Una forma de prevenir la propagación de eventos"
+    ],
+    "correct": 1,
+    "explanation": "Event delegation es una técnica en JavaScript donde, en lugar de añadir un escuchador de eventos a cada elemento similar, se añade un único escuchador a un elemento padre. Esto aprovecha la propagación de eventos y puede mejorar el rendimiento y la gestión de memoria."
+  },
+  {
+    "question": "En el contexto de APIs, ¿qué significa 'rate limiting'?",
+    "options": [
+      "Limitar la velocidad de las respuestas de la API",
+      "Restringir el número de solicitudes que un cliente puede hacer en un período de tiempo",
+      "Establecer un límite en el tamaño de los datos que la API puede manejar",
+      "Priorizar ciertas solicitudes sobre otras basándose en su importancia"
+    ],
+    "correct": 1,
+    "explanation": "Rate limiting es una estrategia utilizada en APIs para restringir el número de solicitudes que un cliente puede hacer en un período de tiempo determinado. Esto ayuda a prevenir abusos, proteger contra ataques DoS y asegurar un uso justo de los recursos del servidor."
+  },
+  {
+    "question": "¿Qué es 'code splitting' en el desarrollo web moderno?",
+    "options": [
+      "Una técnica para dividir el código en múltiples archivos",
+      "Un método para separar el código del frontend y del backend",
+      "Una práctica de dividir el código de una aplicación en varios paquetes que pueden cargarse bajo demanda",
+      "Una estrategia para organizar el código en diferentes ramas de Git"
+    ],
+    "correct": 2,
+    "explanation": "Code splitting es una práctica en el desarrollo web moderno que consiste en dividir el código de una aplicación en varios paquetes o fragmentos que pueden cargarse bajo demanda o en paralelo. Esto puede mejorar significativamente el rendimiento de la aplicación al reducir el tamaño del bundle inicial."
+  }
+]

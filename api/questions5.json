@@ -1,0 +1,222 @@
+[
+  {
+    "question": "¿Qué es el 'shadow DOM' en el contexto de los web components?",
+    "options": [
+      "Una técnica para crear elementos DOM invisibles",
+      "Un método para optimizar el renderizado del DOM",
+      "Una forma de encapsular el DOM y CSS de un componente",
+      "Una API para manipular elementos DOM en segundo plano"
+    ],
+    "correct": 2,
+    "explanation": "El shadow DOM es una característica de los web components que permite encapsular el DOM y CSS de un componente, aislándolo del resto del documento para evitar conflictos de estilo y mantener la modularidad."
+  },
+  {
+    "question": "En el contexto de la seguridad web, ¿qué es CORS?",
+    "options": [
+      "Client Origin Request Security",
+      "Cross-Origin Resource Sharing",
+      "Content Origin Restriction Service",
+      "Centralized Object Reference System"
+    ],
+    "correct": 1,
+    "explanation": "CORS (Cross-Origin Resource Sharing) es un mecanismo de seguridad implementado por los navegadores que permite o restringe las solicitudes de recursos desde un dominio diferente al del servidor."
+  },
+  {
+    "question": "¿Qué es un 'service worker' en el desarrollo web moderno?",
+    "options": [
+      "Un tipo de trabajador en una fábrica de servidores web",
+      "Un script que tu aplicación puede ejecutar en segundo plano",
+      "Un servicio de hosting web",
+      "Una herramienta para automatizar tareas de desarrollo"
+    ],
+    "correct": 1,
+    "explanation": "Un service worker es un script que tu aplicación web puede ejecutar en segundo plano, separado de la página web, permitiendo características que no necesitan una página web o interacción del usuario, como notificaciones push y sincronización en segundo plano."
+  },
+  {
+    "question": "En programación funcional, ¿qué es una función 'pure'?",
+    "options": [
+      "Una función escrita en un lenguaje de programación puro",
+      "Una función que siempre devuelve el mismo resultado para los mismos argumentos y no tiene efectos secundarios",
+      "Una función que solo utiliza variables locales",
+      "Una función que no contiene bucles"
+    ],
+    "correct": 1,
+    "explanation": "Una función pure en programación funcional es aquella que siempre devuelve el mismo resultado para los mismos argumentos de entrada y no tiene efectos secundarios observables, como modificar variables globales o realizar operaciones de I/O."
+  },
+  {
+    "question": "¿Qué es el 'Time to Interactive' (TTI) en el rendimiento web?",
+    "options": [
+      "El tiempo que tarda una página en cargar completamente",
+      "El tiempo que tarda el usuario en interactuar por primera vez con la página",
+      "El punto en el que la página se ha cargado y es capaz de responder rápidamente a la interacción del usuario",
+      "El tiempo que tarda el navegador en parsear el HTML"
+    ],
+    "correct": 2,
+    "explanation": "Time to Interactive (TTI) es una métrica de rendimiento web que mide el tiempo que tarda una página en volverse completamente interactiva, es decir, cuando está visualmente renderizada y capaz de responder de manera confiable a las interacciones del usuario."
+  },
+  {
+    "question": "En el contexto de las bases de datos, ¿qué es una 'transacción'?",
+    "options": [
+      "Una consulta SQL compleja",
+      "Un método para optimizar consultas",
+      "Una unidad de trabajo que se ejecuta de manera atómica",
+      "Una técnica para indexar tablas"
+    ],
+    "correct": 2,
+    "explanation": "En bases de datos, una transacción es una unidad de trabajo que se ejecuta de manera atómica, es decir, o se completa en su totalidad o no se realiza en absoluto, garantizando la consistencia de los datos incluso en caso de fallos."
+  },
+  {
+    "question": "¿Qué es el patrón de diseño 'Singleton'?",
+    "options": [
+      "Un patrón que permite crear solo una instancia de una clase",
+      "Un patrón para manejar operaciones asíncronas",
+      "Un patrón para crear interfaces de usuario",
+      "Un patrón para optimizar consultas de base de datos"
+    ],
+    "correct": 0,
+    "explanation": "El patrón Singleton es un patrón de diseño creacional que garantiza que una clase tenga solo una instancia y proporciona un punto de acceso global a esta instancia."
+  },
+  {
+    "question": "En CSS, ¿qué es un 'flexbox'?",
+    "options": [
+      "Una propiedad para crear cajas flexibles",
+      "Un módulo de diseño que permite crear layouts flexibles y eficientes",
+      "Una técnica para centrar elementos verticalmente",
+      "Un tipo de contenedor que solo acepta elementos flex"
+    ],
+    "correct": 1,
+    "explanation": "Flexbox es un módulo de diseño en CSS que proporciona una forma más eficiente de diseñar, alinear y distribuir el espacio entre los elementos en un contenedor, incluso cuando su tamaño es desconocido o dinámico."
+  },
+  {
+    "question": "¿Qué es 'Server-Side Rendering' (SSR)?",
+    "options": [
+      "Una técnica donde el servidor renderiza la página HTML",
+      "Un método para optimizar el rendimiento del servidor",
+      "Una forma de ejecutar JavaScript en el servidor",
+      "Una estrategia para cachear contenido estático"
+    ],
+    "correct": 0,
+    "explanation": "Server-Side Rendering (SSR) es una técnica donde el servidor genera el HTML completo de una página web antes de enviarlo al cliente, en contraste con el renderizado del lado del cliente donde JavaScript construye el contenido en el navegador."
+  },
+  {
+    "question": "En el contexto de la arquitectura de software, ¿qué es 'microservicios'?",
+    "options": [
+      "Servicios web muy pequeños y rápidos",
+      "Un estilo arquitectónico que estructura una aplicación como una colección de servicios débilmente acoplados",
+      "Una técnica para optimizar el rendimiento de servidores",
+      "Un tipo de base de datos distribuida"
+    ],
+    "correct": 1,
+    "explanation": "La arquitectura de microservicios es un enfoque para desarrollar una aplicación como un conjunto de pequeños servicios, cada uno ejecutándose en su propio proceso y comunicándose con mecanismos ligeros, a menudo una API de recursos HTTP."
+  },
+  {
+    "question": "¿Qué es 'webpack' en el desarrollo web moderno?",
+    "options": [
+      "Un framework de JavaScript",
+      "Una biblioteca para crear interfaces de usuario",
+      "Un empaquetador de módulos (module bundler)",
+      "Un sistema de gestión de bases de datos"
+    ],
+    "correct": 2,
+    "explanation": "Webpack es un empaquetador de módulos (module bundler) para aplicaciones JavaScript modernas. Procesa la aplicación y construye un gráfico de dependencias que incluye cada módulo que tu aplicación necesita, luego empaqueta todos esos módulos en uno o más bundles."
+  },
+  {
+    "question": "En el contexto de React, ¿qué son los 'hooks'?",
+    "options": [
+      "Funciones para crear componentes",
+      "Métodos del ciclo de vida de los componentes",
+      "Funciones que permiten usar estado y otras características de React sin escribir una clase",
+      "Eventos personalizados en React"
+    ],
+    "correct": 2,
+    "explanation": "Los hooks en React son funciones que permiten 'enganchar' el estado de React y el ciclo de vida desde componentes funcionales, permitiendo usar estado y otras características de React sin escribir una clase."
+  },
+  {
+    "question": "¿Qué es 'TDD' en el desarrollo de software?",
+    "options": [
+      "Type Driven Development",
+      "Test Driven Development",
+      "Time Driven Development",
+      "Technical Design Document"
+    ],
+    "correct": 1,
+    "explanation": "TDD significa Test Driven Development (Desarrollo Dirigido por Pruebas). Es una práctica de desarrollo de software que implica escribir pruebas antes de escribir el código de la funcionalidad, luego escribir el código para pasar la prueba, y finalmente refactorizar el código."
+  },
+  {
+    "question": "En el contexto de bases de datos, ¿qué es 'sharding'?",
+    "options": [
+      "Una técnica para encriptar datos",
+      "Un método para optimizar consultas",
+      "Una práctica de dividir una base de datos en partes más pequeñas y rápidas",
+      "Un tipo de índice de base de datos"
+    ],
+    "correct": 2,
+    "explanation": "Sharding es una técnica de particionamiento de bases de datos que divide una base de datos grande en partes más pequeñas, rápidas y más fáciles de manejar llamadas shards. Esto se hace para mejorar el rendimiento y la escalabilidad de la base de datos."
+  },
+  {
+    "question": "¿Qué es 'JWT' en el contexto de la autenticación web?",
+    "options": [
+      "JavaScript Web Token",
+      "JSON Web Token",
+      "Java Web Toolkit",
+      "Justified Width Typography"
+    ],
+    "correct": 1,
+    "explanation": "JWT significa JSON Web Token. Es un estándar abierto que define una forma compacta y autónoma de transmitir información de forma segura entre partes como un objeto JSON, comúnmente usado para la autenticación y el intercambio de información en aplicaciones web."
+  },
+  {
+    "question": "En programación, ¿qué es un 'deadlock'?",
+    "options": [
+      "Un error que ocurre cuando un programa se queda sin memoria",
+      "Una situación donde dos o más procesos están bloqueados permanentemente, esperando que el otro libere un recurso",
+      "Un tipo de bucle infinito",
+      "Una técnica para prevenir race conditions"
+    ],
+    "correct": 1,
+    "explanation": "Un deadlock es una situación en programación concurrente donde dos o más procesos están bloqueados permanentemente, cada uno esperando que el otro libere un recurso que tiene bloqueado, resultando en un estado donde ninguno puede continuar."
+  },
+  {
+    "question": "¿Qué es 'A/B testing' en el desarrollo web?",
+    "options": [
+      "Una técnica de depuración de código",
+      "Un método para comparar dos versiones de una página web para determinar cuál tiene mejor rendimiento",
+      "Una práctica de nombrado de variables",
+      "Un tipo de prueba unitaria"
+    ],
+    "correct": 1,
+    "explanation": "A/B testing es una metodología en el desarrollo web y marketing digital donde dos versiones de una página web o app (A y B) se comparan para determinar cuál tiene mejor rendimiento en términos de una métrica específica, como tasas de conversión."
+  },
+  {
+    "question": "En el contexto de la seguridad web, ¿qué es 'SQL injection'?",
+    "options": [
+      "Una técnica para optimizar consultas SQL",
+      "Un método para insertar datos en una base de datos SQL",
+      "Una vulnerabilidad donde un atacante puede insertar código SQL malicioso en las entradas de la aplicación",
+      "Una herramienta para administrar bases de datos SQL"
+    ],
+    "correct": 2,
+    "explanation": "SQL injection es una vulnerabilidad de seguridad web donde un atacante puede insertar o 'inyectar' instrucciones SQL maliciosas en una consulta a través de las entradas de la aplicación, potencialmente permitiéndole leer, modificar o eliminar datos de la base de datos."
+  },
+  {
+    "question": "¿Qué es 'PWA' en el desarrollo web moderno?",
+    "options": [
+      "Professional Web Association",
+      "Progressive Web App",
+      "Personal Web Assistant",
+      "Programmatic Web Access"
+    ],
+    "correct": 1,
+    "explanation": "PWA significa Progressive Web App. Son aplicaciones web que utilizan las últimas tecnologías web para ofrecer una experiencia similar a la de una aplicación nativa en dispositivos móviles y de escritorio, incluyendo la capacidad de trabajar offline y recibir notificaciones push."
+  },
+  {
+    "question": "En el contexto de la arquitectura de software, ¿qué es el patrón 'MVC'?",
+    "options": [
+      "Most Valuable Code",
+      "Model-View-Controller",
+      "Modular View Components",
+      "Minimum Viable Concept"
+    ],
+    "correct": 1,
+    "explanation": "MVC significa Model-View-Controller. Es un patrón de arquitectura de software que separa la lógica de la aplicación en tres componentes interconectados: el Modelo (datos y lógica de negocio), la Vista (interfaz de usuario) y el Controlador (maneja las entradas y actualiza el modelo y la vista)."
+  }
+]

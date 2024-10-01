@@ -1,0 +1,222 @@
+[
+  {
+    "question": "¿Qué método de array en JavaScript se utiliza para reducir el array a un solo valor?",
+    "options": [
+      "map()",
+      "filter()",
+      "reduce()",
+      "forEach()"
+    ],
+    "correct": 2,
+    "explanation": "El método reduce() ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor."
+  },
+  {
+    "question": "En CSS, ¿qué propiedad se utiliza para cambiar el orden de visualización de los elementos flex?",
+    "options": [
+      "flex-order",
+      "order",
+      "display-order",
+      "flex-display"
+    ],
+    "correct": 1,
+    "explanation": "La propiedad order se utiliza en CSS para cambiar el orden de visualización de los elementos flex."
+  },
+  {
+    "question": "¿Cuál es el propósito del comando 'git pull' en Git?",
+    "options": [
+      "Enviar cambios locales al repositorio remoto",
+      "Crear una nueva rama",
+      "Obtener y fusionar cambios del repositorio remoto",
+      "Eliminar una rama remota"
+    ],
+    "correct": 2,
+    "explanation": "git pull se utiliza para obtener y fusionar cambios del repositorio remoto en la rama actual."
+  },
+  {
+    "question": "En el contexto de las API REST, ¿qué significa HATEOAS?",
+    "options": [
+      "HTTP And Transfer Error Of Application State",
+      "Hypertext As The Engine Of Application State",
+      "Hyperlink And Text Encoding Of Application Services",
+      "HTTP Application Transfer Encoding Of API Services"
+    ],
+    "correct": 1,
+    "explanation": "HATEOAS significa 'Hypertext As The Engine Of Application State', un principio de REST que implica que el cliente interactúa con la aplicación a través de hipermedia proporcionada dinámicamente por el servidor."
+  },
+  {
+    "question": "¿Cuál es la diferencia principal entre let y var en JavaScript?",
+    "options": [
+      "let es función-scoped y var es block-scoped",
+      "var es función-scoped y let es block-scoped",
+      "let no puede ser reasignado y var sí",
+      "var no puede ser reasignado y let sí"
+    ],
+    "correct": 1,
+    "explanation": "var es función-scoped mientras que let es block-scoped, lo que significa que let tiene un alcance más limitado dentro de bloques como if o for."
+  },
+  {
+    "question": "¿Qué significa el acrónimo CORS en el desarrollo web?",
+    "options": [
+      "Create Origin Resource Sharing",
+      "Cross-Origin Resource Sharing",
+      "Create Object Resource System",
+      "Cross-Object Request System"
+    ],
+    "correct": 1,
+    "explanation": "CORS significa Cross-Origin Resource Sharing, un mecanismo que permite que recursos restringidos en una página web sean solicitados desde otro dominio fuera del dominio que sirvió el primer recurso."
+  },
+  {
+    "question": "En HTML5, ¿cuál es el propósito del elemento <canvas>?",
+    "options": [
+      "Crear formularios interactivos",
+      "Mostrar vídeos",
+      "Dibujar gráficos vía scripting",
+      "Definir una sección de navegación"
+    ],
+    "correct": 2,
+    "explanation": "El elemento <canvas> en HTML5 se utiliza para dibujar gráficos vía scripting (usualmente JavaScript)."
+  },
+  {
+    "question": "¿Qué es un closure en JavaScript?",
+    "options": [
+      "Una función que no tiene parámetros",
+      "Un objeto que contiene métodos",
+      "Una función junto con su entorno léxico",
+      "Un método para cerrar una conexión de base de datos"
+    ],
+    "correct": 2,
+    "explanation": "Un closure en JavaScript es una función junto con su entorno léxico, lo que le permite acceder a variables de su ámbito exterior incluso después de que la función exterior haya terminado de ejecutarse."
+  },
+  {
+    "question": "En CSS, ¿qué pseudo-clase se utiliza para seleccionar un elemento cuando el usuario pasa el ratón sobre él?",
+    "options": [
+      ":active",
+      ":focus",
+      ":hover",
+      ":visited"
+    ],
+    "correct": 2,
+    "explanation": "La pseudo-clase :hover se utiliza en CSS para seleccionar y estilizar un elemento cuando el usuario pasa el ratón sobre él."
+  },
+  {
+    "question": "¿Cuál es la diferencia entre git merge y git rebase?",
+    "options": [
+      "git merge crea un nuevo commit, git rebase no",
+      "git rebase reescribe el historial del proyecto, git merge no",
+      "git merge solo funciona con ramas remotas, git rebase con locales",
+      "No hay diferencia, son comandos idénticos"
+    ],
+    "correct": 1,
+    "explanation": "Mientras que git merge crea un nuevo commit de fusión, git rebase reescribe el historial del proyecto moviendo o combinando una secuencia de commits a una nueva base commit."
+  },
+  {
+    "question": "¿Qué es el DOM en el contexto del desarrollo web?",
+    "options": [
+      "Dynamic Object Model",
+      "Document Object Model",
+      "Data Object Model",
+      "Document Oriented Model"
+    ],
+    "correct": 1,
+    "explanation": "DOM significa Document Object Model, una interfaz de programación para documentos HTML y XML que representa la estructura de un documento como un árbol de objetos."
+  },
+  {
+    "question": "En una API REST, ¿qué código de estado HTTP se utiliza normalmente para indicar que el servidor no pudo encontrar el recurso solicitado?",
+    "options": [
+      "400 Bad Request",
+      "401 Unauthorized",
+      "404 Not Found",
+      "500 Internal Server Error"
+    ],
+    "correct": 2,
+    "explanation": "El código de estado HTTP 404 Not Found se utiliza para indicar que el servidor no pudo encontrar el recurso solicitado."
+  },
+  {
+    "question": "¿Qué es NPM en el contexto de desarrollo con JavaScript?",
+    "options": [
+      "New Programming Method",
+      "Node Package Manager",
+      "New Project Module",
+      "Network Protocol Manager"
+    ],
+    "correct": 1,
+    "explanation": "NPM significa Node Package Manager, y es el sistema de gestión de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript."
+  },
+  {
+    "question": "En CSS, ¿qué propiedad se utiliza para crear sombras en un texto?",
+    "options": [
+      "text-shadow",
+      "font-shadow",
+      "box-shadow",
+      "text-effect"
+    ],
+    "correct": 0,
+    "explanation": "La propiedad text-shadow se utiliza en CSS para crear sombras en un texto."
+  },
+  {
+    "question": "¿Qué es un Web Worker en JavaScript?",
+    "options": [
+      "Una función que se ejecuta automáticamente cuando se carga la página",
+      "Un script que se ejecuta en segundo plano independientemente de otros scripts",
+      "Una librería para manejar peticiones AJAX",
+      "Un método para optimizar el rendimiento del DOM"
+    ],
+    "correct": 1,
+    "explanation": "Un Web Worker es un script que se ejecuta en segundo plano independientemente de otros scripts, sin afectar el rendimiento de la página."
+  },
+  {
+    "question": "En Git, ¿qué comando se utiliza para ver las diferencias entre el área de trabajo y el último commit?",
+    "options": [
+      "git check",
+      "git diff",
+      "git status",
+      "git compare"
+    ],
+    "correct": 1,
+    "explanation": "El comando git diff se utiliza para ver las diferencias entre el área de trabajo y el último commit en Git."
+  },
+  {
+    "question": "¿Qué significa SPA en el contexto del desarrollo web?",
+    "options": [
+      "Server Page Application",
+      "Single Page Application",
+      "Structured Program Architecture",
+      "Service Provider Agreement"
+    ],
+    "correct": 1,
+    "explanation": "SPA significa Single Page Application, una aplicación web que interactúa con el usuario reescribiendo dinámicamente la página actual en lugar de cargar páginas enteras desde el servidor."
+  },
+  {
+    "question": "En JavaScript, ¿qué método se utiliza para convertir un objeto JSON en una cadena?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.toString()",
+      "JSON.convert()"
+    ],
+    "correct": 1,
+    "explanation": "El método JSON.stringify() se utiliza en JavaScript para convertir un objeto o valor JavaScript en una cadena JSON."
+  },
+  {
+    "question": "¿Cuál es el propósito principal de los Service Workers en el desarrollo web moderno?",
+    "options": [
+      "Manejar la autenticación de usuarios",
+      "Optimizar consultas de base de datos",
+      "Permitir funcionalidades offline y mejorar el rendimiento",
+      "Generar contenido dinámico en el servidor"
+    ],
+    "correct": 2,
+    "explanation": "Los Service Workers se utilizan principalmente para permitir funcionalidades offline, mejorar el rendimiento y habilitar características como notificaciones push en aplicaciones web."
+  },
+  {
+    "question": "En el contexto de las API REST, ¿qué significa la 'S' en CRUD?",
+    "options": [
+      "Save",
+      "Secure",
+      "Send",
+      "Search"
+    ],
+    "correct": 3,
+    "explanation": "En el contexto de las API REST, CRUD significa Create, Read, Update, Delete. La 'S' no es parte de este acrónimo, pero 'Search' a menudo se considera una operación adicional en algunos diseños de API."
+  }
+]
