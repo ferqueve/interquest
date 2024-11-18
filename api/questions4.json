@@ -1,35 +1,222 @@
 [
     {
-        "question": "¿Cuál será el resultado del siguiente código JavaScript?<br><br>const users = [<br>  { id: 1, name: 'Alice', age: 25 },<br>  { id: 2, name: 'Bob', age: 30 },<br>  { id: 3, name: 'Charlie', age: 35 },<br>  { id: 4, name: 'David', age: 28 }<br>];<br>const youngUsers = users.filter(user => user.age < 30);<br>console.log(youngUsers.length);",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "4"
-        ],
-        "correct": 1,
-        "explanation": "El método filter() crea un nuevo array con todos los elementos que pasan la prueba implementada por la función proporcionada. En este caso, la función comprueba si la edad del usuario es menor que 30. Hay dos usuarios que cumplen esta condición: Alice (25) y David (28). Por lo tanto, el resultado será 2."
+      "question": "¿Qué es SQL?",
+      "options": [
+        "Un sistema operativo",
+        "Un lenguaje de programación para bases de datos relacionales",
+        "Un tipo de base de datos",
+        "Un protocolo de red"
+      ],
+      "correct": 1,
+      "explanation": "SQL (Structured Query Language) es un lenguaje estándar para gestionar y manipular bases de datos relacionales."
     },
     {
-        "question": "¿Cuál es el propósito principal del middleware en Express.js?",
-        "options": [
-            "Manejar errores en el servidor",
-            "Interceptar solicitudes y realizar operaciones antes de enviar una respuesta",
-            "Establecer rutas predeterminadas para solicitudes GET y POST",
-            "Conectar la base de datos al servidor"
-        ],
-        "correct": 1,
-        "explanation": "El middleware en Express.js intercepta las solicitudes para realizar operaciones intermedias como autenticación, validación, o registro de solicitudes, antes de enviar la respuesta final."
+      "question": "¿Cuál es la sentencia SQL para seleccionar todos los registros de una tabla?",
+      "options": [
+        "GET * FROM tabla",
+        "SELECT * FROM tabla",
+        "OBTAIN * FROM tabla",
+        "RETRIEVE * FROM tabla"
+      ],
+      "correct": 1,
+      "explanation": "SELECT * FROM tabla es la sentencia SQL correcta para seleccionar todos los registros de una tabla."
     },
     {
-        "question": "¿Qué método del objeto request en Express.js se utiliza para obtener parámetros de consulta (query params)?",
-        "options": [
-            "req.params",
-            "req.body",
-            "req.query",
-            "req.get"
-        ],
-        "correct": 2,
-        "explanation": "El objeto req.query contiene los parámetros de consulta enviados en la URL después del signo de interrogación. Por ejemplo, en /api?name=John, req.query.name devolverá 'John'."
+      "question": "¿Qué es una clave primaria (PRIMARY KEY)?",
+      "options": [
+        "Un campo opcional en una tabla",
+        "Un campo que identifica de manera única cada registro",
+        "Una contraseña para la base de datos",
+        "Un tipo de índice secundario"
+      ],
+      "correct": 1,
+      "explanation": "Una clave primaria es un campo o conjunto de campos que identifica de manera única cada registro en una tabla."
+    },
+    {
+      "question": "¿Cuál es la sentencia SQL para insertar datos en una tabla?",
+      "options": [
+        "ADD INTO tabla VALUES",
+        "INSERT INTO tabla VALUES",
+        "PUT INTO tabla VALUES",
+        "PLACE INTO tabla VALUES"
+      ],
+      "correct": 1,
+      "explanation": "INSERT INTO es la sentencia SQL correcta para insertar nuevos registros en una tabla."
+    },
+    {
+      "question": "¿Qué hace la cláusula WHERE en SQL?",
+      "options": [
+        "Ordena los resultados",
+        "Filtra los registros según una condición",
+        "Agrupa los resultados",
+        "Une tablas"
+      ],
+      "correct": 1,
+      "explanation": "La cláusula WHERE se usa para filtrar registros que cumplen con una condición específica."
+    },
+    {
+      "question": "¿Qué es una clave foránea (FOREIGN KEY)?",
+      "options": [
+        "La clave principal de una tabla",
+        "Un campo que referencia la clave primaria de otra tabla",
+        "Una clave de encriptación",
+        "Un índice especial"
+      ],
+      "correct": 1,
+      "explanation": "Una clave foránea es un campo que establece una relación con la clave primaria de otra tabla."
+    },
+    {
+      "question": "¿Cuál es la sentencia SQL para actualizar datos?",
+      "options": [
+        "MODIFY",
+        "UPDATE",
+        "CHANGE",
+        "ALTER"
+      ],
+      "correct": 1,
+      "explanation": "UPDATE es la sentencia SQL correcta para modificar registros existentes en una tabla."
+    },
+    {
+      "question": "¿Qué es JOIN en SQL?",
+      "options": [
+        "Una función de agregación",
+        "Una cláusula para combinar filas de dos o más tablas",
+        "Un tipo de índice",
+        "Un método de backup"
+      ],
+      "correct": 1,
+      "explanation": "JOIN es una cláusula que permite combinar registros de dos o más tablas basándose en una columna relacionada."
+    },
+    {
+      "question": "¿Qué hace la sentencia DELETE en SQL?",
+      "options": [
+        "Actualiza registros",
+        "Elimina registros de una tabla",
+        "Borra una tabla",
+        "Elimina una base de datos"
+      ],
+      "correct": 1,
+      "explanation": "DELETE se usa para eliminar registros existentes de una tabla que cumplan con una condición específica."
+    },
+    {
+      "question": "¿Qué es un índice en una base de datos?",
+      "options": [
+        "Una tabla temporal",
+        "Una estructura que mejora la velocidad de recuperación de datos",
+        "Un tipo de clave primaria",
+        "Un backup de la base de datos"
+      ],
+      "correct": 1,
+      "explanation": "Un índice es una estructura de datos que mejora la velocidad de las operaciones de recuperación en una base de datos."
+    },
+    {
+      "question": "¿Qué hace la cláusula ORDER BY?",
+      "options": [
+        "Filtra registros",
+        "Ordena los resultados",
+        "Agrupa registros",
+        "Une tablas"
+      ],
+      "correct": 1,
+      "explanation": "ORDER BY se usa para ordenar los resultados de una consulta en orden ascendente o descendente."
+    },
+    {
+      "question": "¿Qué es una consulta preparada (Prepared Statement)?",
+      "options": [
+        "Una consulta que no se puede modificar",
+        "Una consulta precompilada que puede ejecutarse múltiples veces",
+        "Una consulta que solo selecciona datos",
+        "Una consulta que solo inserta datos"
+      ],
+      "correct": 1,
+      "explanation": "Una consulta preparada es una plantilla de consulta precompilada que puede ejecutarse múltiples veces con diferentes parámetros."
+    },
+    {
+      "question": "¿Qué función cumple DISTINCT en SQL?",
+      "options": [
+        "Ordena resultados",
+        "Elimina duplicados de los resultados",
+        "Cuenta registros",
+        "Une tablas"
+      ],
+      "correct": 1,
+      "explanation": "DISTINCT se usa para eliminar duplicados de los resultados de una consulta SELECT."
+    },
+    {
+      "question": "¿Qué es una transacción en bases de datos?",
+      "options": [
+        "Una tabla temporal",
+        "Una secuencia de operaciones que se ejecutan como una unidad",
+        "Un tipo de consulta",
+        "Un método de backup"
+      ],
+      "correct": 1,
+      "explanation": "Una transacción es una unidad de trabajo que se ejecuta de manera atómica, consistente, aislada y durable (ACID)."
+    },
+    {
+      "question": "¿Qué significa CRUD?",
+      "options": [
+        "Create, Read, Update, Delete",
+        "Create, Retrieve, Update, Drop",
+        "Connect, Read, Update, Disconnect",
+        "Create, Relate, Update, Delete"
+      ],
+      "correct": 0,
+      "explanation": "CRUD representa las cuatro operaciones básicas de persistencia: Create (Crear), Read (Leer), Update (Actualizar) y Delete (Eliminar)."
+    },
+    {
+      "question": "¿Qué es un INNER JOIN?",
+      "options": [
+        "Une todas las filas de ambas tablas",
+        "Une solo las filas que coinciden en ambas tablas",
+        "Une solo las filas de la primera tabla",
+        "Une solo las filas de la segunda tabla"
+      ],
+      "correct": 1,
+      "explanation": "INNER JOIN devuelve solo las filas donde hay coincidencias entre ambas tablas según la condición de unión."
+    },
+    {
+      "question": "¿Qué hace la función COUNT en SQL?",
+      "options": [
+        "Suma valores",
+        "Cuenta el número de filas",
+        "Calcula el promedio",
+        "Encuentra el valor máximo"
+      ],
+      "correct": 1,
+      "explanation": "COUNT es una función de agregación que cuenta el número de filas que cumplen con una condición específica."
+    },
+    {
+      "question": "¿Qué es un trigger en SQL?",
+      "options": [
+        "Un tipo de consulta",
+        "Un procedimiento que se ejecuta automáticamente en respuesta a eventos",
+        "Un tipo de índice",
+        "Una clave foránea"
+      ],
+      "correct": 1,
+      "explanation": "Un trigger es un procedimiento almacenado que se ejecuta automáticamente cuando ocurre un evento específico en la base de datos."
+    },
+    {
+      "question": "¿Qué hace la cláusula GROUP BY?",
+      "options": [
+        "Ordena registros",
+        "Agrupa filas que tienen los mismos valores",
+        "Filtra resultados",
+        "Une tablas"
+      ],
+      "correct": 1,
+      "explanation": "GROUP BY se usa para agrupar filas que tienen los mismos valores en columnas específicas."
+    },
+    {
+      "question": "¿Qué es la normalización en bases de datos?",
+      "options": [
+        "Un método de backup",
+        "Un proceso para organizar datos eficientemente y reducir la redundancia",
+        "Un tipo de consulta",
+        "Un método de encriptación"
+      ],
+      "correct": 1,
+      "explanation": "La normalización es un proceso de diseño de bases de datos que organiza las tablas para minimizar la redundancia y las dependencias."
     }
-]
+  ]

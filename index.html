@@ -131,8 +131,8 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         #chartContainer {
-            width: 50px; /* Reducido de 300px a 200px */
-            height: 50px; /* Añadido para mantener la proporción */
+            width: 200px; /* Reducido de 300px a 200px */
+            height: 200px; /* Añadido para mantener la proporción */
             margin: 20px auto;
         }
     </style>
@@ -161,7 +161,7 @@
         const POINTS_PER_QUESTION = 2;
         const TOTAL_POINTS = TOTAL_QUESTIONS * POINTS_PER_QUESTION;
         const TOTAL_QUESTION_SETS = 5;
-        const BASE_URL = 'https://ferqueve.github.io/interquest/api/';
+        const BASE_URL = 'http://127.0.0.7:5500/api/';
 
         let questions = [];
         let currentQuestion = 0;

@@ -1,35 +1,223 @@
 [
     {
-        "question": "¿Cuál será el resultado del siguiente código JavaScript?<br><br>const users = [<br>  { id: 1, name: 'Alice', age: 25 },<br>  { id: 2, name: 'Bob', age: 30 },<br>  { id: 3, name: 'Charlie', age: 35 },<br>  { id: 4, name: 'David', age: 28 }<br>];<br>const youngUsers = users.filter(user => user.age < 30);<br>console.log(youngUsers.length);",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "4"
-        ],
-        "correct": 1,
-        "explanation": "El método filter() crea un nuevo array con todos los elementos que pasan la prueba implementada por la función proporcionada. En este caso, la función comprueba si la edad del usuario es menor que 30. Hay dos usuarios que cumplen esta condición: Alice (25) y David (28). Por lo tanto, el resultado será 2."
+      "question": "¿Qué es Node.js?",
+      "options": [
+        "Un lenguaje de programación",
+        "Un entorno de ejecución de JavaScript del lado del servidor",
+        "Una base de datos",
+        "Un framework frontend"
+      ],
+      "correct": 1,
+      "explanation": "Node.js es un entorno de ejecución para JavaScript construido con el motor V8 de Chrome que permite ejecutar código JavaScript en el servidor."
     },
     {
-        "question": "¿Cuál es el propósito principal del middleware en Express.js?",
-        "options": [
-            "Manejar errores en el servidor",
-            "Interceptar solicitudes y realizar operaciones antes de enviar una respuesta",
-            "Establecer rutas predeterminadas para solicitudes GET y POST",
-            "Conectar la base de datos al servidor"
-        ],
-        "correct": 1,
-        "explanation": "El middleware en Express.js intercepta las solicitudes para realizar operaciones intermedias como autenticación, validación, o registro de solicitudes, antes de enviar la respuesta final."
+      "question": "En Express.js, ¿cuál es la forma correcta de definir una ruta GET?<br><br>",
+      "options": [
+        "app.get('/ruta', function(res, req) { })",
+        "app.get('/ruta', function(req, res) { })",
+        "app.route('/ruta', function(req, res) { })",
+        "app.get('/ruta', function(request, result) { })"
+      ],
+      "correct": 1,
+      "explanation": "En Express, las rutas se definen con app.get() donde el primer parámetro es la ruta y el segundo es un callback con req y res en ese orden."
     },
     {
-        "question": "¿Qué método del objeto request en Express.js se utiliza para obtener parámetros de consulta (query params)?",
-        "options": [
-            "req.params",
-            "req.body",
-            "req.query",
-            "req.get"
-        ],
-        "correct": 2,
-        "explanation": "El objeto req.query contiene los parámetros de consulta enviados en la URL después del signo de interrogación. Por ejemplo, en /api?name=John, req.query.name devolverá 'John'."
+      "question": "¿Cuál es el propósito del archivo package.json en un proyecto Node.js?",
+      "options": [
+        "Contiene el código fuente de la aplicación",
+        "Almacena la configuración de la base de datos",
+        "Maneja las dependencias y metadatos del proyecto",
+        "Es un archivo de documentación"
+      ],
+      "correct": 2,
+      "explanation": "package.json es un archivo que contiene metadatos del proyecto y lista las dependencias necesarias para el funcionamiento de la aplicación."
+    },
+    {
+      "question": "¿Qué comando se usa para instalar una dependencia en Node.js?",
+      "options": [
+        "node install dependency",
+        "npm add dependency",
+        "npm install dependency",
+        "node add dependency"
+      ],
+      "correct": 2,
+      "explanation": "El comando 'npm install' o 'npm i' se utiliza para instalar dependencias en un proyecto Node.js."
+    },
+    {
+      "question": "En Express.js, ¿qué método se usa para parsear el cuerpo de las peticiones JSON?",
+      "options": [
+        "app.useJSON()",
+        "app.use(express.json())",
+        "app.parseJSON()",
+        "app.use(express.parseJSON())"
+      ],
+      "correct": 1,
+      "explanation": "express.json() es un middleware incorporado en Express que analiza las solicitudes entrantes con cargas JSON."
+    },
+    {
+      "question": "¿Qué es el event loop en Node.js?",
+      "options": [
+        "Una biblioteca de terceros",
+        "Un mecanismo que permite la ejecución asíncrona de código",
+        "Un tipo de base de datos",
+        "Un framework de testing"
+      ],
+      "correct": 1,
+      "explanation": "El event loop es un mecanismo que permite a Node.js realizar operaciones no bloqueantes a pesar de que JavaScript es single-threaded."
+    },
+    {
+      "question": "En Express.js, ¿cómo se accede a los parámetros de ruta en '/users/:id'?",
+      "options": [
+        "req.params.id",
+        "req.parameters.id",
+        "req.query.id",
+        "req.body.id"
+      ],
+      "correct": 0,
+      "explanation": "Los parámetros de ruta en Express se acceden a través del objeto req.params."
+    },
+    {
+      "question": "¿Qué es npm?",
+      "options": [
+        "Node Package Manager",
+        "Node Project Manager",
+        "New Project Module",
+        "Node Process Manager"
+      ],
+      "correct": 0,
+      "explanation": "npm (Node Package Manager) es el sistema de gestión de paquetes por defecto para Node.js."
+    },
+    {
+      "question": "¿Cuál es la diferencia entre require() e import en Node.js?",
+      "options": [
+        "No hay diferencia",
+        "require() es síncrono mientras que import es asíncrono",
+        "require() es CommonJS y import es ES modules",
+        "require() es más nuevo que import"
+      ],
+      "correct": 2,
+      "explanation": "require() es parte del sistema de módulos CommonJS, mientras que import es parte de ES modules (ECMAScript modules)."
+    },
+    {
+      "question": "¿Qué es middleware en Express.js?",
+      "options": [
+        "Una base de datos",
+        "Funciones que tienen acceso al objeto de solicitud y respuesta",
+        "Un tipo de ruta",
+        "Un sistema de autenticación"
+      ],
+      "correct": 1,
+      "explanation": "Middleware son funciones que tienen acceso al objeto de solicitud (req), al objeto de respuesta (res) y a la siguiente función middleware en el ciclo."
+    },
+    {
+      "question": "¿Cómo se maneja un error en una promesa en Node.js?",
+      "options": [
+        "try/catch",
+        ".then()/.catch()",
+        "if/else",
+        "throw new Error()"
+      ],
+      "correct": 1,
+      "explanation": "Los errores en promesas se manejan usando el método .catch() o el segundo parámetro de .then()."
+    },
+    {
+      "question": "En Express.js, ¿qué middleware se usa para servir archivos estáticos?",
+      "options": [
+        "express.static()",
+        "express.public()",
+        "express.files()",
+        "express.serve()"
+      ],
+      "correct": 0,
+      "explanation": "express.static() es el middleware incorporado en Express para servir archivos estáticos como imágenes, CSS, JavaScript, etc."
+    },
+    {
+      "question": "¿Qué es el callback hell?",
+      "options": [
+        "Un error en el código",
+        "Un patrón de diseño",
+        "Múltiples callbacks anidados que dificultan la lectura del código",
+        "Una biblioteca de Node.js"
+      ],
+      "correct": 2,
+      "explanation": "Callback hell se refiere a múltiples callbacks anidados que hacen que el código sea difícil de leer y mantener."
+    },
+    {
+      "question": "¿Qué es process.env en Node.js?",
+      "options": [
+        "Un archivo de configuración",
+        "Un objeto que contiene las variables de entorno",
+        "Un método de Express",
+        "Una base de datos"
+      ],
+      "correct": 1,
+      "explanation": "process.env es un objeto que contiene las variables de entorno del proceso donde se está ejecutando Node.js."
+    },
+    {
+      "question": "En Express.js, ¿cómo se accede a los query parameters de una URL?",
+      "options": [
+        "req.params",
+        "req.query",
+        "req.body",
+        "req.url"
+      ],
+      "correct": 1,
+      "explanation": "Los query parameters (parámetros de consulta) se acceden a través del objeto req.query en Express."
+    },
+    {
+      "question": "¿Qué es el objeto global en Node.js?",
+      "options": [
+        "El equivalente a window en el navegador",
+        "Una variable local",
+        "Un módulo de Node.js",
+        "Una base de datos en memoria"
+      ],
+      "correct": 0,
+      "explanation": "El objeto global en Node.js es similar al objeto window en el navegador, proporcionando variables y funciones globales."
+    },
+    {
+      "question": "¿Cómo se maneja la asincronía en Node.js?",
+      "options": [
+        "Solo con callbacks",
+        "Solo con promesas",
+        "Con callbacks, promesas y async/await",
+        "Solo con async/await"
+      ],
+      "correct": 2,
+      "explanation": "Node.js maneja la asincronía mediante callbacks, promesas y async/await, siendo estas últimas las formas más modernas."
+    },
+    {
+      "question": "En Express.js, ¿qué método se usa para enviar una respuesta JSON?",
+      "options": [
+        "res.send()",
+        "res.json()",
+        "res.write()",
+        "res.end()"
+      ],
+      "correct": 1,
+      "explanation": "res.json() es el método utilizado en Express para enviar una respuesta JSON al cliente."
+    },
+    {
+      "question": "¿Qué es el buffering en Node.js?",
+      "options": [
+        "Un tipo de error",
+        "Un método de almacenamiento temporal de datos",
+        "Un tipo de base de datos",
+        "Un framework"
+      ],
+      "correct": 1,
+      "explanation": "El buffering en Node.js es un método de almacenamiento temporal de datos que se están transfiriendo de un lugar a otro."
+    },
+    {
+      "question": "¿Qué es clustering en Node.js?",
+      "options": [
+        "Un tipo de base de datos",
+        "Una forma de ejecutar múltiples instancias de Node.js",
+        "Un método de encriptación",
+        "Un patrón de diseño"
+      ],
+      "correct": 1,
+      "explanation": "Clustering en Node.js permite ejecutar múltiples instancias de Node.js que pueden compartir el mismo puerto del servidor."
     }
-]
+  ]
+

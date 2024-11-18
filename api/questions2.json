@@ -1,35 +1,223 @@
 [
     {
-        "question": "¿Cuál será el resultado del siguiente código JavaScript?<br><br>const users = [<br>  { id: 1, name: 'Alice', age: 25 },<br>  { id: 2, name: 'Bob', age: 30 },<br>  { id: 3, name: 'Charlie', age: 35 },<br>  { id: 4, name: 'David', age: 28 }<br>];<br>const youngUsers = users.filter(user => user.age < 30);<br>console.log(youngUsers.length);",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "4"
-        ],
-        "correct": 1,
-        "explanation": "El método filter() crea un nuevo array con todos los elementos que pasan la prueba implementada por la función proporcionada. En este caso, la función comprueba si la edad del usuario es menor que 30. Hay dos usuarios que cumplen esta condición: Alice (25) y David (28). Por lo tanto, el resultado será 2."
+      "question": "¿Qué es un middleware en Express.js?",
+      "options": [
+        "Una base de datos",
+        "Una función que tiene acceso a los objetos request, response y next",
+        "Un tipo de ruta",
+        "Un método HTTP"
+      ],
+      "correct": 1,
+      "explanation": "Un middleware es una función que puede acceder a los objetos request (req), response (res) y la función next en el ciclo de solicitud-respuesta de la aplicación."
     },
     {
-        "question": "¿Cuál es el propósito principal del middleware en Express.js?",
-        "options": [
-            "Manejar errores en el servidor",
-            "Interceptar solicitudes y realizar operaciones antes de enviar una respuesta",
-            "Establecer rutas predeterminadas para solicitudes GET y POST",
-            "Conectar la base de datos al servidor"
-        ],
-        "correct": 1,
-        "explanation": "El middleware en Express.js intercepta las solicitudes para realizar operaciones intermedias como autenticación, validación, o registro de solicitudes, antes de enviar la respuesta final."
+      "question": "¿Cuál es la sintaxis correcta para usar un middleware en una ruta específica en Express?",
+      "options": [
+        "app.use('/ruta', middleware)",
+        "app.middleware('/ruta')",
+        "app.route('/ruta', middleware)",
+        "app.get('/ruta').middleware()"
+      ],
+      "correct": 0,
+      "explanation": "Para aplicar un middleware a una ruta específica, se usa app.use('/ruta', middleware) o se puede incluir directamente en la definición de la ruta."
     },
     {
-        "question": "¿Qué método del objeto request en Express.js se utiliza para obtener parámetros de consulta (query params)?",
-        "options": [
-            "req.params",
-            "req.body",
-            "req.query",
-            "req.get"
-        ],
-        "correct": 2,
-        "explanation": "El objeto req.query contiene los parámetros de consulta enviados en la URL después del signo de interrogación. Por ejemplo, en /api?name=John, req.query.name devolverá 'John'."
+      "question": "¿Qué hace la función next() en un middleware?",
+      "options": [
+        "Termina la petición",
+        "Envía una respuesta al cliente",
+        "Pasa el control al siguiente middleware en la cadena",
+        "Reinicia la aplicación"
+      ],
+      "correct": 2,
+      "explanation": "next() pasa el control al siguiente middleware en la cadena. Si no se llama a next(), la petición quedará colgada."
+    },
+    {
+      "question": "¿Cómo se accede al cuerpo de una petición POST en Express?",
+      "options": [
+        "req.body",
+        "req.data",
+        "req.post",
+        "req.content"
+      ],
+      "correct": 0,
+      "explanation": "req.body contiene los datos enviados en el cuerpo de la petición POST, pero requiere un middleware como express.json() para parsear los datos."
+    },
+    {
+      "question": "¿Qué middleware es necesario para parsear JSON en Express?",
+      "options": [
+        "express.parseJSON()",
+        "express.json()",
+        "express.bodyParser()",
+        "express.useJSON()"
+      ],
+      "correct": 1,
+      "explanation": "express.json() es el middleware incorporado en Express que analiza las solicitudes entrantes con payload JSON."
+    },
+    {
+      "question": "¿Cómo se manejan los errores en middleware de Express?",
+      "options": [
+        "try/catch en cada ruta",
+        "Usando un middleware con 4 parámetros (err, req, res, next)",
+        "Con un bloque if/else",
+        "Usando Promise.catch()"
+      ],
+      "correct": 1,
+      "explanation": "Los middlewares de manejo de errores en Express tienen una firma especial con 4 parámetros: (err, req, res, next)."
+    },
+    {
+      "question": "¿Cómo se accede a los parámetros de ruta en Express? Ejemplo: /users/:id",
+      "options": [
+        "req.params.id",
+        "req.parameters.id",
+        "req.route.id",
+        "req.path.id"
+      ],
+      "correct": 0,
+      "explanation": "Los parámetros de ruta definidos con :nombreParametro se acceden a través de req.params."
+    },
+    {
+      "question": "¿Qué es body-parser?",
+      "options": [
+        "Una base de datos",
+        "Un middleware para parsear el cuerpo de las peticiones HTTP",
+        "Un método HTTP",
+        "Una función de ruteo"
+      ],
+      "correct": 1,
+      "explanation": "body-parser es un middleware que procesa el cuerpo de las peticiones antes de que sean manejadas por las rutas."
+    },
+    {
+      "question": "¿Cómo se accede a los query parameters en Express? Ejemplo: /search?q=texto",
+      "options": [
+        "req.query.q",
+        "req.params.q",
+        "req.search.q",
+        "req.queryParams.q"
+      ],
+      "correct": 0,
+      "explanation": "Los query parameters se acceden a través de req.query en Express."
+    },
+    {
+      "question": "¿Qué es cors y para qué se usa?",
+      "options": [
+        "Un tipo de base de datos",
+        "Un middleware para manejar peticiones cross-origin",
+        "Un método de autenticación",
+        "Un formato de datos"
+      ],
+      "correct": 1,
+      "explanation": "cors es un middleware que permite manejar las peticiones Cross-Origin Resource Sharing en una aplicación Express."
+    },
+    {
+      "question": "¿Cómo se envía una respuesta JSON en Express?",
+      "options": [
+        "res.send(json)",
+        "res.json(data)",
+        "res.sendJSON(data)",
+        "res.writeJSON(data)"
+      ],
+      "correct": 1,
+      "explanation": "res.json() es el método usado en Express para enviar una respuesta JSON al cliente."
+    },
+    {
+      "question": "¿Qué es multer?",
+      "options": [
+        "Un middleware para manejar formularios multipart/form-data",
+        "Una base de datos",
+        "Un método HTTP",
+        "Un tipo de ruta"
+      ],
+      "correct": 0,
+      "explanation": "multer es un middleware para manejar multipart/form-data, que se usa principalmente para la carga de archivos."
+    },
+    {
+      "question": "¿Qué hace el middleware express.static()?",
+      "options": [
+        "Maneja autenticación",
+        "Sirve archivos estáticos",
+        "Parsea JSON",
+        "Maneja errores"
+      ],
+      "correct": 1,
+      "explanation": "express.static() es un middleware que sirve archivos estáticos como imágenes, CSS, y JavaScript."
+    },
+    {
+      "question": "¿Cómo se implementa un middleware de autenticación?",
+      "options": [
+        "Solo usando passport.js",
+        "Verificando credenciales en cada ruta",
+        "Creando una función que verifique el token/sesión y use next()",
+        "No es posible implementar autenticación en Express"
+      ],
+      "correct": 2,
+      "explanation": "Un middleware de autenticación verifica las credenciales/token y usa next() para continuar si son válidas, o envía un error si no lo son."
+    },
+    {
+      "question": "¿Qué es passport.js?",
+      "options": [
+        "Una base de datos",
+        "Un middleware de autenticación",
+        "Un servidor web",
+        "Un método HTTP"
+      ],
+      "correct": 1,
+      "explanation": "passport.js es un middleware de autenticación para Node.js que soporta múltiples estrategias de autenticación."
+    },
+    {
+      "question": "¿Cómo se maneja la validación de datos en Express?",
+      "options": [
+        "Solo con try/catch",
+        "No es posible validar datos en Express",
+        "Usando middlewares de validación como express-validator",
+        "Solo con if/else"
+      ],
+      "correct": 2,
+      "explanation": "Se pueden usar middlewares de validación como express-validator para validar y sanitizar datos de entrada."
+    },
+    {
+      "question": "¿Qué es helmet.js?",
+      "options": [
+        "Un framework frontend",
+        "Un middleware de seguridad para Express",
+        "Una base de datos",
+        "Un método de encriptación"
+      ],
+      "correct": 1,
+      "explanation": "helmet.js es un middleware que ayuda a proteger aplicaciones Express configurando varios headers HTTP relacionados con seguridad."
+    },
+    {
+      "question": "¿Cómo se manejan las sesiones en Express?",
+      "options": [
+        "No se pueden manejar sesiones",
+        "Usando express-session middleware",
+        "Solo con bases de datos",
+        "Con métodos HTTP"
+      ],
+      "correct": 1,
+      "explanation": "Las sesiones en Express se manejan típicamente usando el middleware express-session."
+    },
+    {
+      "question": "¿Qué es compression middleware en Express?",
+      "options": [
+        "Un método de encriptación",
+        "Un middleware que comprime las respuestas",
+        "Una base de datos",
+        "Un tipo de autenticación"
+      ],
+      "correct": 1,
+      "explanation": "compression es un middleware que puede comprimir las respuestas antes de enviarlas al cliente, reduciendo el tamaño de la transferencia."
+    },
+    {
+      "question": "¿Qué es morgan?",
+      "options": [
+        "Una base de datos",
+        "Un middleware de logging para HTTP",
+        "Un método de autenticación",
+        "Un servidor web"
+      ],
+      "correct": 1,
+      "explanation": "morgan es un middleware de logging que registra las peticiones HTTP para debugging y monitoreo."
     }
-]
+  ]
+
