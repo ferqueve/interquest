@@ -1,200 +1,57 @@
 [
-  {
-    "question": "¿Cuál será el resultado del siguiente código JavaScript?<br><br>const users = [<br>  { id: 1, name: 'Alice', age: 25 },<br>  { id: 2, name: 'Bob', age: 30 },<br>  { id: 3, name: 'Charlie', age: 35 },<br>  { id: 4, name: 'David', age: 28 }<br>];<br>const youngUsers = users.filter(user => user.age < 30);<br>console.log(youngUsers.length);",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "correct": 1,
-    "explanation": "El método filter() crea un nuevo array con todos los elementos que pasan la prueba implementada por la función proporcionada. En este caso, la función comprueba si la edad del usuario es menor que 30. Hay dos usuarios que cumplen esta condición: Alice (25) y David (28). Por lo tanto, el resultado será 2."
-  },
-  {
-    "question": "Observe el siguiente código JavaScript:<br><br>const products = [<br>  { id: 1, name: 'Laptop', price: 1000 },<br>  { id: 2, name: 'Phone', price: 500 },<br>  { id: 3, name: 'Tablet', price: 300 }<br>];<br>const discountedPrices = products.map(product => ({<br>  ...product,<br>  price: product.price * 0.9<br>}));<br>console.log(discountedPrices[0].price);",
-    "options": [
-      "1000",
-      "900",
-      "500",
-      "450"
-    ],
-    "correct": 1,
-    "explanation": "El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos. En este caso, la función crea un nuevo objeto para cada producto, manteniendo todas las propiedades originales (...product) pero modificando el precio al 90% del original (price: product.price * 0.9). El precio del primer producto (Laptop) era 1000, por lo que el nuevo precio será 1000 * 0.9 = 900."
-  },
-  {
-    "question": "¿Cuál será el resultado del siguiente código JavaScript?<br><br>const items = [<br>  { id: 3, name: 'Pen' },<br>  { id: 1, name: 'Book' },<br>  { id: 2, name: 'Pencil' }<br>];<br>items.sort((a, b) => a.id - b.id);<br>console.log(items[0].name);",
-    "options": [
-      "Pen",
-      "Book",
-      "Pencil",
-      "Error"
-    ],
-    "correct": 1,
-    "explanation": "El método sort() ordena los elementos de un array localmente y devuelve el array ordenado. La función de comparación (a, b) => a.id - b.id ordena los elementos basándose en su id de menor a mayor. Después de ordenar, el elemento con el id más bajo (1) estará en la primera posición, que es 'Book'. Por lo tanto, items[0].name será 'Book'."
-  },
-  {
-    "question": "Observe el siguiente código JavaScript:<br><br>const employees = [<br>  { id: 1, name: 'Alice', department: 'HR' },<br>  { id: 2, name: 'Bob', department: 'IT' },<br>  { id: 3, name: 'Charlie', department: 'Finance' },<br>  { id: 4, name: 'David', department: 'IT' }<br>];<br>const itEmployees = employees.filter(emp => emp.department === 'IT')<br>                              .map(emp => emp.name);<br>console.log(itEmployees);",
-    "options": [
-      "['Alice', 'Bob', 'Charlie', 'David']",
-      "['Bob', 'David']",
-      "['HR', 'IT', 'Finance', 'IT']",
-      "[{ id: 2, name: 'Bob', department: 'IT' }, { id: 4, name: 'David', department: 'IT' }]"
-    ],
-    "correct": 1,
-    "explanation": "Este código combina filter() y map(). Primero, filter() selecciona los empleados del departamento 'IT'. Luego, map() extrae solo los nombres de estos empleados. Por lo tanto, el resultado final es ['Bob', 'David']."
-  },
-  {
-    "question": "¿Cuál será el resultado del siguiente código JavaScript?<br><br>const data = [<br>  { id: 1, value: 10 },<br>  { id: 2, value: 20 },<br>  { id: 3, value: 30 },<br>  { id: 4, value: 40 }<br>];<br>const result = data.filter(item => item.value > 20)<br>                  .map(item => item.value)<br>                  .reduce((sum, value) => sum + value, 0);<br>console.log(result);",
-    "options": [
-      "60",
-      "70",
-      "100",
-      "140"
-    ],
-    "correct": 1,
-    "explanation": "Este código combina filter(), map(), y reduce(). Primero, filter() selecciona los items con value mayor que 20 ([{id:3, value:30}, {id:4, value:40}]). Luego, map() extrae solo los valores ([30, 40]). Finalmente, reduce() suma estos valores (30 + 40 = 70). Por lo tanto, el resultado final es 70."
-  },
-  {
-    "question": "En Git, ¿qué comando se utiliza para crear una nueva rama y cambiar a ella al mismo tiempo?",
-    "options": [
-      "git branch new-branch",
-      "git checkout new-branch",
-      "git checkout -b new-branch",
-      "git create new-branch"
-    ],
-    "correct": 2,
-    "explanation": "El comando 'git checkout -b new-branch' crea una nueva rama llamada 'new-branch' y cambia a ella inmediatamente. Es una combinación de 'git branch new-branch' y 'git checkout new-branch' en un solo comando."
-  },
-  {
-    "question": "¿Cuál de las siguientes es una media query correcta en CSS para aplicar estilos cuando el ancho de la pantalla es de 600 píxeles o menos?",
-    "options": [
-      "@media screen and (max-width: 600px) { ... }",
-      "@media (width <= 600px) { ... }",
-      "@screen-size (600px) { ... }",
-      "@if screen-width <= 600px { ... }"
-    ],
-    "correct": 0,
-    "explanation": "La media query correcta es '@media screen and (max-width: 600px) { ... }'. Esta aplica los estilos contenidos cuando el ancho de la pantalla es de 600 píxeles o menos."
-  },
-  {
-    "question": "En Bootstrap, ¿qué clase se utiliza para crear un botón primario?",
-    "options": [
-      ".btn-primary",
-      ".button-primary",
-      ".primary-btn",
-      ".main-button"
-    ],
-    "correct": 0,
-    "explanation": "En Bootstrap, la clase .btn-primary se utiliza para crear un botón primario. Esta clase aplica el color principal del tema a un elemento con la clase .btn."
-  },
-  {
-    "question": "¿Cuál es la sintaxis correcta para hacer una solicitud GET usando fetch en JavaScript?",
-    "options": [
-      "fetch.get('https://api.example.com/data')",
-      "fetch('https://api.example.com/data', { method: 'GET' })",
-      "fetch.request('GET', 'https://api.example.com/data')",
-      "get('https://api.example.com/data')"
-    ],
-    "correct": 1,
-    "explanation": "La sintaxis correcta es fetch('https://api.example.com/data', { method: 'GET' }). Aunque 'GET' es el método por defecto y se puede omitir, esta forma explícita es correcta y clara."
-  },
-  {
-    "question": "Observe el siguiente código JavaScript:<br><br>const inventory = [<br>  { id: 1, name: 'Laptop', stock: 5 },<br>  { id: 2, name: 'Phone', stock: 0 },<br>  { id: 3, name: 'Tablet', stock: 2 }<br>];<br>const inStock = inventory.filter(item => item.stock > 0)<br>                         .map(item => item.name);<br>console.log(inStock);",
-    "options": [
-      "['Laptop', 'Phone', 'Tablet']",
-      "['Laptop', 'Tablet']",
-      "['Phone']",
-      "[{ id: 1, name: 'Laptop', stock: 5 }, { id: 3, name: 'Tablet', stock: 2 }]"
-    ],
-    "correct": 1,
-    "explanation": "Este código utiliza filter() para seleccionar los items con stock mayor que 0, y luego map() para extraer solo los nombres de estos items. 'Laptop' tiene 5 en stock y 'Tablet' tiene 2 en stock, mientras que 'Phone' tiene 0. Por lo tanto, el resultado será ['Laptop', 'Tablet']."
-  },
-  {
-    "question": "En Git, ¿qué comando se usa para ver el estado actual del repositorio?",
-    "options": [
-      "git check",
-      "git status",
-      "git state",
-      "git info"
-    ],
-    "correct": 1,
-    "explanation": "El comando 'git status' se utiliza para ver el estado actual del repositorio. Muestra información sobre qué archivos han sido modificados, cuáles están en el área de preparación (staging area), y cuáles no están siendo rastreados por Git."
-  },
-  {
-    "question": "¿Cuál es el propósito principal de las media queries en CSS?",
-    "options": [
-      "Cambiar el color de fondo de una página web",
-      "Aplicar estilos diferentes basados en las características del dispositivo",
-      "Crear animaciones en CSS",
-      "Definir variables globales en CSS"
-    ],
-    "correct": 1,
-    "explanation": "El propósito principal de las media queries en CSS es aplicar estilos diferentes basados en las características del dispositivo o del viewport, como el ancho de la pantalla. Esto permite crear diseños responsivos que se adaptan a diferentes tamaños de pantalla."
-  },
-  {
-    "question": "En Bootstrap, ¿qué clase se utiliza para crear un contenedor que se ajusta al ancho completo del viewport?",
-    "options": [
-      ".container",
-      ".container-fluid",
-      ".full-width",
-      ".viewport-container"
-    ],
-    "correct": 1,
-    "explanation": "En Bootstrap, la clase .container-fluid se utiliza para crear un contenedor que se ajusta al ancho completo del viewport. A diferencia de .container, que tiene un ancho máximo en diferentes breakpoints, .container-fluid siempre ocupa el 100% del ancho disponible."
-  },
-  {
-    "question": "¿Cuál será el resultado del siguiente código JavaScript?<br><br>const orders = [<br>  { id: 1, total: 100 },<br>  { id: 2, total: 150 },<br>  { id: 3, total: 200 }<br>];<br>const grandTotal = orders.reduce((sum, order) => sum + order.total, 0);<br>console.log(grandTotal);",
-    "options": [
-      "300",
-      "450",
-      "600",
-      "0"
-    ],
-    "correct": 1,
-    "explanation": "El método reduce() ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor. En este caso, suma los totales de todas las órdenes. La suma de 100 + 150 + 200 es 450, por lo que ese será el resultado final."
-  },
-  {
-    "question": "En Git, ¿qué comando se utiliza para descargar los cambios del repositorio remoto y fusionarlos con la rama local actual?",
-    "options": [
-      "git fetch",
-      "git merge",
-      "git pull",
-      "git update"
-    ],
-    "correct": 2,
-    "explanation": "El comando 'git pull' se utiliza para descargar los cambios del repositorio remoto y fusionarlos automáticamente con la rama local actual. Es equivalente a hacer 'git fetch' seguido de 'git merge'."
-  },
-  {
-    "question": "¿Cuál de las siguientes es una forma correcta de centrar un elemento tanto horizontal como verticalmente usando Flexbox?",
-    "options": [
-      "display: flex; align-items: center; justify-content: center;",
-      "display: flex; text-align: center; vertical-align: middle;",
-      "display: center; align: center;",
-      "position: absolute; top: 50%; left: 50%;"
-    ],
-    "correct": 0,
-    "explanation": "Para centrar un elemento tanto horizontal como verticalmente usando Flexbox, se utiliza 'display: flex;' en el contenedor padre, junto con 'align-items: center;' para el centrado vertical y 'justify-content: center;' para el centrado horizontal."
-  },
-  {
-    "question": "En Bootstrap, ¿qué clase se utiliza para crear una fila en el sistema de grid?",
-    "options": [
-      ".row",
-      ".grid-row",
-      ".flex-row",
-      ".line"
-    ],
-    "correct": 0,
-    "explanation": "En Bootstrap, la clase .row se utiliza para crear una fila en el sistema de grid. Las filas actúan como contenedores para las columnas y deben colocarse dentro de un .container o .container-fluid."
-  },
-  {
-    "question": "¿Cuál es la forma correcta de manejar una respuesta de una solicitud fetch en JavaScript?",
-    "options": [
-      "fetch(url).then(response => response.data())",
-      "fetch(url).then(data => console.log(data))",
-      "fetch(url).then(response => response.json()).then(data => console.log(data))",
-      "fetch(url).then(response => console.log(response))"
-    ],
-    "correct": 2,
-    "explanation": "La forma correcta de manejar una respuesta de fetch es usando .then() dos veces."
-  }
+    {
+        "question": "¿Qué propiedad del objeto response en Express.js se usa para enviar una respuesta JSON?",
+        "options": [
+            "res.send()",
+            "res.json()",
+            "res.render()",
+            "res.write()"
+        ],
+        "correct": 1,
+        "explanation": "La propiedad res.json() en Express.js se usa para enviar una respuesta en formato JSON al cliente."
+    },
+    {
+        "question": "¿Qué método del objeto response en Express.js se usa para redirigir a otra URL?",
+        "options": [
+            "res.redirect()",
+            "res.relocate()",
+            "res.navigate()",
+            "res.send()"
+        ],
+        "correct": 0,
+        "explanation": "El método res.redirect() se utiliza para redirigir al cliente a otra URL."
+    },
+    {
+        "question": "¿Cuál es el método correcto para definir middleware global en una aplicación Express.js?",
+        "options": [
+            "app.middleware()",
+            "app.use()",
+            "app.route()",
+            "app.listen()"
+        ],
+        "correct": 1,
+        "explanation": "El método app.use() se utiliza para registrar middleware global en una aplicación Express.js."
+    },
+    {
+        "question": "En una aplicación RESTful, ¿qué método HTTP se usa típicamente para eliminar un recurso?",
+        "options": [
+            "GET",
+            "POST",
+            "DELETE",
+            "PUT"
+        ],
+        "correct": 2,
+        "explanation": "El método HTTP DELETE se utiliza para eliminar un recurso en una aplicación RESTful."
+    },
+    {
+        "question": "¿Qué método del objeto request en Express.js se usa para obtener el cuerpo de una solicitud POST?",
+        "options": [
+            "req.params",
+            "req.body",
+            "req.query",
+            "req.get"
+        ],
+        "correct": 1,
+        "explanation": "El objeto req.body contiene el cuerpo de la solicitud, pero solo estará disponible si se utiliza middleware como express.json()."
+    }
 ]

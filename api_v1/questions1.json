@@ -1,0 +1,222 @@
+[
+  {
+    "question": "¿Qué método de array en JavaScript se utiliza para crear un nuevo array con todos los elementos que pasen la prueba implementada por la función proporcionada?",
+    "options": [
+      "map()",
+      "filter()",
+      "reduce()",
+      "forEach()"
+    ],
+    "correct": 1,
+    "explanation": "El método filter() crea un nuevo array con todos los elementos que pasen la prueba implementada por la función proporcionada."
+  },
+  {
+    "question": "En CSS, ¿qué propiedad se utiliza para hacer que un elemento sea una cuadrícula?",
+    "options": [
+      "display: grid;",
+      "display: flex;",
+      "position: grid;",
+      "layout: grid;"
+    ],
+    "correct": 0,
+    "explanation": "La propiedad display: grid; se utiliza para hacer que un elemento sea una cuadrícula en CSS."
+  },
+  {
+    "question": "¿Cuál es el propósito principal de Git?",
+    "options": [
+      "Compilar código",
+      "Depurar aplicaciones",
+      "Control de versiones",
+      "Diseño de interfaces de usuario"
+    ],
+    "correct": 2,
+    "explanation": "Git es un sistema de control de versiones distribuido diseñado para rastrear cambios en el código fuente durante el desarrollo de software."
+  },
+  {
+    "question": "¿Qué significa REST en el contexto de las API web?",
+    "options": [
+      "Rapid Execution of Structured Text",
+      "Representational State Transfer",
+      "Remote Execution of Synchronized Tasks",
+      "Relational Entity State Transfer"
+    ],
+    "correct": 1,
+    "explanation": "REST significa Representational State Transfer, que es un estilo arquitectónico para diseñar servicios web."
+  },
+  {
+    "question": "En JavaScript, ¿qué método se utiliza para ordenar los elementos de un array?",
+    "options": [
+      "sort()",
+      "order()",
+      "arrange()",
+      "organize()"
+    ],
+    "correct": 0,
+    "explanation": "El método sort() se utiliza para ordenar los elementos de un array en JavaScript."
+  },
+  {
+    "question": "¿Cuál es la función principal de una media query en CSS?",
+    "options": [
+      "Cambiar el color de fondo",
+      "Aplicar estilos basados en características del dispositivo",
+      "Crear animaciones",
+      "Definir variables CSS"
+    ],
+    "correct": 1,
+    "explanation": "Las media queries en CSS permiten aplicar estilos basados en características del dispositivo, como el ancho de la pantalla, facilitando el diseño responsive."
+  },
+  {
+    "question": "¿Qué método HTTP se utiliza típicamente para enviar datos al servidor para crear un nuevo recurso?",
+    "options": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "correct": 1,
+    "explanation": "El método HTTP POST se utiliza típicamente para enviar datos al servidor con el fin de crear un nuevo recurso."
+  },
+  {
+    "question": "En JavaScript, ¿qué es una Promise?",
+    "options": [
+      "Un tipo de bucle",
+      "Una función de orden superior",
+      "Un objeto que representa la eventual finalización o fallo de una operación asíncrona",
+      "Una nueva característica de ES7"
+    ],
+    "correct": 2,
+    "explanation": "Una Promise es un objeto que representa la eventual finalización o fallo de una operación asíncrona en JavaScript."
+  },
+  {
+    "question": "¿Cuál de los siguientes NO es un selector válido en CSS?",
+    "options": [
+      "#id",
+      ".class",
+      "*",
+      "!element"
+    ],
+    "correct": 3,
+    "explanation": "!element no es un selector válido en CSS. Los otros (id, class, y el selector universal *) son válidos."
+  },
+  {
+    "question": "En Git, ¿qué comando se utiliza para crear una nueva rama y cambiar a ella?",
+    "options": [
+      "git branch new-branch",
+      "git checkout -b new-branch",
+      "git create new-branch",
+      "git switch new-branch"
+    ],
+    "correct": 1,
+    "explanation": "El comando git checkout -b new-branch crea una nueva rama llamada 'new-branch' y cambia a ella en un solo paso."
+  },
+  {
+    "question": "¿Qué método de array en JavaScript se utiliza para transformar cada elemento del array?",
+    "options": [
+      "forEach()",
+      "filter()",
+      "map()",
+      "reduce()"
+    ],
+    "correct": 2,
+    "explanation": "El método map() crea un nuevo array con los resultados de llamar a una función para cada elemento del array."
+  },
+  {
+    "question": "En una API REST, ¿qué código de estado HTTP indica que la solicitud se ha completado con éxito?",
+    "options": [
+      "200 OK",
+      "201 Created",
+      "204 No Content",
+      "Todas las anteriores"
+    ],
+    "correct": 3,
+    "explanation": "Todos estos códigos (200, 201, 204) indican que la solicitud se ha completado con éxito en diferentes contextos."
+  },
+  {
+    "question": "¿Cuál es la forma correcta de declarar una variable en JavaScript que no se puede reasignar?",
+    "options": [
+      "var x = 5;",
+      "let x = 5;",
+      "const x = 5;",
+      "fixed x = 5;"
+    ],
+    "correct": 2,
+    "explanation": "const se utiliza para declarar variables que no se pueden reasignar en JavaScript."
+  },
+  {
+    "question": "En CSS, ¿qué propiedad se utiliza para crear un diseño flexible de una dimensión?",
+    "options": [
+      "display: block;",
+      "display: inline;",
+      "display: flex;",
+      "display: grid;"
+    ],
+    "correct": 2,
+    "explanation": "display: flex; se utiliza para crear un diseño flexible de una dimensión en CSS."
+  },
+  {
+    "question": "¿Qué método se utiliza en JavaScript para realizar una solicitud HTTP?",
+    "options": [
+      "ajax()",
+      "http()",
+      "request()",
+      "fetch()"
+    ],
+    "correct": 3,
+    "explanation": "El método fetch() es una API moderna en JavaScript para realizar solicitudes HTTP."
+  },
+  {
+    "question": "En Git, ¿qué comando se utiliza para ver el historial de commits?",
+    "options": [
+      "git history",
+      "git log",
+      "git commits",
+      "git show"
+    ],
+    "correct": 1,
+    "explanation": "El comando git log se utiliza para ver el historial de commits en Git."
+  },
+  {
+    "question": "¿Cuál de las siguientes NO es una unidad de longitud válida en CSS?",
+    "options": [
+      "em",
+      "rem",
+      "px",
+      "dm"
+    ],
+    "correct": 3,
+    "explanation": "dm (decímetro) no es una unidad de longitud válida en CSS. Las otras (em, rem, px) son unidades válidas."
+  },
+  {
+    "question": "En JavaScript, ¿qué método se utiliza para eliminar el último elemento de un array?",
+    "options": [
+      "pop()",
+      "push()",
+      "shift()",
+      "unshift()"
+    ],
+    "correct": 0,
+    "explanation": "El método pop() elimina el último elemento de un array en JavaScript."
+  },
+  {
+    "question": "¿Cuál es el propósito principal de un archivo .gitignore?",
+    "options": [
+      "Listar los archivos que Git debe rastrear",
+      "Especificar archivos y directorios que Git debe ignorar",
+      "Definir alias para comandos de Git",
+      "Configurar opciones globales de Git"
+    ],
+    "correct": 1,
+    "explanation": "Un archivo .gitignore se utiliza para especificar archivos y directorios que Git debe ignorar y no rastrear."
+  },
+  {
+    "question": "En una API REST, ¿qué verbo HTTP se utiliza típicamente para actualizar un recurso existente?",
+    "options": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "correct": 2,
+    "explanation": "El verbo HTTP PUT se utiliza típicamente en una API REST para actualizar un recurso existente."
+  }
+]

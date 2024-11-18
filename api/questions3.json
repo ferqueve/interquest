@@ -1,222 +1,35 @@
 [
-  {
-    "question": "¿Qué es el hoisting en JavaScript?",
-    "options": [
-      "Una técnica para optimizar el rendimiento del código",
-      "El comportamiento de mover declaraciones al inicio de su ámbito",
-      "Un método para elevar elementos en el DOM",
-      "Una forma de importar módulos"
-    ],
-    "correct": 1,
-    "explanation": "Hoisting es el comportamiento en JavaScript donde las declaraciones de variables y funciones son movidas al inicio de su ámbito respectivo durante la fase de compilación."
-  },
-  {
-    "question": "En CSS, ¿qué propiedad se utiliza para hacer que un elemento sea pegajoso (sticky)?",
-    "options": [
-      "position: fixed;",
-      "position: absolute;",
-      "position: relative;",
-      "position: sticky;"
-    ],
-    "correct": 3,
-    "explanation": "La propiedad position: sticky; se utiliza para hacer que un elemento sea 'pegajoso', es decir, que se comporte como relative hasta que alcanza un umbral especificado, luego se comporta como fixed."
-  },
-  {
-    "question": "¿Qué comando de Git se utiliza para crear una nueva rama y cambiar a ella en un solo paso?",
-    "options": [
-      "git branch new-branch && git checkout new-branch",
-      "git checkout -b new-branch",
-      "git create new-branch",
-      "git switch -c new-branch"
-    ],
-    "correct": 1,
-    "explanation": "El comando git checkout -b new-branch crea una nueva rama y cambia a ella en un solo paso. git switch -c new-branch también es correcto en versiones más recientes de Git."
-  },
-  {
-    "question": "En el contexto de las API REST, ¿qué significa el término 'idempotencia'?",
-    "options": [
-      "La capacidad de una API para manejar grandes volúmenes de solicitudes",
-      "La propiedad de ciertas operaciones de poder ser aplicadas múltiples veces sin cambiar el resultado más allá de la aplicación inicial",
-      "La habilidad de una API para autenticarse de forma segura",
-      "El proceso de optimizar el rendimiento de una API"
-    ],
-    "correct": 1,
-    "explanation": "En el contexto de las API REST, la idempotencia se refiere a la propiedad de ciertas operaciones de poder ser aplicadas múltiples veces sin cambiar el resultado más allá de la aplicación inicial."
-  },
-  {
-    "question": "¿Qué es el Event Bubbling en JavaScript?",
-    "options": [
-      "Una técnica para crear animaciones suaves",
-      "Un método para ordenar eventos en orden de prioridad",
-      "La propagación de eventos desde el elemento hijo hasta el padre",
-      "Una forma de prevenir que los eventos se disparen"
-    ],
-    "correct": 2,
-    "explanation": "Event Bubbling es un mecanismo de propagación de eventos en JavaScript donde un evento disparado en un elemento hijo se propaga hacia arriba a través de sus elementos padres en el DOM."
-  },
-  {
-    "question": "¿Cuál es la diferencia principal entre localStorage y sessionStorage en JavaScript?",
-    "options": [
-      "localStorage es más seguro que sessionStorage",
-      "sessionStorage persiste después de cerrar el navegador, localStorage no",
-      "localStorage persiste después de cerrar el navegador, sessionStorage no",
-      "No hay diferencia, son sinónimos"
-    ],
-    "correct": 2,
-    "explanation": "La principal diferencia es que los datos en localStorage persisten incluso después de cerrar el navegador, mientras que los datos en sessionStorage se eliminan al cerrar la pestaña o ventana del navegador."
-  },
-  {
-    "question": "En CSS, ¿qué hace la propiedad 'z-index'?",
-    "options": [
-      "Controla la opacidad de un elemento",
-      "Define el orden de apilamiento de elementos posicionados",
-      "Establece el zoom de un elemento",
-      "Ajusta el tamaño de la fuente"
-    ],
-    "correct": 1,
-    "explanation": "La propiedad z-index en CSS define el orden de apilamiento de elementos posicionados (position distinto de static), determinando qué elemento se muestra encima de otro cuando se superponen."
-  },
-  {
-    "question": "¿Qué es un 'callback hell' en JavaScript?",
-    "options": [
-      "Un error que ocurre cuando se llama a demasiadas funciones",
-      "Una técnica para optimizar el rendimiento de callbacks",
-      "Un patrón de diseño para manejar errores en callbacks",
-      "Una situación donde los callbacks anidados llevan a código difícil de leer y mantener"
-    ],
-    "correct": 3,
-    "explanation": "El 'callback hell' se refiere a una situación en JavaScript donde múltiples callbacks anidados resultan en código que es difícil de leer, entender y mantener, a menudo llamado 'Pyramid of Doom'."
-  },
-  {
-    "question": "En Git, ¿qué hace el comando 'git stash'?",
-    "options": [
-      "Elimina permanentemente los cambios no confirmados",
-      "Guarda temporalmente los cambios no confirmados",
-      "Combina los cambios de diferentes ramas",
-      "Revierte el último commit"
-    ],
-    "correct": 1,
-    "explanation": "El comando git stash guarda temporalmente los cambios que has hecho en tu copia de trabajo para que puedas trabajar en otra cosa, y luego volver y volver a aplicar esos cambios más tarde."
-  },
-  {
-    "question": "¿Qué es el 'Virtual DOM' en el contexto de frameworks como React?",
-    "options": [
-      "Una versión simplificada del DOM para mejorar el rendimiento",
-      "Una representación en memoria del DOM real",
-      "Un nuevo estándar web para crear interfaces de usuario",
-      "Una técnica para renderizar componentes en el servidor"
-    ],
-    "correct": 1,
-    "explanation": "El Virtual DOM es una representación ligera en memoria del DOM real. Frameworks como React lo utilizan para mejorar el rendimiento al minimizar las manipulaciones directas del DOM."
-  },
-  {
-    "question": "En CSS, ¿qué hace la pseudo-clase :nth-child()?",
-    "options": [
-      "Selecciona el primer hijo de un elemento",
-      "Selecciona el último hijo de un elemento",
-      "Permite seleccionar elementos basados en su posición en un grupo de hermanos",
-      "Selecciona todos los hijos de un elemento"
-    ],
-    "correct": 2,
-    "explanation": "La pseudo-clase :nth-child() en CSS permite seleccionar uno o más elementos basados en su posición dentro de un grupo de elementos hermanos."
-  },
-  {
-    "question": "¿Qué es una 'Promise' en JavaScript?",
-    "options": [
-      "Una función que siempre retorna true",
-      "Un objeto que representa la eventual finalización o fallo de una operación asíncrona",
-      "Una técnica para manejar errores en código síncrono",
-      "Una forma de declarar variables globales"
-    ],
-    "correct": 1,
-    "explanation": "Una Promise en JavaScript es un objeto que representa la eventual finalización o fallo de una operación asíncrona, permitiendo un mejor manejo del código asíncrono."
-  },
-  {
-    "question": "En el contexto de las API REST, ¿qué significa el término 'stateless'?",
-    "options": [
-      "La API no puede manejar datos de estado",
-      "Cada solicitud debe contener toda la información necesaria para entenderla y procesarla",
-      "La API no puede realizar operaciones de escritura",
-      "Las respuestas de la API siempre son las mismas"
-    ],
-    "correct": 1,
-    "explanation": "En una API REST stateless, cada solicitud del cliente al servidor debe contener toda la información necesaria para entender y procesar la solicitud, sin depender de ningún contexto almacenado en el servidor."
-  },
-  {
-    "question": "¿Qué es el 'box model' en CSS?",
-    "options": [
-      "Un método para crear diseños responsivos",
-      "Una técnica para centrar elementos",
-      "El modelo que describe cómo se renderiza el contenido, padding, borde y margen de un elemento",
-      "Una herramienta para debuggear estilos CSS"
-    ],
-    "correct": 2,
-    "explanation": "El box model en CSS es el modelo que describe cómo se calcula el tamaño total de un elemento, considerando su contenido, padding, borde y margen."
-  },
-  {
-    "question": "En JavaScript, ¿qué es el 'temporal dead zone'?",
-    "options": [
-      "Un error que ocurre cuando se usa var en lugar de let",
-      "El período entre la creación de una variable con let o const y su inicialización",
-      "Una región del código donde las funciones no pueden ser llamadas",
-      "Un bug en versiones antiguas de JavaScript"
-    ],
-    "correct": 1,
-    "explanation": "El 'temporal dead zone' es el período entre la creación de una variable con let o const y su inicialización, durante el cual intentar acceder a la variable resultará en un ReferenceError."
-  },
-  {
-    "question": "¿Qué es CSRF en el contexto de seguridad web?",
-    "options": [
-      "Client Side Rendering Framework",
-      "Cross-Site Request Forgery",
-      "Cascading Style Rule Format",
-      "Content Security Restriction Filter"
-    ],
-    "correct": 1,
-    "explanation": "CSRF significa Cross-Site Request Forgery, un tipo de ataque donde se fuerza al navegador de un usuario autenticado a enviar una solicitud falsificada a una aplicación web vulnerable."
-  },
-  {
-    "question": "En Git, ¿qué hace el comando 'git reset --hard'?",
-    "options": [
-      "Borra todos los commits en la rama actual",
-      "Revierte los cambios en el área de preparación (staging area)",
-      "Descarta todos los cambios locales y restablece el HEAD al commit especificado",
-      "Elimina la última confirmación (commit) sin afectar los archivos"
-    ],
-    "correct": 2,
-    "explanation": "git reset --hard descarta todos los cambios en el directorio de trabajo y el área de preparación, y restablece el HEAD al commit especificado. Es una operación potencialmente peligrosa ya que puede resultar en pérdida de trabajo no guardado."
-  },
-  {
-    "question": "¿Qué es el 'event loop' en JavaScript?",
-    "options": [
-      "Una técnica para crear bucles infinitos",
-      "Un mecanismo que permite la ejecución de código asíncrono en un entorno de un solo hilo",
-      "Una función que se ejecuta cada vez que ocurre un evento",
-      "Una librería para manejar eventos del DOM"
-    ],
-    "correct": 1,
-    "explanation": "El event loop es un mecanismo en JavaScript que permite la ejecución de código asíncrono en un entorno de un solo hilo, gestionando la ejecución de múltiples trozos de código a lo largo del tiempo."
-  },
-  {
-    "question": "En CSS, ¿qué hace la propiedad 'flex-grow'?",
-    "options": [
-      "Determina el orden de los elementos flex",
-      "Establece la capacidad de un elemento flex para crecer si es necesario",
-      "Define la dirección del contenedor flex",
-      "Controla el espaciado entre elementos flex"
-    ],
-    "correct": 1,
-    "explanation": "La propiedad flex-grow en CSS establece la capacidad de crecimiento de un elemento flex, es decir, la cantidad de espacio disponible dentro del contenedor flex que debe ocupar el elemento."
-  },
-  {
-    "question": "¿Qué es una 'closure' en JavaScript?",
-    "options": [
-      "Una función que no tiene parámetros",
-      "Un objeto que contiene métodos privados",
-      "Una función junto con su entorno léxico",
-      "Un método para cerrar conexiones de red"
-    ],
-    "correct": 2,
-    "explanation": "Una closure en JavaScript es una función junto con su entorno léxico. Permite a la función acceder a variables de su ámbito exterior incluso después de que la función exterior haya terminado de ejecutarse."
-  }
+    {
+        "question": "¿Cuál será el resultado del siguiente código JavaScript?<br><br>const users = [<br>  { id: 1, name: 'Alice', age: 25 },<br>  { id: 2, name: 'Bob', age: 30 },<br>  { id: 3, name: 'Charlie', age: 35 },<br>  { id: 4, name: 'David', age: 28 }<br>];<br>const youngUsers = users.filter(user => user.age < 30);<br>console.log(youngUsers.length);",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correct": 1,
+        "explanation": "El método filter() crea un nuevo array con todos los elementos que pasan la prueba implementada por la función proporcionada. En este caso, la función comprueba si la edad del usuario es menor que 30. Hay dos usuarios que cumplen esta condición: Alice (25) y David (28). Por lo tanto, el resultado será 2."
+    },
+    {
+        "question": "¿Cuál es el propósito principal del middleware en Express.js?",
+        "options": [
+            "Manejar errores en el servidor",
+            "Interceptar solicitudes y realizar operaciones antes de enviar una respuesta",
+            "Establecer rutas predeterminadas para solicitudes GET y POST",
+            "Conectar la base de datos al servidor"
+        ],
+        "correct": 1,
+        "explanation": "El middleware en Express.js intercepta las solicitudes para realizar operaciones intermedias como autenticación, validación, o registro de solicitudes, antes de enviar la respuesta final."
+    },
+    {
+        "question": "¿Qué método del objeto request en Express.js se utiliza para obtener parámetros de consulta (query params)?",
+        "options": [
+            "req.params",
+            "req.body",
+            "req.query",
+            "req.get"
+        ],
+        "correct": 2,
+        "explanation": "El objeto req.query contiene los parámetros de consulta enviados en la URL después del signo de interrogación. Por ejemplo, en /api?name=John, req.query.name devolverá 'John'."
+    }
 ]
