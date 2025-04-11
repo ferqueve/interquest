@@ -1,223 +1,222 @@
- [
-    {
-      "question": "¿Qué significa HTTP?",
-      "options": [
-        "High Text Transfer Protocol",
-        "Hypertext Transfer Protocol",
-        "Hypertext Type Protocol",
-        "High Type Transfer Protocol"
-      ],
-      "correct": 1,
-      "explanation": "HTTP (Hypertext Transfer Protocol) es el protocolo de comunicación que permite las transferencias de información en la World Wide Web."
-    },
-    {
-      "question": "¿Cuál NO es un método HTTP válido?",
-      "options": [
-        "GET",
-        "POST",
-        "SEND",
-        "PUT"
-      ],
-      "correct": 2,
-      "explanation": "SEND no es un método HTTP válido. Los métodos HTTP estándar incluyen GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, entre otros."
-    },
-    {
-      "question": "¿Qué método HTTP se usa para obtener datos de un recurso?",
-      "options": [
-        "POST",
-        "GET",
-        "PUT",
-        "DELETE"
-      ],
-      "correct": 1,
-      "explanation": "GET se utiliza para solicitar datos de un recurso específico y no debe tener efectos secundarios en el servidor."
-    },
-    {
-      "question": "¿Qué código de estado HTTP indica una respuesta exitosa?",
-      "options": [
-        "200",
-        "404",
-        "500",
-        "301"
-      ],
-      "correct": 0,
-      "explanation": "200 (OK) indica que la solicitud fue exitosa y el servidor respondió con los datos solicitados."
-    },
-    {
-      "question": "¿Qué es una API REST?",
-      "options": [
-        "Un tipo de base de datos",
-        "Un lenguaje de programación",
-        "Una interfaz que sigue los principios REST",
-        "Un sistema operativo"
-      ],
-      "correct": 2,
-      "explanation": "Una API REST es una interfaz de programación que sigue los principios de la arquitectura REST (Representational State Transfer)."
-    },
-    {
-      "question": "¿Qué método HTTP se usa para crear un nuevo recurso?",
-      "options": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ],
-      "correct": 1,
-      "explanation": "POST se utiliza típicamente para enviar datos al servidor y crear un nuevo recurso."
-    },
-    {
-      "question": "¿Qué significa el código de estado HTTP 401?",
-      "options": [
-        "No autorizado",
-        "No encontrado",
-        "Error del servidor",
-        "Solicitud incorrecta"
-      ],
-      "correct": 0,
-      "explanation": "401 (Unauthorized) indica que la solicitud requiere autenticación o la autenticación proporcionada ha fallado."
-    },
-    {
-      "question": "En una API REST, ¿qué significa CRUD?",
-      "options": [
-        "Create, Read, Update, Delete",
-        "Create, Render, Update, Deploy",
-        "Connect, Read, Update, Delete",
-        "Create, Read, Upgrade, Deploy"
-      ],
-      "correct": 0,
-      "explanation": "CRUD representa las cuatro operaciones básicas: Crear (Create), Leer (Read), Actualizar (Update) y Eliminar (Delete)."
-    },
-    {
-      "question": "¿Qué contiene el cuerpo (body) de una petición HTTP POST?",
-      "options": [
-        "Solo la URL",
-        "Los datos que se envían al servidor",
-        "Solo headers",
-        "Solo el método HTTP"
-      ],
-      "correct": 1,
-      "explanation": "El cuerpo de una petición POST contiene los datos que se envían al servidor, como formularios o datos JSON."
-    },
-    {
-      "question": "¿Qué es un endpoint en una API REST?",
-      "options": [
-        "Un error en la API",
-        "Una URL que expone datos o funcionalidad",
-        "Un tipo de base de datos",
-        "Un método HTTP"
-      ],
-      "correct": 1,
-      "explanation": "Un endpoint es una URL específica en una API REST que expone ciertos datos o funcionalidad."
-    },
-    {
-      "question": "¿Qué es la autenticación JWT?",
-      "options": [
-        "Un tipo de base de datos",
-        "Un método HTTP",
-        "Un token de autenticación basado en JSON",
-        "Un lenguaje de programación"
-      ],
-      "correct": 2,
-      "explanation": "JWT (JSON Web Token) es un estándar para crear tokens de acceso que permiten la propagación de identidad y privilegios."
-    },
-    {
-      "question": "¿Qué significa que una API sea 'stateless'?",
-      "options": [
-        "Que no requiere autenticación",
-        "Que no mantiene estado entre peticiones",
-        "Que solo usa GET y POST",
-        "Que no usa base de datos"
-      ],
-      "correct": 1,
-      "explanation": "Stateless significa que cada petición al servidor debe contener toda la información necesaria, sin depender de peticiones anteriores."
-    },
-    {
-      "question": "¿Qué es un header HTTP?",
-      "options": [
-        "Un tipo de base de datos",
-        "Metadatos de la petición o respuesta HTTP",
-        "Un método HTTP",
-        "Un tipo de autenticación"
-      ],
-      "correct": 1,
-      "explanation": "Los headers HTTP son metadatos que proporcionan información adicional sobre la petición o respuesta HTTP."
-    },
-    {
-      "question": "¿Qué es el Content-Type en HTTP?",
-      "options": [
-        "Un método HTTP",
-        "Un header que indica el tipo de contenido",
-        "Un tipo de autenticación",
-        "Un código de estado"
-      ],
-      "correct": 1,
-      "explanation": "Content-Type es un header HTTP que indica el tipo de medio del recurso (por ejemplo, application/json)."
-    },
-    {
-      "question": "¿Qué es CORS en el contexto de APIs REST?",
-      "options": [
-        "Un tipo de base de datos",
-        "Un método HTTP",
-        "Una política de seguridad del navegador",
-        "Un formato de datos"
-      ],
-      "correct": 2,
-      "explanation": "CORS (Cross-Origin Resource Sharing) es un mecanismo que permite o restringe recursos solicitados desde otro dominio."
-    },
-    {
-      "question": "¿Qué método HTTP es idempotente?",
-      "options": [
-        "POST",
-        "GET",
-        "PATCH",
-        "DELETE"
-      ],
-      "correct": 1,
-      "explanation": "GET es idempotente porque realizar la misma solicitud múltiples veces debe producir el mismo resultado sin efectos secundarios."
-    },
-    {
-      "question": "¿Qué formato de datos es más común en REST APIs?",
-      "options": [
-        "XML",
-        "JSON",
-        "HTML",
-        "Plain text"
-      ],
-      "correct": 1,
-      "explanation": "JSON es el formato más común en REST APIs por su simplicidad, ligereza y facilidad de uso con JavaScript."
-    },
-    {
-      "question": "¿Qué es el versionado de API?",
-      "options": [
-        "Un tipo de base de datos",
-        "Una manera de mantener múltiples versiones de una API",
-        "Un método HTTP",
-        "Un tipo de autenticación"
-      ],
-      "correct": 1,
-      "explanation": "El versionado de API permite mantener múltiples versiones de una API al mismo tiempo para mantener la compatibilidad con clientes existentes."
-    },
-    {
-      "question": "¿Qué es un middleware en el contexto de REST APIs?",
-      "options": [
-        "Un tipo de base de datos",
-        "Software que procesa peticiones antes de llegar al manejador final",
-        "Un método HTTP",
-        "Un formato de datos"
-      ],
-      "correct": 1,
-      "explanation": "Middleware es software que procesa las peticiones HTTP antes de que lleguen al manejador final, permitiendo funcionalidades como autenticación o logging."
-    },
-    {
-      "question": "¿Qué significa API?",
-      "options": [
-        "Application Programming Interface",
-        "Advanced Programming Implementation",
-        "Application Process Integration",
-        "Advanced Protocol Interface"
-      ],
-      "correct": 0,
-      "explanation": "API significa Application Programming Interface (Interfaz de Programación de Aplicaciones)."
-    }
-  ]
-
+[
+  {
+    "question": "¿Qué significa 'API' en el contexto de JavaScript?",
+    "options": [
+      "Application Programming Interface",
+      "Advanced Programming Instruction",
+      "Automated Processing Interface",
+      "Application Protocol Integration"
+    ],
+    "correct": 0,
+    "explanation": "API (Application Programming Interface) es un conjunto de definiciones y protocolos que permiten que un software se comunique con otro."
+  },
+  {
+    "question": "¿Qué es el método map() en JavaScript?",
+    "options": [
+      "Un método que crea un objeto Map",
+      "Un método que crea un nuevo array con los resultados de llamar a una función para cada elemento",
+      "Un método para obtener la longitud de un array",
+      "Un método para unir dos arrays"
+    ],
+    "correct": 1,
+    "explanation": "El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos."
+  },
+  {
+    "question": "¿Qué hace el método addEventListener en JavaScript?",
+    "options": [
+      "Agrega un nuevo elemento al DOM",
+      "Registra un manejador de eventos para un elemento específico",
+      "Crea un nuevo evento personalizado",
+      "Modifica el comportamiento predeterminado de un elemento"
+    ],
+    "correct": 1,
+    "explanation": "addEventListener() registra un manejador de eventos en un elemento específico, permitiendo que se ejecute una función cuando ocurra el evento especificado."
+  },
+  {
+    "question": "¿Qué es una expresión regular en JavaScript?",
+    "options": [
+      "Un tipo de variable",
+      "Un patrón utilizado para hacer coincidir combinaciones de caracteres en strings",
+      "Una función que se ejecuta regularmente",
+      "Un método para regular el flujo de ejecución"
+    ],
+    "correct": 1,
+    "explanation": "Las expresiones regulares son patrones utilizados para hacer coincidir combinaciones de caracteres en strings, útiles para validación y búsqueda de texto."
+  },
+  {
+    "question": "¿Qué método se utiliza para encontrar el primer elemento que cumple con una condición en un array?",
+    "options": [
+      "findIndex()",
+      "filter()",
+      "find()",
+      "search()"
+    ],
+    "correct": 2,
+    "explanation": "El método find() devuelve el primer elemento de un array que cumple con la función de prueba proporcionada."
+  },
+  {
+    "question": "¿Qué es el Event Bubbling en JavaScript?",
+    "options": [
+      "Una técnica de animación",
+      "Un error en el código",
+      "La propagación de eventos desde el elemento hijo hasta sus ancestros",
+      "Un método para crear nuevos eventos"
+    ],
+    "correct": 2,
+    "explanation": "Event Bubbling es un mecanismo de propagación de eventos en el que un evento primero es capturado y manejado por el elemento más interno y luego se propaga hacia los elementos ancestros."
+  },
+  {
+    "question": "¿Qué es una función de orden superior en JavaScript?",
+    "options": [
+      "Una función que toma otras funciones como argumentos o devuelve funciones",
+      "Una función con mayor prioridad de ejecución",
+      "Una función que requiere más recursos",
+      "Una función definida dentro de otra función"
+    ],
+    "correct": 0,
+    "explanation": "Una función de orden superior es aquella que puede tomar otras funciones como argumentos o devolver una función como resultado."
+  },
+  {
+    "question": "¿Qué hace el método reduce() en JavaScript?",
+    "options": [
+      "Reduce el tamaño de un array",
+      "Ejecuta una función reductora en cada elemento de un array, resultando en un único valor",
+      "Filtra elementos de un array",
+      "Ordena los elementos de un array"
+    ],
+    "correct": 1,
+    "explanation": "El método reduce() ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor."
+  },
+  {
+    "question": "¿Qué es el método fetch() en JavaScript?",
+    "options": [
+      "Un método para obtener elementos del DOM",
+      "Una API para hacer peticiones HTTP",
+      "Un método para obtener valores de un array",
+      "Una función para recuperar datos almacenados localmente"
+    ],
+    "correct": 1,
+    "explanation": "fetch() es una API para realizar peticiones HTTP, que devuelve una promesa que se resuelve con la respuesta a la solicitud."
+  },
+  {
+    "question": "¿Qué es el Local Storage en JavaScript?",
+    "options": [
+      "Una base de datos local",
+      "Una API que permite almacenar datos en el navegador del usuario",
+      "Una variable local",
+      "Un tipo de caché del navegador"
+    ],
+    "correct": 1,
+    "explanation": "Local Storage es una API que permite almacenar datos de manera persistente en el navegador del usuario, sin fecha de expiración."
+  },
+  {
+    "question": "¿Qué significa la sigla 'JSON'?",
+    "options": [
+      "JavaScript Object Notation",
+      "JavaScript Online Network",
+      "Java Standard Object Naming",
+      "JavaScript Open Network"
+    ],
+    "correct": 0,
+    "explanation": "JSON (JavaScript Object Notation) es un formato ligero de intercambio de datos, fácil de leer y escribir para humanos y fácil de analizar y generar para máquinas."
+  },
+  {
+    "question": "¿Qué es una función anónima en JavaScript?",
+    "options": [
+      "Una función que no tiene nombre",
+      "Una función que no acepta parámetros",
+      "Una función que no devuelve valor",
+      "Una función que se ejecuta automáticamente"
+    ],
+    "correct": 0,
+    "explanation": "Una función anónima es una función que se define sin un nombre identificador, a menudo utilizada como argumento para otras funciones o en asignaciones de variables."
+  },
+  {
+    "question": "¿Qué método se utiliza para eliminar el primer elemento de un array?",
+    "options": [
+      "pop()",
+      "shift()",
+      "unshift()",
+      "remove()"
+    ],
+    "correct": 1,
+    "explanation": "El método shift() elimina el primer elemento de un array y devuelve ese elemento."
+  },
+  {
+    "question": "¿Qué es el operador ternario en JavaScript?",
+    "options": [
+      "Un operador que siempre devuelve tres valores",
+      "Un operador que toma tres operandos y funciona como un if...else condicional",
+      "Un operador que combina tres arrays",
+      "Un operador que divide un valor en tres partes"
+    ],
+    "correct": 1,
+    "explanation": "El operador ternario (condición ? expr1 : expr2) es el único operador de JavaScript que toma tres operandos y funciona como una versión abreviada de la declaración if-else."
+  },
+  {
+    "question": "¿Qué es una Promise en JavaScript?",
+    "options": [
+      "Una garantía de que el código funcionará",
+      "Un objeto que representa la eventual finalización o fallo de una operación asíncrona",
+      "Una declaración de que una variable no cambiará",
+      "Una función que siempre devuelve el mismo valor"
+    ],
+    "correct": 1,
+    "explanation": "Una Promise es un objeto que representa la eventual finalización (o fallo) de una operación asíncrona y su valor resultante."
+  },
+  {
+    "question": "¿Qué es el método forEach() en JavaScript?",
+    "options": [
+      "Un método que devuelve un nuevo array",
+      "Un método que ejecuta una función una vez por cada elemento de un array",
+      "Un método que combina todos los elementos de un array",
+      "Un método que ordena un array"
+    ],
+    "correct": 1,
+    "explanation": "El método forEach() ejecuta una función proporcionada una vez por cada elemento del array, sin devolver un nuevo array."
+  },
+  {
+    "question": "¿Qué significa la palabra clave 'async' en una declaración de función?",
+    "options": [
+      "Que la función se ejecutará en un hilo separado",
+      "Que la función siempre devolverá un valor",
+      "Que la función devolverá una promesa",
+      "Que la función no aceptará parámetros"
+    ],
+    "correct": 2,
+    "explanation": "La palabra clave 'async' en una declaración de función significa que la función devolverá implícitamente una promesa, y permite el uso de 'await' dentro de la función."
+  },
+  {
+    "question": "¿Qué es la palabra clave 'await' en JavaScript?",
+    "options": [
+      "Una forma de pausar la ejecución hasta que una promesa se resuelva",
+      "Una palabra reservada para crear esperas forzadas",
+      "Un operador para manejar errores",
+      "Una función para detener la ejecución de un bucle"
+    ],
+    "correct": 0,
+    "explanation": "La palabra clave 'await' hace que JavaScript espere hasta que una promesa se resuelva y devuelva su resultado, solo puede usarse dentro de funciones async."
+  },
+  {
+    "question": "¿Qué es el objeto XMLHttpRequest?",
+    "options": [
+      "Un formato de archivo XML",
+      "Un objeto para realizar peticiones HTTP y AJAX",
+      "Una biblioteca externa de JavaScript",
+      "Un objeto para manipular archivos XML"
+    ],
+    "correct": 1,
+    "explanation": "XMLHttpRequest es un objeto de JavaScript que proporciona funcionalidad para transferir datos entre un cliente y un servidor, utilizado principalmente para realizar peticiones AJAX."
+  },
+  {
+    "question": "¿Qué es el patrón de diseño 'Module' en JavaScript?",
+    "options": [
+      "Una biblioteca externa",
+      "Un sistema de organización de archivos",
+      "Un patrón que encapsula 'privacidad', estado y organización",
+      "Un método de carga asíncrona"
+    ],
+    "correct": 2,
+    "explanation": "El patrón Module es un patrón de diseño que proporciona encapsulación y organización del código, permitiendo crear variables y métodos privados y públicos."
+  }
+]

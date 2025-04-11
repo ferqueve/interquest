@@ -1,222 +1,222 @@
- [
-    {
-      "question": "¿Qué método HTTP se usa para enviar datos sensibles al servidor?",
-      "options": [
-        "GET",
-        "POST",
-        "PUT",
-        "HEAD"
-      ],
-      "correct": 1,
-      "explanation": "POST es el método HTTP más apropiado para enviar datos sensibles al servidor ya que los datos se envían en el cuerpo de la petición y no en la URL."
-    },
-    {
-      "question": "En SQL, ¿qué hace la siguiente consulta?<br>SELECT * FROM usuarios WHERE edad > 18 ORDER BY nombre;",
-      "options": [
-        "Selecciona usuarios mayores de 18 años ordenados por nombre",
-        "Selecciona todos los usuarios y los ordena por edad",
-        "Cuenta los usuarios mayores de 18 años",
-        "Agrupa los usuarios por nombre"
-      ],
-      "correct": 0,
-      "explanation": "La consulta selecciona todos los campos (*) de la tabla usuarios donde la edad es mayor a 18 y ordena los resultados alfabéticamente por nombre."
-    },
-    {
-      "question": "¿Cómo se maneja una promesa rechazada en JavaScript?",
-      "options": [
-        "try/catch",
-        ".catch()",
-        "if/else",
-        "throw new Error()"
-      ],
-      "correct": 1,
-      "explanation": "Las promesas rechazadas se manejan usando el método .catch() que captura el error cuando la promesa falla."
-    },
-    {
-      "question": "En Express.js, ¿cómo se obtiene un parámetro de ruta en '/users/:id'?",
-      "options": [
-        "req.params.id",
-        "req.query.id",
-        "req.body.id",
-        "req.data.id"
-      ],
-      "correct": 0,
-      "explanation": "Los parámetros de ruta en Express se acceden mediante req.params seguido del nombre del parámetro definido en la ruta."
-    },
-    {
-      "question": "¿Qué es una API RESTful?",
-      "options": [
-        "Una base de datos",
-        "Un tipo de servidor",
-        "Una interfaz que sigue los principios REST",
-        "Un lenguaje de programación"
-      ],
-      "correct": 2,
-      "explanation": "Una API RESTful es una interfaz que sigue los principios de arquitectura REST, incluyendo stateless, recursos bien definidos y uso de métodos HTTP estándar."
-    },
-    {
-      "question": "¿Cuál es la diferencia entre PUT y PATCH?",
-      "options": [
-        "No hay diferencia",
-        "PUT es más seguro que PATCH",
-        "PUT actualiza todo el recurso, PATCH actualiza parcialmente",
-        "PATCH es más rápido que PUT"
-      ],
-      "correct": 2,
-      "explanation": "PUT se usa para actualizar un recurso completo, mientras que PATCH se usa para actualizaciones parciales de un recurso."
-    },
-    {
-      "question": "En Node.js, ¿qué es el event loop?",
-      "options": [
-        "Una biblioteca externa",
-        "El mecanismo que permite la ejecución asíncrona",
-        "Un tipo de variable",
-        "Un método HTTP"
-      ],
-      "correct": 1,
-      "explanation": "El event loop es el mecanismo que permite a Node.js realizar operaciones no bloqueantes a pesar de ser single-threaded."
-    },
-    {
-      "question": "¿Qué hace la siguiente consulta SQL?<br>SELECT COUNT(*) FROM productos WHERE precio > 100;",
-      "options": [
-        "Suma los precios mayores a 100",
-        "Cuenta los productos con precio mayor a 100",
-        "Lista los productos con precio mayor a 100",
-        "Agrupa los productos por precio"
-      ],
-      "correct": 1,
-      "explanation": "COUNT(*) cuenta el número total de filas que cumplen con la condición especificada (precio > 100)."
-    },
-    {
-      "question": "¿Qué es middleware en Express?",
-      "options": [
-        "Una base de datos",
-        "Funciones que procesan las peticiones antes de llegar a la ruta final",
-        "Un tipo de ruta",
-        "Un protocolo de red"
-      ],
-      "correct": 1,
-      "explanation": "Middleware son funciones que tienen acceso a los objetos request, response y next, y pueden procesar la petición antes de que llegue a su destino final."
-    },
-    {
-      "question": "¿Qué significa el código de estado HTTP 403?",
-      "options": [
-        "OK",
-        "No encontrado",
-        "Prohibido",
-        "Error del servidor"
-      ],
-      "correct": 2,
-      "explanation": "403 Forbidden indica que el servidor entiende la petición pero se niega a autorizarla, típicamente por falta de permisos."
-    },
-    {
-      "question": "En una base de datos, ¿qué es una clave foránea?",
-      "options": [
-        "La clave principal de una tabla",
-        "Un campo que referencia la clave primaria de otra tabla",
-        "Un índice especial",
-        "Una contraseña de la base de datos"
-      ],
-      "correct": 1,
-      "explanation": "Una clave foránea es un campo que establece una relación con la clave primaria de otra tabla, manteniendo la integridad referencial."
-    },
-    {
-      "question": "¿Qué es JWT?",
-      "options": [
-        "Un tipo de base de datos",
-        "Un token de autenticación basado en JSON",
-        "Un método HTTP",
-        "Un framework de JavaScript"
-      ],
-      "correct": 1,
-      "explanation": "JWT (JSON Web Token) es un estándar para crear tokens de acceso que contienen claims (información) en formato JSON y pueden ser verificados."
-    },
-    {
-      "question": "¿Qué hace el siguiente código?<br>app.use(express.json());",
-      "options": [
-        "Crea una nueva aplicación Express",
-        "Parsea el body de las peticiones JSON",
-        "Configura las rutas JSON",
-        "Envía respuestas JSON"
-      ],
-      "correct": 1,
-      "explanation": "express.json() es un middleware que parsea el cuerpo de las peticiones que contienen JSON, permitiendo acceder a estos datos en req.body."
-    },
-    {
-      "question": "¿Qué es npm?",
-      "options": [
-        "Node Package Manager",
-        "Node Programming Method",
-        "New Project Module",
-        "Node Process Manager"
-      ],
-      "correct": 0,
-      "explanation": "npm (Node Package Manager) es el sistema de gestión de paquetes por defecto para Node.js, usado para instalar y administrar dependencias."
-    },
-    {
-      "question": "¿Qué hace el método res.status(404).json({ error: 'No encontrado' })?",
-      "options": [
-        "Redirige a una página 404",
-        "Envía una respuesta JSON con código de estado 404",
-        "Crea un nuevo error",
-        "Registra un error en el servidor"
-      ],
-      "correct": 1,
-      "explanation": "Este método establece el código de estado HTTP a 404 y envía una respuesta JSON con un mensaje de error."
-    },
-    {
-      "question": "¿Cuál es la diferencia entre req.query y req.params?",
-      "options": [
-        "No hay diferencia",
-        "req.query es para datos en la URL después de ?, req.params para parámetros de ruta",
-        "req.params es más seguro que req.query",
-        "req.query es para POST, req.params para GET"
-      ],
-      "correct": 1,
-      "explanation": "req.query accede a los query parameters (?key=value), mientras que req.params accede a los parámetros de ruta (:param)."
-    },
-    {
-      "question": "¿Qué es una transacción en bases de datos?",
-      "options": [
-        "Una consulta SQL",
-        "Un conjunto de operaciones que se ejecutan como una unidad atómica",
-        "Un tipo de tabla",
-        "Un método de backup"
-      ],
-      "correct": 1,
-      "explanation": "Una transacción es una secuencia de operaciones que se ejecutan como una unidad indivisible, cumpliendo con las propiedades ACID."
-    },
-    {
-      "question": "¿Qué es CORS?",
-      "options": [
-        "Un tipo de base de datos",
-        "Una política de seguridad del navegador",
-        "Un método HTTP",
-        "Un formato de datos"
-      ],
-      "correct": 1,
-      "explanation": "CORS (Cross-Origin Resource Sharing) es una política de seguridad que controla las peticiones HTTP desde diferentes orígenes."
-    },
-    {
-      "question": "¿Cuál es el propósito de next() en un middleware de Express?",
-      "options": [
-        "Terminar la petición",
-        "Enviar una respuesta",
-        "Pasar el control al siguiente middleware",
-        "Redirigir la petición"
-      ],
-      "correct": 2,
-      "explanation": "next() se usa para pasar el control al siguiente middleware en la cadena de middleware. Si no se llama, la petición puede quedar colgada."
-    },
-    {
-      "question": "¿Qué es NoSQL?",
-      "options": [
-        "Un error en SQL",
-        "Una base de datos que no usa tablas relacionales",
-        "Una versión nueva de SQL",
-        "Un tipo de consulta SQL"
-      ],
-      "correct": 1,
-      "explanation": "NoSQL se refiere a las bases de datos que no utilizan el modelo relacional tradicional, permitiendo estructuras de datos más flexibles."
-    }
-  ]
+[
+  {
+    "question": "¿Qué es TypeScript en relación con JavaScript?",
+    "options": [
+      "Un reemplazo completo de JavaScript",
+      "Un superconjunto de JavaScript que añade tipado estático opcional",
+      "Una versión compilada de JavaScript",
+      "Un framework para JavaScript"
+    ],
+    "correct": 1,
+    "explanation": "TypeScript es un superconjunto de JavaScript desarrollado por Microsoft que añade tipado estático opcional y otras características a JavaScript."
+  },
+  {
+    "question": "¿Qué es la destructuración de arrays en JavaScript?",
+    "options": [
+      "Un método para eliminar elementos de un array",
+      "Una forma de extraer varios valores de un array y asignarlos a variables en una sola operación",
+      "Un método para combinar arrays",
+      "Una técnica para ordenar arrays"
+    ],
+    "correct": 1,
+    "explanation": "La destructuración de arrays es una expresión de JavaScript que permite extraer múltiples valores de un array y asignarlos a variables individuales en una sola operación."
+  },
+  {
+    "question": "¿Qué es una expresión de función en JavaScript?",
+    "options": [
+      "Una función declarada usando la palabra clave function",
+      "Una función asignada a una variable o constante",
+      "Una función que siempre devuelve un valor",
+      "Una función que toma otras funciones como argumentos"
+    ],
+    "correct": 1,
+    "explanation": "Una expresión de función es una función que se asigna a una variable o constante, en contraste con una declaración de función que se declara con la palabra clave function al principio."
+  },
+  {
+    "question": "¿Qué es el DOM Virtual (Virtual DOM)?",
+    "options": [
+      "Una versión simplificada del DOM",
+      "Una representación en memoria del DOM que se usa para optimizar las actualizaciones del DOM real",
+      "Un DOM que solo existe en servidores virtuales",
+      "Una API para manipular el DOM"
+    ],
+    "correct": 1,
+    "explanation": "El DOM Virtual es una representación ligera en memoria del DOM real, utilizada por librerías como React para optimizar las actualizaciones del DOM calculando la forma más eficiente de aplicar cambios."
+  },
+  {
+    "question": "¿Qué es la compatibilidad entre navegadores (browser compatibility) en JavaScript?",
+    "options": [
+      "La capacidad de un navegador para ejecutar cualquier código JavaScript",
+      "La medida en que diferentes navegadores soportan las mismas características de JavaScript",
+      "La relación entre JavaScript y HTML en navegadores",
+      "Un conjunto de reglas para escribir JavaScript"
+    ],
+    "correct": 1,
+    "explanation": "La compatibilidad entre navegadores se refiere a la medida en que diferentes navegadores soportan las mismas características de JavaScript, lo que puede variar según la versión y el fabricante del navegador."
+  },
+  {
+    "question": "¿Qué es un polyfill en JavaScript?",
+    "options": [
+      "Un tipo de error",
+      "Código que proporciona funcionalidades modernas en navegadores antiguos que no las admiten nativamente",
+      "Una técnica de optimización",
+      "Una biblioteca externa"
+    ],
+    "correct": 1,
+    "explanation": "Un polyfill es un fragmento de código (generalmente JavaScript) que proporciona funcionalidades modernas en navegadores antiguos que no las soportan nativamente."
+  },
+  {
+    "question": "¿Qué es la declaración 'use strict' en JavaScript?",
+    "options": [
+      "Una función que valida el código",
+      "Una directiva que activa el modo estricto, que impone un conjunto de reglas más rigurosas",
+      "Una declaración obsoleta",
+      "Un comentario especial"
+    ],
+    "correct": 1,
+    "explanation": "'use strict' es una directiva que activa el modo estricto en JavaScript, imponiendo reglas más rigurosas y eliminando algunas características problemáticas del lenguaje."
+  },
+  {
+    "question": "¿Qué es el patrón de diseño Factory en JavaScript?",
+    "options": [
+      "Un patrón para crear objetos industriales",
+      "Un patrón creacional que proporciona una interfaz para crear objetos sin especificar sus clases concretas",
+      "Un patrón para manejar código asíncrono",
+      "Un patrón para optimizar el código"
+    ],
+    "correct": 1,
+    "explanation": "El patrón Factory es un patrón de diseño creacional que proporciona una interfaz para crear objetos en una superclase, pero permite a las subclases alterar el tipo de objetos que se crearán."
+  },
+  {
+    "question": "¿Qué es el método Object.freeze() en JavaScript?",
+    "options": [
+      "Un método que congela la ejecución del código",
+      "Un método que hace que un objeto sea inmutable",
+      "Un método que detiene eventos",
+      "Un método que pausa funciones asíncronas"
+    ],
+    "correct": 1,
+    "explanation": "Object.freeze() congela un objeto, impidiendo que se le añadan nuevas propiedades, se eliminen las existentes o se modifiquen sus valores, haciendo el objeto inmutable."
+  },
+  {
+    "question": "¿Qué es el localStorage en JavaScript?",
+    "options": [
+      "Una variable local",
+      "Un mecanismo para almacenar datos en el navegador del usuario de forma persistente",
+      "Un método para guardar variables en el ámbito local",
+      "Una forma de almacenar datos en el servidor"
+    ],
+    "correct": 1,
+    "explanation": "localStorage es una propiedad que permite almacenar datos en el navegador del usuario de forma persistente, es decir, los datos permanecen incluso después de cerrar el navegador."
+  },
+  {
+    "question": "¿Qué es el sessionStorage en JavaScript?",
+    "options": [
+      "Una variable de sesión",
+      "Un mecanismo similar a localStorage pero los datos solo persisten durante la sesión de la página",
+      "Una forma de almacenar datos en el servidor durante una sesión",
+      "Una API para gestionar sesiones de usuario"
+    ],
+    "correct": 1,
+    "explanation": "sessionStorage es similar a localStorage, pero los datos almacenados solo están disponibles durante la sesión de la página y se eliminan cuando se cierra la pestaña o ventana."
+  },
+  {
+    "question": "¿Qué es el método Array.from() en JavaScript?",
+    "options": [
+      "Un método que crea un nuevo array a partir de un array existente",
+      "Un método que crea un nuevo array a partir de un objeto iterable o array-like",
+      "Un método que convierte un array en un objeto",
+      "Un método que genera un array con valores aleatorios"
+    ],
+    "correct": 1,
+    "explanation": "Array.from() crea una nueva instancia de Array a partir de un objeto iterable o array-like, permitiendo crear arrays a partir de strings, maps, sets, etc."
+  },
+  {
+    "question": "¿Qué es una promesa rechazada (rejected promise) en JavaScript?",
+    "options": [
+      "Una promesa que nunca se resuelve",
+      "Una promesa que ha fallado y se ha llamado a su función de rechazo",
+      "Una promesa que está en proceso",
+      "Una promesa que no fue creada correctamente"
+    ],
+    "correct": 1,
+    "explanation": "Una promesa rechazada es una promesa que ha fallado y se ha llamado a su función de rechazo (reject), indicando que la operación asíncrona no se completó exitosamente."
+  },
+  {
+    "question": "¿Qué es el método Promise.all() en JavaScript?",
+    "options": [
+      "Un método que espera a que se resuelvan todas las promesas proporcionadas",
+      "Un método que crea una nueva promesa",
+      "Un método que rechaza todas las promesas",
+      "Un método que combina múltiples promesas en una"
+    ],
+    "correct": 0,
+    "explanation": "Promise.all() toma un iterable de promesas y devuelve una nueva promesa que se resuelve cuando todas las promesas del iterable se han resuelto, o se rechaza si alguna de ellas es rechazada."
+  },
+  {
+    "question": "¿Qué es el método Promise.race() en JavaScript?",
+    "options": [
+      "Un método que determina qué promesa se ejecuta más rápido",
+      "Un método que devuelve una promesa que se resuelve o rechaza tan pronto como una de las promesas del iterable se resuelve o rechaza",
+      "Un método que ejecuta promesas en paralelo",
+      "Un método que combina los resultados de múltiples promesas"
+    ],
+    "correct": 1,
+    "explanation": "Promise.race() devuelve una promesa que se resuelve o rechaza tan pronto como una de las promesas del iterable se resuelve o rechaza, con el valor o razón de esa promesa."
+  },
+  {
+    "question": "¿Qué es un objeto Set en JavaScript?",
+    "options": [
+      "Un tipo especial de array",
+      "Una colección de valores únicos donde cada valor puede aparecer solo una vez",
+      "Un objeto que almacena pares clave-valor",
+      "Un tipo de variable global"
+    ],
+    "correct": 1,
+    "explanation": "Un Set es una colección de valores únicos, donde cada valor puede aparecer solo una vez. Puede almacenar cualquier tipo de valor, ya sean primitivos o referencias a objetos."
+  },
+  {
+    "question": "¿Qué es un objeto Map en JavaScript?",
+    "options": [
+      "Una función para transformar arrays",
+      "Una colección de pares clave-valor donde las claves pueden ser de cualquier tipo",
+      "Un objeto que crea mapas visuales",
+      "Un tipo especial de array"
+    ],
+    "correct": 1,
+    "explanation": "Un Map es una colección de pares clave-valor donde, a diferencia de los objetos regulares, las claves pueden ser de cualquier tipo, incluidos objetos y funciones."
+  },
+  {
+    "question": "¿Qué es el método Array.prototype.reduce() en JavaScript?",
+    "options": [
+      "Un método que reduce el tamaño de un array",
+      "Un método que ejecuta una función reductora en cada elemento, resultando en un único valor",
+      "Un método que elimina elementos duplicados",
+      "Un método que simplifica un array de arrays"
+    ],
+    "correct": 1,
+    "explanation": "reduce() ejecuta una función reductora sobre cada elemento de un array, devolviendo un único valor que resulta de la acumulación de todos los elementos."
+  },
+  {
+    "question": "¿Qué es un Web Worker en JavaScript?",
+    "options": [
+      "Un trabajador que programa en web",
+      "Un script que se ejecuta en un hilo en segundo plano, separado del hilo principal del navegador",
+      "Una API para trabajar con formularios web",
+      "Un tipo de función asíncrona"
+    ],
+    "correct": 1,
+    "explanation": "Un Web Worker es un script que se ejecuta en un hilo de segundo plano, independiente del hilo principal de ejecución de un navegador, permitiendo realizar tareas sin interferir con la interfaz de usuario."
+  },
+  {
+    "question": "¿Qué es el método Object.create() en JavaScript?",
+    "options": [
+      "Un método que crea una copia exacta de un objeto",
+      "Un método que crea un nuevo objeto con el prototipo especificado y propiedades opcionales",
+      "Un método que genera un nuevo objeto vacío",
+      "Un método que crea un constructor para un objeto"
+    ],
+    "correct": 1,
+    "explanation": "Object.create() crea un nuevo objeto, utilizando un objeto existente como el prototipo del nuevo objeto creado, permitiendo una forma directa de implementar la herencia."
+  }
+]

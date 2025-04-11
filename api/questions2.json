@@ -1,223 +1,222 @@
 [
-    {
-      "question": "¿Qué es un middleware en Express.js?",
-      "options": [
-        "Una base de datos",
-        "Una función que tiene acceso a los objetos request, response y next",
-        "Un tipo de ruta",
-        "Un método HTTP"
-      ],
-      "correct": 1,
-      "explanation": "Un middleware es una función que puede acceder a los objetos request (req), response (res) y la función next en el ciclo de solicitud-respuesta de la aplicación."
-    },
-    {
-      "question": "¿Cuál es la sintaxis correcta para usar un middleware en una ruta específica en Express?",
-      "options": [
-        "app.use('/ruta', middleware)",
-        "app.middleware('/ruta')",
-        "app.route('/ruta', middleware)",
-        "app.get('/ruta').middleware()"
-      ],
-      "correct": 0,
-      "explanation": "Para aplicar un middleware a una ruta específica, se usa app.use('/ruta', middleware) o se puede incluir directamente en la definición de la ruta."
-    },
-    {
-      "question": "¿Qué hace la función next() en un middleware?",
-      "options": [
-        "Termina la petición",
-        "Envía una respuesta al cliente",
-        "Pasa el control al siguiente middleware en la cadena",
-        "Reinicia la aplicación"
-      ],
-      "correct": 2,
-      "explanation": "next() pasa el control al siguiente middleware en la cadena. Si no se llama a next(), la petición quedará colgada."
-    },
-    {
-      "question": "¿Cómo se accede al cuerpo de una petición POST en Express?",
-      "options": [
-        "req.body",
-        "req.data",
-        "req.post",
-        "req.content"
-      ],
-      "correct": 0,
-      "explanation": "req.body contiene los datos enviados en el cuerpo de la petición POST, pero requiere un middleware como express.json() para parsear los datos."
-    },
-    {
-      "question": "¿Qué middleware es necesario para parsear JSON en Express?",
-      "options": [
-        "express.parseJSON()",
-        "express.json()",
-        "express.bodyParser()",
-        "express.useJSON()"
-      ],
-      "correct": 1,
-      "explanation": "express.json() es el middleware incorporado en Express que analiza las solicitudes entrantes con payload JSON."
-    },
-    {
-      "question": "¿Cómo se manejan los errores en middleware de Express?",
-      "options": [
-        "try/catch en cada ruta",
-        "Usando un middleware con 4 parámetros (err, req, res, next)",
-        "Con un bloque if/else",
-        "Usando Promise.catch()"
-      ],
-      "correct": 1,
-      "explanation": "Los middlewares de manejo de errores en Express tienen una firma especial con 4 parámetros: (err, req, res, next)."
-    },
-    {
-      "question": "¿Cómo se accede a los parámetros de ruta en Express? Ejemplo: /users/:id",
-      "options": [
-        "req.params.id",
-        "req.parameters.id",
-        "req.route.id",
-        "req.path.id"
-      ],
-      "correct": 0,
-      "explanation": "Los parámetros de ruta definidos con :nombreParametro se acceden a través de req.params."
-    },
-    {
-      "question": "¿Qué es body-parser?",
-      "options": [
-        "Una base de datos",
-        "Un middleware para parsear el cuerpo de las peticiones HTTP",
-        "Un método HTTP",
-        "Una función de ruteo"
-      ],
-      "correct": 1,
-      "explanation": "body-parser es un middleware que procesa el cuerpo de las peticiones antes de que sean manejadas por las rutas."
-    },
-    {
-      "question": "¿Cómo se accede a los query parameters en Express? Ejemplo: /search?q=texto",
-      "options": [
-        "req.query.q",
-        "req.params.q",
-        "req.search.q",
-        "req.queryParams.q"
-      ],
-      "correct": 0,
-      "explanation": "Los query parameters se acceden a través de req.query en Express."
-    },
-    {
-      "question": "¿Qué es cors y para qué se usa?",
-      "options": [
-        "Un tipo de base de datos",
-        "Un middleware para manejar peticiones cross-origin",
-        "Un método de autenticación",
-        "Un formato de datos"
-      ],
-      "correct": 1,
-      "explanation": "cors es un middleware que permite manejar las peticiones Cross-Origin Resource Sharing en una aplicación Express."
-    },
-    {
-      "question": "¿Cómo se envía una respuesta JSON en Express?",
-      "options": [
-        "res.send(json)",
-        "res.json(data)",
-        "res.sendJSON(data)",
-        "res.writeJSON(data)"
-      ],
-      "correct": 1,
-      "explanation": "res.json() es el método usado en Express para enviar una respuesta JSON al cliente."
-    },
-    {
-      "question": "¿Qué es multer?",
-      "options": [
-        "Un middleware para manejar formularios multipart/form-data",
-        "Una base de datos",
-        "Un método HTTP",
-        "Un tipo de ruta"
-      ],
-      "correct": 0,
-      "explanation": "multer es un middleware para manejar multipart/form-data, que se usa principalmente para la carga de archivos."
-    },
-    {
-      "question": "¿Qué hace el middleware express.static()?",
-      "options": [
-        "Maneja autenticación",
-        "Sirve archivos estáticos",
-        "Parsea JSON",
-        "Maneja errores"
-      ],
-      "correct": 1,
-      "explanation": "express.static() es un middleware que sirve archivos estáticos como imágenes, CSS, y JavaScript."
-    },
-    {
-      "question": "¿Cómo se implementa un middleware de autenticación?",
-      "options": [
-        "Solo usando passport.js",
-        "Verificando credenciales en cada ruta",
-        "Creando una función que verifique el token/sesión y use next()",
-        "No es posible implementar autenticación en Express"
-      ],
-      "correct": 2,
-      "explanation": "Un middleware de autenticación verifica las credenciales/token y usa next() para continuar si son válidas, o envía un error si no lo son."
-    },
-    {
-      "question": "¿Qué es passport.js?",
-      "options": [
-        "Una base de datos",
-        "Un middleware de autenticación",
-        "Un servidor web",
-        "Un método HTTP"
-      ],
-      "correct": 1,
-      "explanation": "passport.js es un middleware de autenticación para Node.js que soporta múltiples estrategias de autenticación."
-    },
-    {
-      "question": "¿Cómo se maneja la validación de datos en Express?",
-      "options": [
-        "Solo con try/catch",
-        "No es posible validar datos en Express",
-        "Usando middlewares de validación como express-validator",
-        "Solo con if/else"
-      ],
-      "correct": 2,
-      "explanation": "Se pueden usar middlewares de validación como express-validator para validar y sanitizar datos de entrada."
-    },
-    {
-      "question": "¿Qué es helmet.js?",
-      "options": [
-        "Un framework frontend",
-        "Un middleware de seguridad para Express",
-        "Una base de datos",
-        "Un método de encriptación"
-      ],
-      "correct": 1,
-      "explanation": "helmet.js es un middleware que ayuda a proteger aplicaciones Express configurando varios headers HTTP relacionados con seguridad."
-    },
-    {
-      "question": "¿Cómo se manejan las sesiones en Express?",
-      "options": [
-        "No se pueden manejar sesiones",
-        "Usando express-session middleware",
-        "Solo con bases de datos",
-        "Con métodos HTTP"
-      ],
-      "correct": 1,
-      "explanation": "Las sesiones en Express se manejan típicamente usando el middleware express-session."
-    },
-    {
-      "question": "¿Qué es compression middleware en Express?",
-      "options": [
-        "Un método de encriptación",
-        "Un middleware que comprime las respuestas",
-        "Una base de datos",
-        "Un tipo de autenticación"
-      ],
-      "correct": 1,
-      "explanation": "compression es un middleware que puede comprimir las respuestas antes de enviarlas al cliente, reduciendo el tamaño de la transferencia."
-    },
-    {
-      "question": "¿Qué es morgan?",
-      "options": [
-        "Una base de datos",
-        "Un middleware de logging para HTTP",
-        "Un método de autenticación",
-        "Un servidor web"
-      ],
-      "correct": 1,
-      "explanation": "morgan es un middleware de logging que registra las peticiones HTTP para debugging y monitoreo."
-    }
-  ]
-
+  {
+    "question": "¿Qué es JavaScript?",
+    "options": [
+      "Un lenguaje de programación del lado del servidor",
+      "Un lenguaje de programación orientado a objetos y basado en prototipos",
+      "Un framework para crear aplicaciones web",
+      "Un preprocesador de CSS"
+    ],
+    "correct": 1,
+    "explanation": "JavaScript es un lenguaje de programación orientado a objetos basado en prototipos, interpretado y de alto nivel utilizado principalmente para crear páginas web interactivas."
+  },
+  {
+    "question": "¿Cuál es la forma correcta de declarar una variable en JavaScript moderno?",
+    "options": [
+      "var nombre = 'valor';",
+      "let nombre = 'valor';",
+      "const nombre = 'valor';",
+      "Las opciones B y C son correctas"
+    ],
+    "correct": 3,
+    "explanation": "En JavaScript moderno, se utilizan 'let' para variables que cambiarán su valor y 'const' para constantes. 'var' es la forma antigua de declarar variables."
+  },
+  {
+    "question": "¿Qué es el DOM en JavaScript?",
+    "options": [
+      "Un tipo de dato",
+      "Una biblioteca externa",
+      "Una representación en memoria de la estructura HTML",
+      "Un método de encriptación"
+    ],
+    "correct": 2,
+    "explanation": "El DOM (Document Object Model) es una representación en memoria de la estructura HTML que permite a JavaScript acceder y manipular los elementos de la página."
+  },
+  {
+    "question": "¿Cómo se declara una función en JavaScript?",
+    "options": [
+      "function nombreFuncion() {}",
+      "const nombreFuncion = function() {}",
+      "const nombreFuncion = () => {}",
+      "Todas las anteriores son correctas"
+    ],
+    "correct": 3,
+    "explanation": "En JavaScript, las funciones pueden declararse usando la declaración de función, expresiones de función o funciones flecha (arrow functions)."
+  },
+  {
+    "question": "¿Qué método se utiliza para agregar un elemento al final de un array en JavaScript?",
+    "options": [
+      "push()",
+      "append()",
+      "addToEnd()",
+      "insert()"
+    ],
+    "correct": 0,
+    "explanation": "El método push() añade uno o más elementos al final de un array y devuelve la nueva longitud del array."
+  },
+  {
+    "question": "¿Qué es el hoisting en JavaScript?",
+    "options": [
+      "Una técnica de optimización",
+      "El comportamiento que mueve las declaraciones al inicio de su contexto",
+      "Un patrón de diseño",
+      "Una característica de ES6"
+    ],
+    "correct": 1,
+    "explanation": "Hoisting es un comportamiento de JavaScript donde las declaraciones de variables y funciones son movidas al inicio de su contexto de ejecución durante la fase de compilación."
+  },
+  {
+    "question": "¿Cuál es el operador de igualdad estricta en JavaScript?",
+    "options": [
+      "==",
+      "===",
+      "=",
+      "!="
+    ],
+    "correct": 1,
+    "explanation": "El operador === compara tanto el valor como el tipo de datos, sin realizar conversiones de tipo."
+  },
+  {
+    "question": "¿Qué es una closure en JavaScript?",
+    "options": [
+      "Un error en el código",
+      "Una función que tiene acceso a variables de su contexto externo",
+      "Una variable global",
+      "Un tipo de bucle"
+    ],
+    "correct": 1,
+    "explanation": "Una closure es una función que tiene acceso al ámbito léxico en el que fue definida, incluso después de que la función externa haya terminado de ejecutarse."
+  },
+  {
+    "question": "¿Cuál es el resultado de 0.1 + 0.2 en JavaScript?",
+    "options": [
+      "0.3",
+      "0.30000000000000004",
+      "0.12",
+      "Error"
+    ],
+    "correct": 1,
+    "explanation": "Debido a cómo JavaScript maneja los números de punto flotante, el resultado de 0.1 + 0.2 es 0.30000000000000004, no exactamente 0.3."
+  },
+  {
+    "question": "¿Qué método se utiliza para eliminar el último elemento de un array?",
+    "options": [
+      "remove()",
+      "pop()",
+      "delete()",
+      "shift()"
+    ],
+    "correct": 1,
+    "explanation": "El método pop() elimina el último elemento de un array y devuelve ese elemento."
+  },
+  {
+    "question": "¿Qué es un callback en JavaScript?",
+    "options": [
+      "Una función que se pasa como argumento a otra función",
+      "Un evento del navegador",
+      "Un tipo de variable",
+      "Un método de array"
+    ],
+    "correct": 0,
+    "explanation": "Un callback es una función que se pasa como argumento a otra función y se ejecuta después de que ocurra algún evento o se complete alguna operación."
+  },
+  {
+    "question": "¿Qué método se utiliza para convertir un objeto JSON en JavaScript?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.convert()",
+      "JSON.toObject()"
+    ],
+    "correct": 0,
+    "explanation": "JSON.parse() analiza una cadena de texto como JSON y transforma el valor producido por el análisis a un objeto JavaScript."
+  },
+  {
+    "question": "¿Qué es el objeto 'this' en JavaScript?",
+    "options": [
+      "Una variable global",
+      "Una referencia al elemento HTML actual",
+      "Una referencia al contexto de ejecución actual",
+      "Un puntero a una función"
+    ],
+    "correct": 2,
+    "explanation": "En JavaScript, 'this' hace referencia al contexto de ejecución actual y su valor depende de cómo se invoca la función."
+  },
+  {
+    "question": "¿Qué son las promesas en JavaScript?",
+    "options": [
+      "Funciones asíncronas",
+      "Objetos que representan la eventual finalización o fallo de una operación asíncrona",
+      "Métodos de manipulación del DOM",
+      "Variables globales"
+    ],
+    "correct": 1,
+    "explanation": "Las promesas son objetos que representan la eventual finalización (o fallo) de una operación asíncrona y su valor resultante."
+  },
+  {
+    "question": "¿Cuál es la diferencia entre let y const?",
+    "options": [
+      "No hay diferencia",
+      "let permite reasignar el valor, const no",
+      "const es para funciones, let para variables",
+      "let es global, const es local"
+    ],
+    "correct": 1,
+    "explanation": "Las variables declaradas con let pueden ser reasignadas, mientras que las declaradas con const son constantes y no pueden cambiar su valor después de la asignación inicial."
+  },
+  {
+    "question": "¿Qué es el operador spread (...) en JavaScript?",
+    "options": [
+      "Un operador de asignación",
+      "Un operador que permite expandir elementos iterables",
+      "Un operador de comparación",
+      "Un operador lógico"
+    ],
+    "correct": 1,
+    "explanation": "El operador spread (...) permite expandir elementos iterables como arrays o strings en lugares donde se esperan cero o más argumentos o elementos."
+  },
+  {
+    "question": "¿Qué es la desestructuración en JavaScript?",
+    "options": [
+      "Una técnica para eliminar objetos",
+      "Una forma de extraer valores de arrays o propiedades de objetos",
+      "Un método de encriptación",
+      "Un patrón de diseño"
+    ],
+    "correct": 1,
+    "explanation": "La desestructuración es una expresión de JavaScript que permite extraer datos de arrays o objetos en variables individuales de forma más concisa."
+  },
+  {
+    "question": "¿Qué método utilizarías para ejecutar una función después de un cierto tiempo?",
+    "options": [
+      "setInterval()",
+      "setTimeout()",
+      "delay()",
+      "wait()"
+    ],
+    "correct": 1,
+    "explanation": "setTimeout() establece un temporizador que ejecuta una función o un código específico una vez que expira el temporizador."
+  },
+  {
+    "question": "¿Qué es AJAX en JavaScript?",
+    "options": [
+      "Un nuevo lenguaje de programación",
+      "Una biblioteca de JavaScript",
+      "Una técnica para actualizar partes de una página web sin recargarla completamente",
+      "Un framework de JavaScript"
+    ],
+    "correct": 2,
+    "explanation": "AJAX (Asynchronous JavaScript and XML) es una técnica que permite actualizar partes de una página web sin necesidad de recargar la página completa."
+  },
+  {
+    "question": "¿Cuál es la función de 'use strict' en JavaScript?",
+    "options": [
+      "Mejorar el rendimiento",
+      "Activar el modo estricto que detecta errores comunes y acciones inseguras",
+      "Hacer el código compatible con navegadores antiguos",
+      "Permitir el uso de características nuevas"
+    ],
+    "correct": 1,
+    "explanation": "'use strict' activa el modo estricto en JavaScript, que ayuda a detectar errores comunes y previene acciones que podrían llevar a comportamientos inesperados."
+  }
+]

@@ -1,0 +1,223 @@
+ [
+    {
+      "question": "¿Qué significa HTTP?",
+      "options": [
+        "High Text Transfer Protocol",
+        "Hypertext Transfer Protocol",
+        "Hypertext Type Protocol",
+        "High Type Transfer Protocol"
+      ],
+      "correct": 1,
+      "explanation": "HTTP (Hypertext Transfer Protocol) es el protocolo de comunicación que permite las transferencias de información en la World Wide Web."
+    },
+    {
+      "question": "¿Cuál NO es un método HTTP válido?",
+      "options": [
+        "GET",
+        "POST",
+        "SEND",
+        "PUT"
+      ],
+      "correct": 2,
+      "explanation": "SEND no es un método HTTP válido. Los métodos HTTP estándar incluyen GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, entre otros."
+    },
+    {
+      "question": "¿Qué método HTTP se usa para obtener datos de un recurso?",
+      "options": [
+        "POST",
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "correct": 1,
+      "explanation": "GET se utiliza para solicitar datos de un recurso específico y no debe tener efectos secundarios en el servidor."
+    },
+    {
+      "question": "¿Qué código de estado HTTP indica una respuesta exitosa?",
+      "options": [
+        "200",
+        "404",
+        "500",
+        "301"
+      ],
+      "correct": 0,
+      "explanation": "200 (OK) indica que la solicitud fue exitosa y el servidor respondió con los datos solicitados."
+    },
+    {
+      "question": "¿Qué es una API REST?",
+      "options": [
+        "Un tipo de base de datos",
+        "Un lenguaje de programación",
+        "Una interfaz que sigue los principios REST",
+        "Un sistema operativo"
+      ],
+      "correct": 2,
+      "explanation": "Una API REST es una interfaz de programación que sigue los principios de la arquitectura REST (Representational State Transfer)."
+    },
+    {
+      "question": "¿Qué método HTTP se usa para crear un nuevo recurso?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "correct": 1,
+      "explanation": "POST se utiliza típicamente para enviar datos al servidor y crear un nuevo recurso."
+    },
+    {
+      "question": "¿Qué significa el código de estado HTTP 401?",
+      "options": [
+        "No autorizado",
+        "No encontrado",
+        "Error del servidor",
+        "Solicitud incorrecta"
+      ],
+      "correct": 0,
+      "explanation": "401 (Unauthorized) indica que la solicitud requiere autenticación o la autenticación proporcionada ha fallado."
+    },
+    {
+      "question": "En una API REST, ¿qué significa CRUD?",
+      "options": [
+        "Create, Read, Update, Delete",
+        "Create, Render, Update, Deploy",
+        "Connect, Read, Update, Delete",
+        "Create, Read, Upgrade, Deploy"
+      ],
+      "correct": 0,
+      "explanation": "CRUD representa las cuatro operaciones básicas: Crear (Create), Leer (Read), Actualizar (Update) y Eliminar (Delete)."
+    },
+    {
+      "question": "¿Qué contiene el cuerpo (body) de una petición HTTP POST?",
+      "options": [
+        "Solo la URL",
+        "Los datos que se envían al servidor",
+        "Solo headers",
+        "Solo el método HTTP"
+      ],
+      "correct": 1,
+      "explanation": "El cuerpo de una petición POST contiene los datos que se envían al servidor, como formularios o datos JSON."
+    },
+    {
+      "question": "¿Qué es un endpoint en una API REST?",
+      "options": [
+        "Un error en la API",
+        "Una URL que expone datos o funcionalidad",
+        "Un tipo de base de datos",
+        "Un método HTTP"
+      ],
+      "correct": 1,
+      "explanation": "Un endpoint es una URL específica en una API REST que expone ciertos datos o funcionalidad."
+    },
+    {
+      "question": "¿Qué es la autenticación JWT?",
+      "options": [
+        "Un tipo de base de datos",
+        "Un método HTTP",
+        "Un token de autenticación basado en JSON",
+        "Un lenguaje de programación"
+      ],
+      "correct": 2,
+      "explanation": "JWT (JSON Web Token) es un estándar para crear tokens de acceso que permiten la propagación de identidad y privilegios."
+    },
+    {
+      "question": "¿Qué significa que una API sea 'stateless'?",
+      "options": [
+        "Que no requiere autenticación",
+        "Que no mantiene estado entre peticiones",
+        "Que solo usa GET y POST",
+        "Que no usa base de datos"
+      ],
+      "correct": 1,
+      "explanation": "Stateless significa que cada petición al servidor debe contener toda la información necesaria, sin depender de peticiones anteriores."
+    },
+    {
+      "question": "¿Qué es un header HTTP?",
+      "options": [
+        "Un tipo de base de datos",
+        "Metadatos de la petición o respuesta HTTP",
+        "Un método HTTP",
+        "Un tipo de autenticación"
+      ],
+      "correct": 1,
+      "explanation": "Los headers HTTP son metadatos que proporcionan información adicional sobre la petición o respuesta HTTP."
+    },
+    {
+      "question": "¿Qué es el Content-Type en HTTP?",
+      "options": [
+        "Un método HTTP",
+        "Un header que indica el tipo de contenido",
+        "Un tipo de autenticación",
+        "Un código de estado"
+      ],
+      "correct": 1,
+      "explanation": "Content-Type es un header HTTP que indica el tipo de medio del recurso (por ejemplo, application/json)."
+    },
+    {
+      "question": "¿Qué es CORS en el contexto de APIs REST?",
+      "options": [
+        "Un tipo de base de datos",
+        "Un método HTTP",
+        "Una política de seguridad del navegador",
+        "Un formato de datos"
+      ],
+      "correct": 2,
+      "explanation": "CORS (Cross-Origin Resource Sharing) es un mecanismo que permite o restringe recursos solicitados desde otro dominio."
+    },
+    {
+      "question": "¿Qué método HTTP es idempotente?",
+      "options": [
+        "POST",
+        "GET",
+        "PATCH",
+        "DELETE"
+      ],
+      "correct": 1,
+      "explanation": "GET es idempotente porque realizar la misma solicitud múltiples veces debe producir el mismo resultado sin efectos secundarios."
+    },
+    {
+      "question": "¿Qué formato de datos es más común en REST APIs?",
+      "options": [
+        "XML",
+        "JSON",
+        "HTML",
+        "Plain text"
+      ],
+      "correct": 1,
+      "explanation": "JSON es el formato más común en REST APIs por su simplicidad, ligereza y facilidad de uso con JavaScript."
+    },
+    {
+      "question": "¿Qué es el versionado de API?",
+      "options": [
+        "Un tipo de base de datos",
+        "Una manera de mantener múltiples versiones de una API",
+        "Un método HTTP",
+        "Un tipo de autenticación"
+      ],
+      "correct": 1,
+      "explanation": "El versionado de API permite mantener múltiples versiones de una API al mismo tiempo para mantener la compatibilidad con clientes existentes."
+    },
+    {
+      "question": "¿Qué es un middleware en el contexto de REST APIs?",
+      "options": [
+        "Un tipo de base de datos",
+        "Software que procesa peticiones antes de llegar al manejador final",
+        "Un método HTTP",
+        "Un formato de datos"
+      ],
+      "correct": 1,
+      "explanation": "Middleware es software que procesa las peticiones HTTP antes de que lleguen al manejador final, permitiendo funcionalidades como autenticación o logging."
+    },
+    {
+      "question": "¿Qué significa API?",
+      "options": [
+        "Application Programming Interface",
+        "Advanced Programming Implementation",
+        "Application Process Integration",
+        "Advanced Protocol Interface"
+      ],
+      "correct": 0,
+      "explanation": "API significa Application Programming Interface (Interfaz de Programación de Aplicaciones)."
+    }
+  ]
+

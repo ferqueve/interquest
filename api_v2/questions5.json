@@ -1,0 +1,223 @@
+ [
+    {
+      "question": "¿Qué propiedades tiene el objeto request (req) en Express.js?",
+      "options": [
+        "Solo req.body",
+        "req.body, req.params, req.query y req.headers",
+        "Solo req.params",
+        "Solo req.query"
+      ],
+      "correct": 1,
+      "explanation": "El objeto request en Express.js tiene múltiples propiedades útiles como req.body para datos POST, req.params para parámetros de ruta, req.query para query strings y req.headers para headers HTTP."
+    },
+    {
+      "question": "¿Cómo se accede a los parámetros de ruta en '/users/:id/posts/:postId'?",
+      "options": [
+        "req.parameters.id y req.parameters.postId",
+        "req.params.id y req.params.postId",
+        "req.query.id y req.query.postId",
+        "req.body.id y req.body.postId"
+      ],
+      "correct": 1,
+      "explanation": "Los parámetros de ruta definidos con ':' se acceden a través del objeto req.params, donde cada parámetro es una propiedad."
+    },
+    {
+      "question": "¿Qué método del objeto response se usa para enviar una respuesta JSON?",
+      "options": [
+        "res.send()",
+        "res.json()",
+        "res.sendJSON()",
+        "res.return()"
+      ],
+      "correct": 1,
+      "explanation": "res.json() es el método específico para enviar respuestas en formato JSON, automáticamente establece el Content-Type correcto."
+    },
+    {
+      "question": "¿Cómo se accede a los query parameters en '/search?name=john&age=25'?",
+      "options": [
+        "req.params.name y req.params.age",
+        "req.query.name y req.query.age",
+        "req.body.name y req.body.age",
+        "req.data.name y req.data.age"
+      ],
+      "correct": 1,
+      "explanation": "Los query parameters (parámetros de consulta) se acceden a través del objeto req.query en Express."
+    },
+    {
+      "question": "¿Qué middleware es necesario para parsear el body de una petición POST con JSON?",
+      "options": [
+        "app.use(express.urlencoded())",
+        "app.use(express.json())",
+        "app.use(bodyParser.json())",
+        "app.use(express.parseJSON())"
+      ],
+      "correct": 1,
+      "explanation": "express.json() es el middleware necesario para parsear el body de las peticiones que contienen JSON."
+    },
+    {
+      "question": "¿Cómo se establece el código de estado HTTP en una respuesta?",
+      "options": [
+        "res.status(code)",
+        "res.setStatus(code)",
+        "res.code(code)",
+        "res.httpStatus(code)"
+      ],
+      "correct": 0,
+      "explanation": "res.status(code) es el método para establecer el código de estado HTTP de la respuesta."
+    },
+    {
+      "question": "¿Qué método se usa para enviar un archivo como respuesta?",
+      "options": [
+        "res.send()",
+        "res.sendFile()",
+        "res.file()",
+        "res.download()"
+      ],
+      "correct": 1,
+      "explanation": "res.sendFile() es el método utilizado para enviar un archivo como respuesta HTTP."
+    },
+    {
+      "question": "¿Cómo se accede a los headers de la petición?",
+      "options": [
+        "req.headers",
+        "req.getHeaders()",
+        "req.httpHeaders",
+        "req.requestHeaders"
+      ],
+      "correct": 0,
+      "explanation": "Los headers de la petición se acceden a través del objeto req.headers."
+    },
+    {
+      "question": "¿Qué método se usa para redireccionar a otra URL?",
+      "options": [
+        "res.goto()",
+        "res.redirect()",
+        "res.forward()",
+        "res.sendTo()"
+      ],
+      "correct": 1,
+      "explanation": "res.redirect() es el método utilizado para redireccionar la petición a otra URL."
+    },
+    {
+      "question": "¿Cómo se manejan los errores en una API REST?",
+      "options": [
+        "Solo con try/catch",
+        "Usando middleware de error y códigos de estado HTTP apropiados",
+        "Solo con if/else",
+        "Ignorándolos"
+      ],
+      "correct": 1,
+      "explanation": "Los errores en una API REST se manejan usando middleware de error y enviando códigos de estado HTTP apropiados junto con mensajes descriptivos."
+    },
+    {
+      "question": "¿Qué es el objeto next en un middleware?",
+      "options": [
+        "Un objeto de configuración",
+        "Una función para pasar el control al siguiente middleware",
+        "Un método HTTP",
+        "Un tipo de respuesta"
+      ],
+      "correct": 1,
+      "explanation": "next es una función que se usa para pasar el control al siguiente middleware en la cadena de middleware."
+    },
+    {
+      "question": "¿Cómo se validan los datos de entrada en una API REST?",
+      "options": [
+        "No es necesario validar",
+        "Solo con try/catch",
+        "Usando middleware de validación y schemas",
+        "Solo con if/else"
+      ],
+      "correct": 2,
+      "explanation": "Los datos de entrada se validan usando middleware de validación y schemas que definen la estructura y reglas de los datos esperados."
+    },
+    {
+      "question": "¿Qué es el rate limiting en una API?",
+      "options": [
+        "Un tipo de base de datos",
+        "Una técnica para limitar el número de peticiones por usuario",
+        "Un método HTTP",
+        "Un tipo de autenticación"
+      ],
+      "correct": 1,
+      "explanation": "Rate limiting es una técnica para limitar el número de peticiones que un cliente puede hacer a la API en un período de tiempo."
+    },
+    {
+      "question": "¿Qué es el versionado de API?",
+      "options": [
+        "Un tipo de base de datos",
+        "Una técnica para mantener múltiples versiones de una API",
+        "Un método HTTP",
+        "Un tipo de autenticación"
+      ],
+      "correct": 1,
+      "explanation": "El versionado de API permite mantener múltiples versiones de una API simultáneamente para garantizar compatibilidad."
+    },
+    {
+      "question": "¿Cómo se manejan las subidas de archivos en Express?",
+      "options": [
+        "No es posible subir archivos",
+        "Usando el middleware multer",
+        "Solo con formularios HTML",
+        "Solo con FTP"
+      ],
+      "correct": 1,
+      "explanation": "multer es un middleware popular en Express para manejar la subida de archivos mediante multipart/form-data."
+    },
+    {
+      "question": "¿Qué son los headers CORS?",
+      "options": [
+        "Headers de autenticación",
+        "Headers que permiten o restringen el acceso desde diferentes dominios",
+        "Headers de caché",
+        "Headers de compresión"
+      ],
+      "correct": 1,
+      "explanation": "Los headers CORS (Cross-Origin Resource Sharing) controlan qué dominios pueden acceder a los recursos de la API."
+    },
+    {
+      "question": "¿Qué es la paginación en una API REST?",
+      "options": [
+        "Un tipo de autenticación",
+        "Una técnica para dividir grandes conjuntos de datos en páginas",
+        "Un método HTTP",
+        "Un tipo de base de datos"
+      ],
+      "correct": 1,
+      "explanation": "La paginación es una técnica para dividir grandes conjuntos de datos en páginas más pequeñas y manejables."
+    },
+    {
+      "question": "¿Qué es el caching en una API REST?",
+      "options": [
+        "Un tipo de base de datos",
+        "Una técnica para almacenar temporalmente respuestas frecuentes",
+        "Un método HTTP",
+        "Un tipo de autenticación"
+      ],
+      "correct": 1,
+      "explanation": "El caching es una técnica para almacenar temporalmente respuestas frecuentes y mejorar el rendimiento de la API."
+    },
+    {
+      "question": "¿Qué es la autenticación basada en tokens?",
+      "options": [
+        "Un tipo de base de datos",
+        "Un método de autenticación que usa tokens para verificar la identidad",
+        "Un método HTTP",
+        "Un tipo de caché"
+      ],
+      "correct": 1,
+      "explanation": "La autenticación basada en tokens es un método donde se usa un token (como JWT) para verificar la identidad del cliente."
+    },
+    {
+      "question": "¿Qué es la documentación de API?",
+      "options": [
+        "Un tipo de base de datos",
+        "Documentación que describe cómo usar la API",
+        "Un método HTTP",
+        "Un tipo de autenticación"
+      ],
+      "correct": 1,
+      "explanation": "La documentación de API proporciona información sobre cómo usar la API, incluyendo endpoints, parámetros y ejemplos."
+    }
+  ]
+

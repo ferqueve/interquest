@@ -1,0 +1,222 @@
+ [
+    {
+      "question": "¿Qué método HTTP se usa para enviar datos sensibles al servidor?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "HEAD"
+      ],
+      "correct": 1,
+      "explanation": "POST es el método HTTP más apropiado para enviar datos sensibles al servidor ya que los datos se envían en el cuerpo de la petición y no en la URL."
+    },
+    {
+      "question": "En SQL, ¿qué hace la siguiente consulta?<br>SELECT * FROM usuarios WHERE edad > 18 ORDER BY nombre;",
+      "options": [
+        "Selecciona usuarios mayores de 18 años ordenados por nombre",
+        "Selecciona todos los usuarios y los ordena por edad",
+        "Cuenta los usuarios mayores de 18 años",
+        "Agrupa los usuarios por nombre"
+      ],
+      "correct": 0,
+      "explanation": "La consulta selecciona todos los campos (*) de la tabla usuarios donde la edad es mayor a 18 y ordena los resultados alfabéticamente por nombre."
+    },
+    {
+      "question": "¿Cómo se maneja una promesa rechazada en JavaScript?",
+      "options": [
+        "try/catch",
+        ".catch()",
+        "if/else",
+        "throw new Error()"
+      ],
+      "correct": 1,
+      "explanation": "Las promesas rechazadas se manejan usando el método .catch() que captura el error cuando la promesa falla."
+    },
+    {
+      "question": "En Express.js, ¿cómo se obtiene un parámetro de ruta en '/users/:id'?",
+      "options": [
+        "req.params.id",
+        "req.query.id",
+        "req.body.id",
+        "req.data.id"
+      ],
+      "correct": 0,
+      "explanation": "Los parámetros de ruta en Express se acceden mediante req.params seguido del nombre del parámetro definido en la ruta."
+    },
+    {
+      "question": "¿Qué es una API RESTful?",
+      "options": [
+        "Una base de datos",
+        "Un tipo de servidor",
+        "Una interfaz que sigue los principios REST",
+        "Un lenguaje de programación"
+      ],
+      "correct": 2,
+      "explanation": "Una API RESTful es una interfaz que sigue los principios de arquitectura REST, incluyendo stateless, recursos bien definidos y uso de métodos HTTP estándar."
+    },
+    {
+      "question": "¿Cuál es la diferencia entre PUT y PATCH?",
+      "options": [
+        "No hay diferencia",
+        "PUT es más seguro que PATCH",
+        "PUT actualiza todo el recurso, PATCH actualiza parcialmente",
+        "PATCH es más rápido que PUT"
+      ],
+      "correct": 2,
+      "explanation": "PUT se usa para actualizar un recurso completo, mientras que PATCH se usa para actualizaciones parciales de un recurso."
+    },
+    {
+      "question": "En Node.js, ¿qué es el event loop?",
+      "options": [
+        "Una biblioteca externa",
+        "El mecanismo que permite la ejecución asíncrona",
+        "Un tipo de variable",
+        "Un método HTTP"
+      ],
+      "correct": 1,
+      "explanation": "El event loop es el mecanismo que permite a Node.js realizar operaciones no bloqueantes a pesar de ser single-threaded."
+    },
+    {
+      "question": "¿Qué hace la siguiente consulta SQL?<br>SELECT COUNT(*) FROM productos WHERE precio > 100;",
+      "options": [
+        "Suma los precios mayores a 100",
+        "Cuenta los productos con precio mayor a 100",
+        "Lista los productos con precio mayor a 100",
+        "Agrupa los productos por precio"
+      ],
+      "correct": 1,
+      "explanation": "COUNT(*) cuenta el número total de filas que cumplen con la condición especificada (precio > 100)."
+    },
+    {
+      "question": "¿Qué es middleware en Express?",
+      "options": [
+        "Una base de datos",
+        "Funciones que procesan las peticiones antes de llegar a la ruta final",
+        "Un tipo de ruta",
+        "Un protocolo de red"
+      ],
+      "correct": 1,
+      "explanation": "Middleware son funciones que tienen acceso a los objetos request, response y next, y pueden procesar la petición antes de que llegue a su destino final."
+    },
+    {
+      "question": "¿Qué significa el código de estado HTTP 403?",
+      "options": [
+        "OK",
+        "No encontrado",
+        "Prohibido",
+        "Error del servidor"
+      ],
+      "correct": 2,
+      "explanation": "403 Forbidden indica que el servidor entiende la petición pero se niega a autorizarla, típicamente por falta de permisos."
+    },
+    {
+      "question": "En una base de datos, ¿qué es una clave foránea?",
+      "options": [
+        "La clave principal de una tabla",
+        "Un campo que referencia la clave primaria de otra tabla",
+        "Un índice especial",
+        "Una contraseña de la base de datos"
+      ],
+      "correct": 1,
+      "explanation": "Una clave foránea es un campo que establece una relación con la clave primaria de otra tabla, manteniendo la integridad referencial."
+    },
+    {
+      "question": "¿Qué es JWT?",
+      "options": [
+        "Un tipo de base de datos",
+        "Un token de autenticación basado en JSON",
+        "Un método HTTP",
+        "Un framework de JavaScript"
+      ],
+      "correct": 1,
+      "explanation": "JWT (JSON Web Token) es un estándar para crear tokens de acceso que contienen claims (información) en formato JSON y pueden ser verificados."
+    },
+    {
+      "question": "¿Qué hace el siguiente código?<br>app.use(express.json());",
+      "options": [
+        "Crea una nueva aplicación Express",
+        "Parsea el body de las peticiones JSON",
+        "Configura las rutas JSON",
+        "Envía respuestas JSON"
+      ],
+      "correct": 1,
+      "explanation": "express.json() es un middleware que parsea el cuerpo de las peticiones que contienen JSON, permitiendo acceder a estos datos en req.body."
+    },
+    {
+      "question": "¿Qué es npm?",
+      "options": [
+        "Node Package Manager",
+        "Node Programming Method",
+        "New Project Module",
+        "Node Process Manager"
+      ],
+      "correct": 0,
+      "explanation": "npm (Node Package Manager) es el sistema de gestión de paquetes por defecto para Node.js, usado para instalar y administrar dependencias."
+    },
+    {
+      "question": "¿Qué hace el método res.status(404).json({ error: 'No encontrado' })?",
+      "options": [
+        "Redirige a una página 404",
+        "Envía una respuesta JSON con código de estado 404",
+        "Crea un nuevo error",
+        "Registra un error en el servidor"
+      ],
+      "correct": 1,
+      "explanation": "Este método establece el código de estado HTTP a 404 y envía una respuesta JSON con un mensaje de error."
+    },
+    {
+      "question": "¿Cuál es la diferencia entre req.query y req.params?",
+      "options": [
+        "No hay diferencia",
+        "req.query es para datos en la URL después de ?, req.params para parámetros de ruta",
+        "req.params es más seguro que req.query",
+        "req.query es para POST, req.params para GET"
+      ],
+      "correct": 1,
+      "explanation": "req.query accede a los query parameters (?key=value), mientras que req.params accede a los parámetros de ruta (:param)."
+    },
+    {
+      "question": "¿Qué es una transacción en bases de datos?",
+      "options": [
+        "Una consulta SQL",
+        "Un conjunto de operaciones que se ejecutan como una unidad atómica",
+        "Un tipo de tabla",
+        "Un método de backup"
+      ],
+      "correct": 1,
+      "explanation": "Una transacción es una secuencia de operaciones que se ejecutan como una unidad indivisible, cumpliendo con las propiedades ACID."
+    },
+    {
+      "question": "¿Qué es CORS?",
+      "options": [
+        "Un tipo de base de datos",
+        "Una política de seguridad del navegador",
+        "Un método HTTP",
+        "Un formato de datos"
+      ],
+      "correct": 1,
+      "explanation": "CORS (Cross-Origin Resource Sharing) es una política de seguridad que controla las peticiones HTTP desde diferentes orígenes."
+    },
+    {
+      "question": "¿Cuál es el propósito de next() en un middleware de Express?",
+      "options": [
+        "Terminar la petición",
+        "Enviar una respuesta",
+        "Pasar el control al siguiente middleware",
+        "Redirigir la petición"
+      ],
+      "correct": 2,
+      "explanation": "next() se usa para pasar el control al siguiente middleware en la cadena de middleware. Si no se llama, la petición puede quedar colgada."
+    },
+    {
+      "question": "¿Qué es NoSQL?",
+      "options": [
+        "Un error en SQL",
+        "Una base de datos que no usa tablas relacionales",
+        "Una versión nueva de SQL",
+        "Un tipo de consulta SQL"
+      ],
+      "correct": 1,
+      "explanation": "NoSQL se refiere a las bases de datos que no utilizan el modelo relacional tradicional, permitiendo estructuras de datos más flexibles."
+    }
+  ]

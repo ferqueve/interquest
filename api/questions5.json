@@ -1,223 +1,222 @@
- [
-    {
-      "question": "¿Qué propiedades tiene el objeto request (req) en Express.js?",
-      "options": [
-        "Solo req.body",
-        "req.body, req.params, req.query y req.headers",
-        "Solo req.params",
-        "Solo req.query"
-      ],
-      "correct": 1,
-      "explanation": "El objeto request en Express.js tiene múltiples propiedades útiles como req.body para datos POST, req.params para parámetros de ruta, req.query para query strings y req.headers para headers HTTP."
-    },
-    {
-      "question": "¿Cómo se accede a los parámetros de ruta en '/users/:id/posts/:postId'?",
-      "options": [
-        "req.parameters.id y req.parameters.postId",
-        "req.params.id y req.params.postId",
-        "req.query.id y req.query.postId",
-        "req.body.id y req.body.postId"
-      ],
-      "correct": 1,
-      "explanation": "Los parámetros de ruta definidos con ':' se acceden a través del objeto req.params, donde cada parámetro es una propiedad."
-    },
-    {
-      "question": "¿Qué método del objeto response se usa para enviar una respuesta JSON?",
-      "options": [
-        "res.send()",
-        "res.json()",
-        "res.sendJSON()",
-        "res.return()"
-      ],
-      "correct": 1,
-      "explanation": "res.json() es el método específico para enviar respuestas en formato JSON, automáticamente establece el Content-Type correcto."
-    },
-    {
-      "question": "¿Cómo se accede a los query parameters en '/search?name=john&age=25'?",
-      "options": [
-        "req.params.name y req.params.age",
-        "req.query.name y req.query.age",
-        "req.body.name y req.body.age",
-        "req.data.name y req.data.age"
-      ],
-      "correct": 1,
-      "explanation": "Los query parameters (parámetros de consulta) se acceden a través del objeto req.query en Express."
-    },
-    {
-      "question": "¿Qué middleware es necesario para parsear el body de una petición POST con JSON?",
-      "options": [
-        "app.use(express.urlencoded())",
-        "app.use(express.json())",
-        "app.use(bodyParser.json())",
-        "app.use(express.parseJSON())"
-      ],
-      "correct": 1,
-      "explanation": "express.json() es el middleware necesario para parsear el body de las peticiones que contienen JSON."
-    },
-    {
-      "question": "¿Cómo se establece el código de estado HTTP en una respuesta?",
-      "options": [
-        "res.status(code)",
-        "res.setStatus(code)",
-        "res.code(code)",
-        "res.httpStatus(code)"
-      ],
-      "correct": 0,
-      "explanation": "res.status(code) es el método para establecer el código de estado HTTP de la respuesta."
-    },
-    {
-      "question": "¿Qué método se usa para enviar un archivo como respuesta?",
-      "options": [
-        "res.send()",
-        "res.sendFile()",
-        "res.file()",
-        "res.download()"
-      ],
-      "correct": 1,
-      "explanation": "res.sendFile() es el método utilizado para enviar un archivo como respuesta HTTP."
-    },
-    {
-      "question": "¿Cómo se accede a los headers de la petición?",
-      "options": [
-        "req.headers",
-        "req.getHeaders()",
-        "req.httpHeaders",
-        "req.requestHeaders"
-      ],
-      "correct": 0,
-      "explanation": "Los headers de la petición se acceden a través del objeto req.headers."
-    },
-    {
-      "question": "¿Qué método se usa para redireccionar a otra URL?",
-      "options": [
-        "res.goto()",
-        "res.redirect()",
-        "res.forward()",
-        "res.sendTo()"
-      ],
-      "correct": 1,
-      "explanation": "res.redirect() es el método utilizado para redireccionar la petición a otra URL."
-    },
-    {
-      "question": "¿Cómo se manejan los errores en una API REST?",
-      "options": [
-        "Solo con try/catch",
-        "Usando middleware de error y códigos de estado HTTP apropiados",
-        "Solo con if/else",
-        "Ignorándolos"
-      ],
-      "correct": 1,
-      "explanation": "Los errores en una API REST se manejan usando middleware de error y enviando códigos de estado HTTP apropiados junto con mensajes descriptivos."
-    },
-    {
-      "question": "¿Qué es el objeto next en un middleware?",
-      "options": [
-        "Un objeto de configuración",
-        "Una función para pasar el control al siguiente middleware",
-        "Un método HTTP",
-        "Un tipo de respuesta"
-      ],
-      "correct": 1,
-      "explanation": "next es una función que se usa para pasar el control al siguiente middleware en la cadena de middleware."
-    },
-    {
-      "question": "¿Cómo se validan los datos de entrada en una API REST?",
-      "options": [
-        "No es necesario validar",
-        "Solo con try/catch",
-        "Usando middleware de validación y schemas",
-        "Solo con if/else"
-      ],
-      "correct": 2,
-      "explanation": "Los datos de entrada se validan usando middleware de validación y schemas que definen la estructura y reglas de los datos esperados."
-    },
-    {
-      "question": "¿Qué es el rate limiting en una API?",
-      "options": [
-        "Un tipo de base de datos",
-        "Una técnica para limitar el número de peticiones por usuario",
-        "Un método HTTP",
-        "Un tipo de autenticación"
-      ],
-      "correct": 1,
-      "explanation": "Rate limiting es una técnica para limitar el número de peticiones que un cliente puede hacer a la API en un período de tiempo."
-    },
-    {
-      "question": "¿Qué es el versionado de API?",
-      "options": [
-        "Un tipo de base de datos",
-        "Una técnica para mantener múltiples versiones de una API",
-        "Un método HTTP",
-        "Un tipo de autenticación"
-      ],
-      "correct": 1,
-      "explanation": "El versionado de API permite mantener múltiples versiones de una API simultáneamente para garantizar compatibilidad."
-    },
-    {
-      "question": "¿Cómo se manejan las subidas de archivos en Express?",
-      "options": [
-        "No es posible subir archivos",
-        "Usando el middleware multer",
-        "Solo con formularios HTML",
-        "Solo con FTP"
-      ],
-      "correct": 1,
-      "explanation": "multer es un middleware popular en Express para manejar la subida de archivos mediante multipart/form-data."
-    },
-    {
-      "question": "¿Qué son los headers CORS?",
-      "options": [
-        "Headers de autenticación",
-        "Headers que permiten o restringen el acceso desde diferentes dominios",
-        "Headers de caché",
-        "Headers de compresión"
-      ],
-      "correct": 1,
-      "explanation": "Los headers CORS (Cross-Origin Resource Sharing) controlan qué dominios pueden acceder a los recursos de la API."
-    },
-    {
-      "question": "¿Qué es la paginación en una API REST?",
-      "options": [
-        "Un tipo de autenticación",
-        "Una técnica para dividir grandes conjuntos de datos en páginas",
-        "Un método HTTP",
-        "Un tipo de base de datos"
-      ],
-      "correct": 1,
-      "explanation": "La paginación es una técnica para dividir grandes conjuntos de datos en páginas más pequeñas y manejables."
-    },
-    {
-      "question": "¿Qué es el caching en una API REST?",
-      "options": [
-        "Un tipo de base de datos",
-        "Una técnica para almacenar temporalmente respuestas frecuentes",
-        "Un método HTTP",
-        "Un tipo de autenticación"
-      ],
-      "correct": 1,
-      "explanation": "El caching es una técnica para almacenar temporalmente respuestas frecuentes y mejorar el rendimiento de la API."
-    },
-    {
-      "question": "¿Qué es la autenticación basada en tokens?",
-      "options": [
-        "Un tipo de base de datos",
-        "Un método de autenticación que usa tokens para verificar la identidad",
-        "Un método HTTP",
-        "Un tipo de caché"
-      ],
-      "correct": 1,
-      "explanation": "La autenticación basada en tokens es un método donde se usa un token (como JWT) para verificar la identidad del cliente."
-    },
-    {
-      "question": "¿Qué es la documentación de API?",
-      "options": [
-        "Un tipo de base de datos",
-        "Documentación que describe cómo usar la API",
-        "Un método HTTP",
-        "Un tipo de autenticación"
-      ],
-      "correct": 1,
-      "explanation": "La documentación de API proporciona información sobre cómo usar la API, incluyendo endpoints, parámetros y ejemplos."
-    }
-  ]
-
+[
+  {
+    "question": "¿Qué es el método some() en arrays de JavaScript?",
+    "options": [
+      "Un método que devuelve algunos elementos aleatorios",
+      "Un método que verifica si al menos un elemento cumple con una condición",
+      "Un método que devuelve los primeros elementos de un array",
+      "Un método que suma todos los elementos numéricos"
+    ],
+    "correct": 1,
+    "explanation": "El método some() comprueba si al menos un elemento del array cumple con la condición implementada por la función proporcionada, devolviendo un valor booleano."
+  },
+  {
+    "question": "¿Qué es el método includes() en JavaScript?",
+    "options": [
+      "Un método que verifica si un array contiene un determinado elemento",
+      "Un método que incluye un nuevo elemento en un array",
+      "Un método que importa módulos externos",
+      "Un método que combina dos arrays"
+    ],
+    "correct": 0,
+    "explanation": "El método includes() determina si un array incluye un determinado valor entre sus entradas, devolviendo true o false según corresponda."
+  },
+  {
+    "question": "¿Qué es una clase en JavaScript?",
+    "options": [
+      "Un atributo de estilo CSS",
+      "Un tipo especial de función que sirve como plantilla para crear objetos",
+      "Una librería externa",
+      "Un selector de elementos HTML"
+    ],
+    "correct": 1,
+    "explanation": "Una clase en JavaScript es un tipo de función especial introducida en ES6 que sirve como plantilla para crear objetos y proporciona una sintaxis más clara para implementar la herencia basada en prototipos."
+  },
+  {
+    "question": "¿Qué es el operador de coalescencia nula (??) en JavaScript?",
+    "options": [
+      "Un operador que siempre devuelve null",
+      "Un operador que devuelve su operando del lado derecho cuando el operando del lado izquierdo es null o undefined",
+      "Un operador que verifica si un valor es nulo",
+      "Un operador que convierte valores a null"
+    ],
+    "correct": 1,
+    "explanation": "El operador de coalescencia nula (??) es un operador lógico que devuelve su operando del lado derecho cuando su operando del lado izquierdo es null o undefined."
+  },
+  {
+    "question": "¿Qué es el método slice() en arrays?",
+    "options": [
+      "Un método que divide un array en múltiples arrays",
+      "Un método que devuelve una copia superficial de una porción del array",
+      "Un método que elimina elementos de un array",
+      "Un método que ordena un array"
+    ],
+    "correct": 1,
+    "explanation": "El método slice() devuelve una copia superficial de una porción del array en un nuevo array, seleccionado desde el índice inicio hasta el índice fin (fin no incluido)."
+  },
+  {
+    "question": "¿Qué es el método splice() en arrays?",
+    "options": [
+      "Un método que une dos arrays",
+      "Un método que cambia el contenido de un array eliminando o reemplazando elementos existentes y/o agregando nuevos",
+      "Un método que copia una porción de un array",
+      "Un método que ordena un array"
+    ],
+    "correct": 1,
+    "explanation": "El método splice() cambia el contenido de un array eliminando o reemplazando elementos existentes y/o agregando nuevos elementos en su lugar."
+  },
+  {
+    "question": "¿Qué es el operador de propagación (spread operator) en JavaScript?",
+    "options": [
+      "Un operador que divide strings en caracteres",
+      "Un operador que expande un iterable en más elementos",
+      "Un operador que concatena arrays",
+      "Un operador que multiplica valores"
+    ],
+    "correct": 1,
+    "explanation": "El operador de propagación (...) permite expandir un iterable (como un array o una cadena) en sus elementos individuales cuando se usa en llamadas a funciones o inicializaciones de arrays/objetos."
+  },
+  {
+    "question": "¿Qué es una promesa en JavaScript?",
+    "options": [
+      "Una declaración que garantiza que el código funcionará",
+      "Un objeto que representa una operación que no se ha completado todavía, pero se espera que lo haga en el futuro",
+      "Una función especial que siempre devuelve verdadero",
+      "Un tipo de variable global"
+    ],
+    "correct": 1,
+    "explanation": "Una promesa (Promise) es un objeto que representa la eventual finalización o fallo de una operación asíncrona, permitiendo asociar handlers con el valor eventual de éxito o la razón de fallo."
+  },
+  {
+    "question": "¿Qué es el método join() en arrays?",
+    "options": [
+      "Un método que une dos arrays",
+      "Un método que convierte todos los elementos de un array en una cadena",
+      "Un método que agrega nuevos elementos a un array",
+      "Un método que combina objetos"
+    ],
+    "correct": 1,
+    "explanation": "El método join() une todos los elementos de un array en una cadena y devuelve esta cadena, usando un separador especificado (o coma por defecto)."
+  },
+  {
+    "question": "¿Qué es el patrón de diseño Singleton en JavaScript?",
+    "options": [
+      "Un patrón que permite crear solo una instancia de una clase",
+      "Un patrón para manejar errores",
+      "Un patrón para organizar el código en módulos",
+      "Un patrón para optimizar el rendimiento"
+    ],
+    "correct": 0,
+    "explanation": "El patrón Singleton es un patrón de diseño que restringe la instanciación de una clase a un objeto único, asegurando que solo exista una instancia de esa clase en toda la aplicación."
+  },
+  {
+    "question": "¿Qué es una Proxy en JavaScript?",
+    "options": [
+      "Un servidor intermedio",
+      "Un objeto que envuelve otro objeto y controla el acceso a él",
+      "Una función que se ejecuta en lugar de otra",
+      "Un tipo de variable protegida"
+    ],
+    "correct": 1,
+    "explanation": "Un Proxy es un objeto que envuelve otro objeto (target) y puede interceptar y redefinir operaciones fundamentales para ese objeto, como la asignación de propiedades o el acceso a ellas."
+  },
+  {
+    "question": "¿Qué es el método Object.assign() en JavaScript?",
+    "options": [
+      "Un método que asigna valores a variables",
+      "Un método que copia los valores de todas las propiedades enumerables de uno o más objetos fuente a un objeto destino",
+      "Un método que asigna métodos a objetos",
+      "Un método que crea un nuevo objeto"
+    ],
+    "correct": 1,
+    "explanation": "Object.assign() copia todas las propiedades enumerables propias de uno o más objetos fuente a un objeto destino, devolviendo el objeto destino modificado."
+  },
+  {
+    "question": "¿Qué es el operador de encadenamiento opcional (?.) en JavaScript?",
+    "options": [
+      "Un operador que encadena funciones",
+      "Un operador que permite leer el valor de una propiedad ubicada dentro de una cadena de objetos conectados sin validar cada referencia",
+      "Un operador que crea una cadena de valores",
+      "Un operador que une strings"
+    ],
+    "correct": 1,
+    "explanation": "El operador de encadenamiento opcional (?.) permite leer el valor de una propiedad ubicada dentro de una cadena de objetos conectados sin tener que validar cada referencia, devolviendo undefined si es nulo o indefinido."
+  },
+  {
+    "question": "¿Qué es un iterador en JavaScript?",
+    "options": [
+      "Un tipo de bucle",
+      "Un objeto que proporciona un método next() que devuelve el siguiente elemento en la secuencia",
+      "Una función que recorre arrays",
+      "Un método para contar elementos"
+    ],
+    "correct": 1,
+    "explanation": "Un iterador es un objeto que implementa el protocolo de iteración en JavaScript, proporcionando un método next() que devuelve un objeto con propiedades value y done."
+  },
+  {
+    "question": "¿Qué es un generador en JavaScript?",
+    "options": [
+      "Una función que genera números aleatorios",
+      "Una función especial que puede pausar su ejecución y reanudarla más tarde",
+      "Un método para crear objetos",
+      "Una función que genera arrays"
+    ],
+    "correct": 1,
+    "explanation": "Un generador es una función especial declarada con function* que puede pausar su ejecución y reanudarla más tarde, manteniendo su contexto entre reinicios, y que produce múltiples valores."
+  },
+  {
+    "question": "¿Qué es el método trim() en JavaScript?",
+    "options": [
+      "Un método que elimina caracteres específicos de un string",
+      "Un método que elimina los espacios en blanco del principio y del final de un string",
+      "Un método que reduce el tamaño de un array",
+      "Un método que formatea números"
+    ],
+    "correct": 1,
+    "explanation": "El método trim() elimina los espacios en blanco (espacios, tabulaciones, saltos de línea) del principio y del final de un string."
+  },
+  {
+    "question": "¿Qué es el método split() en JavaScript?",
+    "options": [
+      "Un método que divide un string en un array de substrings basado en un separador",
+      "Un método que divide un array en múltiples arrays",
+      "Un método que separa los caracteres de un string",
+      "Un método que divide un número en decimales"
+    ],
+    "correct": 0,
+    "explanation": "El método split() divide un objeto de tipo String en un array de strings, separando la cadena en subcadenas utilizando un separador especificado."
+  },
+  {
+    "question": "¿Qué es el patrón de diseño Observer en JavaScript?",
+    "options": [
+      "Un patrón para observar el rendimiento del código",
+      "Un patrón donde un objeto (sujeto) mantiene una lista de dependientes (observadores) y les notifica automáticamente de cambios",
+      "Un patrón para supervisar errores",
+      "Un patrón para visualizar datos"
+    ],
+    "correct": 1,
+    "explanation": "El patrón Observer es un patrón de diseño donde un objeto (el sujeto) mantiene una lista de dependientes (observadores) y les notifica automáticamente cuando hay cambios de estado, generalmente llamando a uno de sus métodos."
+  },
+  {
+    "question": "¿Qué es la programación funcional en JavaScript?",
+    "options": [
+      "Programar funciones solamente",
+      "Un paradigma que trata la computación como evaluación de funciones matemáticas y evita cambiar el estado y los datos mutables",
+      "Un tipo de programación que solo utiliza funciones flecha",
+      "Programar con funciones recursivas"
+    ],
+    "correct": 1,
+    "explanation": "La programación funcional es un paradigma de programación que trata la computación como la evaluación de funciones matemáticas y evita cambiar el estado y los datos mutables, enfocándose en la aplicación de funciones más que en cambios de estado."
+  },
+  {
+    "question": "¿Qué es un callback hell (o pirámide de la perdición) en JavaScript?",
+    "options": [
+      "Un error que ocurre durante la ejecución de callbacks",
+      "Múltiples callbacks anidados que hacen el código difícil de leer y mantener",
+      "Una técnica de optimización para callbacks",
+      "Un patrón para manejar errores en callbacks"
+    ],
+    "correct": 1,
+    "explanation": "El callback hell o pirámide de la perdición se refiere a la situación donde múltiples callbacks anidados hacen que el código sea difícil de leer y mantener, creando una estructura piramidal en el código."
+  }
+]
