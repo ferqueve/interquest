@@ -159,6 +159,101 @@
     margin-right: 10px; /* espacio entre la imagen y el texto */
     margin-bottom: 10px;
 }
+@media screen and (max-width: 480px) {
+
+    body {
+        padding-top: 90px; /* Deja espacio para score + progress */
+    }
+
+    .container {
+        width: 92%;
+        padding: 0;
+    }
+
+    #quiz-container {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    /* Imagen del bot */
+    #quiz-icon {
+        width: 120px;
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    /* Encabezados */
+    h1 {
+        font-size: 1.7rem !important;
+    }
+    h3 {
+        font-size: 1.2rem !important;
+    }
+    h5 {
+        font-size: 1rem !important;
+    }
+
+    /* Botones */
+    .option-btn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    /* Barra de progreso */
+    #progress-container {
+        padding: 6px;
+    }
+
+    #progress-bar {
+        height: 8px;
+    }
+
+    /* Puntaje fijo */
+    #score-display {
+        font-size: 14px;
+        padding: 6px 10px;
+        right: 5px;
+        top: 45px; /* debajo de la barra */
+    }
+
+    /* Texto de preguntas */
+    #question-container p,
+    #question-container h3 {
+        font-size: 1rem;
+    }
+
+    /* Ajustes del feedback */
+    #feedback p {
+        font-size: 0.9rem;
+    }
+
+    /* Resultados */
+    #results {
+        padding: 20px 10px;
+    }
+
+    #chartContainer {
+        width: 160px !important;
+        height: 160px !important;
+    }
+}
+/* Fix para que las opciones SIEMPRE se vean */
+#options {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    padding: 20px 0 !important;
+    margin: 20px 0 !important;
+    border-top: 1px solid #e9ecef !important;
+}
+
+.option-btn {
+    display: block !important;
+    width: 100% !important;
+}
+
     </style>
 </head>
 <body>
