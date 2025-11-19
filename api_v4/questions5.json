@@ -1,0 +1,202 @@
+[
+  {
+    "question": "¿Qué sucede si intentas iniciar un servidor Express en un puerto ya utilizado?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Dos procesos no pueden escuchar en el mismo puerto TCP; Express mostrará un error EADDRINUSE."
+  },
+  {
+    "question": "¿Cuál de las siguientes clases de Bootstrap permite alinear un elemento usando flexbox?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": ".align-items-center es parte del sistema Flexbox de Bootstrap."
+  },
+  {
+    "question": "¿Cuál método HTTP está pensado para reemplazar completamente un recurso?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "PUT reemplaza completamente el recurso, a diferencia de PATCH."
+  },
+  {
+    "question": "¿Qué significa max-width en una media query?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "max-width aplica estilos cuando la pantalla es menor o igual al valor definido."
+  },
+  {
+    "question": "¿Qué comando crea un archivo package.json de forma automática?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "npm init -y genera un package.json con valores por defecto."
+  },
+  {
+    "question": "¿Qué hace fs.unlink en Node.js?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "unlink elimina un archivo del sistema."
+  },
+  {
+    "question": "¿Cuál es la respuesta correcta para obtener datos en fetch?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "fetch(url) por defecto realiza una petición GET."
+  },
+  {
+    "question": "¿Qué clase Bootstrap crea una fila flexible?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": ".row define una fila dentro del grid system."
+  },
+  {
+    "question": "¿Qué método convierte una cadena JSON en objeto?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "JSON.parse transforma texto JSON a objeto JS."
+  },
+  {
+    "question": "¿Qué comando instala una dependencia solo para desarrollo?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "--dev (ó --save-dev) guarda la dependencia como de desarrollo."
+  },
+  {
+    "question": "¿Qué es un middleware en Express?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Los middleware procesan datos antes de llegar a las rutas finales."
+  },
+  {
+    "question": "¿Qué método HTTP se usa para crear un recurso nuevo?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "POST se utiliza para crear nuevos recursos."
+  },
+  {
+    "question": "¿Cuál clase Bootstrap hace que un elemento ocupe todo el ancho disponible?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "col-12 ocupa las 12 columnas del grid."
+  },
+  {
+    "question": "¿Cuál es el comando para ver la versión de Node instalada?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "node -v muestra la versión instalada."
+  },
+  {
+    "question": "¿Qué propiedad CSS permite cambiar la dirección de los elementos en flexbox?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "flex-direction define la orientación del layout."
+  },
+  {
+    "question": "¿Qué es un error 500 en HTTP?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "500 indica un error interno del servidor."
+  },
+  {
+    "question": "¿Qué hace event.target en JavaScript?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "event.target señala el elemento exacto que disparó el evento."
+  },
+  {
+    "question": "¿Qué instrucción SQL elimina un registro?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "DELETE FROM elimina filas."
+  },
+  {
+    "question": "¿Qué comando muestra todas las dependencias instaladas en un proyecto?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "npm list muestra el árbol completo de dependencias."
+  },
+  {
+    "question": "¿Cuál es la sintaxis correcta para agregar datos en MariaDB?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "INSERT INTO es la sentencia estándar para agregar registros."
+  }
+]

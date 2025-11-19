@@ -1,0 +1,202 @@
+[
+  {
+    "question": "¿Qué sucede si un servidor Node.js intenta escuchar en un puerto ocupado?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Node no puede escuchar dos procesos en el mismo puerto."
+  },
+  {
+    "question": "¿Qué clase de Bootstrap se usa para ocultar un elemento en pantallas pequeñas?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": ".d-sm-none oculta desde sm hacia abajo."
+  },
+  {
+    "question": "¿Qué método de fetch se utiliza para actualizar parcialmente un recurso?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "PATCH actualiza parcialmente un recurso."
+  },
+  {
+    "question": "En CSS, ¿qué significa min-width en una media query?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "min-width activa estilos a partir de un ancho mínimo."
+  },
+  {
+    "question": "¿Qué comando instala una dependencia en Node.js?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "npm install agrega dependencias al proyecto."
+  },
+  {
+    "question": "¿Qué hace fs.readFile() en Node?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "fs.readFile es asincrónico."
+  },
+  {
+    "question": "¿Qué método HTTP se usa para borrar datos?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "DELETE elimina recursos."
+  },
+  {
+    "question": "¿Cuál es la clase Bootstrap para crear un contenedor con ancho dinámico?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": ".container-fluid ocupa todo el ancho disponible."
+  },
+  {
+    "question": "¿Qué significa JSON.stringify?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Serializa un objeto a cadena JSON."
+  },
+  {
+    "question": "¿Qué comando se usa para iniciar un proyecto Node.js?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "npm init crea package.json."
+  },
+  {
+    "question": "¿Qué es un callback en JavaScript?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Es una función que se ejecuta después de otra."
+  },
+  {
+    "question": "¿Qué método obtiene datos de una API?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "GET obtiene recursos."
+  },
+  {
+    "question": "¿Para qué sirve express.json()?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Middleware para interpretar JSON."
+  },
+  {
+    "question": "¿Qué comando actualiza paquetes globalmente en npm?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "El flag -g actualiza paquetes globales."
+  },
+  {
+    "question": "¿Cuál atributo HTML es necesario para que un input envíe datos?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "name es requerido al enviar formularios."
+  },
+  {
+    "question": "¿Qué significa res.status(404) en Express?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "404 indica recurso inexistente."
+  },
+  {
+    "question": "¿Qué operador compara sin convertir tipos?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "=== compara tipo y valor."
+  },
+  {
+    "question": "¿Qué hace preventDefault()?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Impide ejecución automática del evento."
+  },
+  {
+    "question": "¿Qué sentencia SQL obtiene todos los registros de una tabla?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "SELECT obtiene datos."
+  },
+  {
+    "question": "¿Cuál es el formato correcto para insertar datos en MariaDB?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "INSERT INTO agrega registros."
+  }
+]

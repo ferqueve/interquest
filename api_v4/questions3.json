@@ -1,0 +1,202 @@
+[
+  {
+    "question": "¿Qué puede suceder si se ejecutan dos servidores Node.js en el puerto 3001 al mismo tiempo?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Dos procesos no pueden escuchar simultáneamente en el mismo puerto TCP; el segundo genera error."
+  },
+  {
+    "question": "¿Cuál de las siguientes afirmaciones respecto a Bootstrap es FALSA?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": ".col nunca es padre de .row; siempre es al revés."
+  },
+  {
+    "question": "Observa el código y responde: ¿cuál afirmación es FALSA?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "El media query mostraba lo contrario: el tamaño cambia según el ancho mayor o menor a 600px."
+  },
+  {
+    "question": "Completa los espacios para que el código funcione correctamente.",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Las referencias deben coincidir con los IDs reales de los elementos."
+  },
+  {
+    "question": "¿Cuál es el propósito del fragmento de código?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "El método usado es PUT, por lo que actualiza el recurso."
+  },
+  {
+    "question": "¿Qué sucede si el campo input no está vacío al enviar el formulario?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "La validación solo evita enviar si el campo está vacío."
+  },
+  {
+    "question": "¿Cuál es forma asincrónica de escribir archivo en Node.js?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "fs.writeFile es la versión no bloqueante."
+  },
+  {
+    "question": "¿Qué hace este código en la validación de formularios?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Previene envío si el campo no cumple condiciones."
+  },
+  {
+    "question": "Sobre fetch DELETE, ¿qué sucede?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "DELETE típicamente retorna 204 si elimina correctamente."
+  },
+  {
+    "question": "¿Cuál es el propósito principal del PUT en el código?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "PUT actualiza un recurso existente."
+  },
+  {
+    "question": "Para enviar nuevo artículo, ¿qué método usar?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "POST se usa para crear nuevos recursos."
+  },
+  {
+    "question": "Clase Bootstrap para centrar texto horizontalmente:",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": ".text-center es la clase oficial."
+  },
+  {
+    "question": "Clase para mostrar columnas como una sola en móviles:",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": ".col-12 ocupa el ancho completo en cualquier breakpoint."
+  },
+  {
+    "question": "Fila de cuatro columnas iguales en Bootstrap:",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "col-3 x4 suma 12 unidades, cuadrícula perfecta."
+  },
+  {
+    "question": "¿Qué es un endpoint en Node.js?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Endpoint es una ruta que responde a solicitudes."
+  },
+  {
+    "question": "Afirmación correcta sobre npm:",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "npm maneja paquetes en Node.js."
+  },
+  {
+    "question": "Función de stopPropagation():",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Evita que el evento siga burbujeando."
+  },
+  {
+    "question": "Eliminar registro id=3 en MariaDB:",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "DELETE FROM tabla WHERE id=3 es la sintaxis correcta."
+  },
+  {
+    "question": "Comando para modificar datos en MariaDB:",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "UPDATE modifica registros existentes."
+  },
+  {
+    "question": "Completar espacio en blanco para agregar registro con POST:",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "INSERT INTO tabla (...) VALUES (...) se usa para agregar filas."
+  }
+]

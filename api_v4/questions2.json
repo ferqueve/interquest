@@ -1,0 +1,202 @@
+[
+  {
+    "question": "¿Qué devuelve la función getJSONData en caso de éxito?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "getJSONData envuelve fetch y retorna un objeto con 'status' y 'data', no un JSON crudo ni un array."
+  },
+  {
+    "question": "En MariaDB el comando que permite insertar datos en una tabla es...",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "INSERT es la sentencia SQL usada para agregar registros a una tabla."
+  },
+  {
+    "question": "¿Cuál es la clase de Bootstrap que se utiliza para crear una fila?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "En Bootstrap, las filas se definen con la clase .row."
+  },
+  {
+    "question": "¿Cuál es el protocolo de comunicación a una API REST?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "REST utiliza el protocolo HTTP para realizar solicitudes."
+  },
+  {
+    "question": "¿Cuál es el propósito de este fragmento de código?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "El fragmento corresponde a un handler POST que envía un JSON como respuesta."
+  },
+  {
+    "question": "¿Cuál es el propósito de la función validateForm()?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "La función verifica si el campo está vacío y evita el envío del formulario."
+  },
+  {
+    "question": "En Node.js, ¿cuál es una forma sincrónica de leer un archivo desde el sistema de archivos?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "La variante Sync indica que es bloqueante y por tanto sincrónica."
+  },
+  {
+    "question": "¿Cuál es la función del fragmento de código que valida correo electrónico?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "El listener revisa el correo con una regex y cancela el envío si no pasa la validación."
+  },
+  {
+    "question": "¿Cuál es el propósito principal de la solicitud fetch en el código dado?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "El método GET obtiene datos y los transforma con response.json()."
+  },
+  {
+    "question": "¿Cuál es el propósito principal de la solicitud PUT?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "PUT se utiliza para actualizar recursos existentes."
+  },
+  {
+    "question": "¿Qué método debería utilizarse para obtener las últimas noticias?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "GET es el método estándar para solicitar información."
+  },
+  {
+    "question": "¿Qué clase de Bootstrap sirve para crear una columna de la mitad de tamaño en un dispositivo pequeño?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "sm representa dispositivos pequeños; 6 equivale a la mitad del ancho."
+  },
+  {
+    "question": "Para iniciar un servidor en Node.js, ¿qué puerto debes usar siempre?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Node puede ejecutarse en cualquier puerto libre, aunque 3000 es común."
+  },
+  {
+    "question": "¿Cuál afirmación sobre Bootstrap es FALSA?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": ".col-sm-6 ocupa solo la mitad, no el total del contenedor."
+  },
+  {
+    "question": "¿Cuál es la forma correcta de importar el módulo express?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "CommonJS usa require asignado a una constante."
+  },
+  {
+    "question": "¿Qué comando se usa para ejecutar una aplicación Node.js?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "El comando básico para ejecutar Node es 'node archivo.js'."
+  },
+  {
+    "question": "¿Qué es el sistema de enrutamiento de Express.js?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "Express usa métodos HTTP para mapear rutas a controladores."
+  },
+  {
+    "question": "¿Qué muestra como resultado el código dado?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "El filtrado o resultado final mostrado contiene solo esos valores."
+  },
+  {
+    "question": "En MariaDB el comando que permite insertar datos en una tabla es...",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "INSERT agrega registros nuevos a una tabla."
+  },
+  {
+    "question": "¿Qué consulta selecciona registros de Products con precio mayor a 50?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "explanation": "La sintaxis correcta para seleccionar columnas y filtrar por precio es SELECT * FROM tabla WHERE condición."
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "question": "¿Qué es una API?",
+    "options": [
+      "Una API es un conjunto de fallas que se dan en la comunicación entre balanceadores de carga.",
+      "Una API es una serie de respuestas que reciben los servidores de parte de los clientes DNS cuando hacen solicitudes.",
+      "Una API es un conjunto de reglas que permite a diferentes aplicaciones comunicarse entre sí.",
+      "Una API es una función de backend."
+    ],
+    "correct": 2,
+    "explanation": "Una API permite la comunicación entre aplicaciones mediante reglas y protocolos."
+  },
+  {
+    "question": "¿Qué es Node.js?",
+    "options": [
+      "Es una extensión de VSCode para crear servidores web en Javascript.",
+      "Node.js es un entorno de ejecución de JavaScript de código abierto que permite ejecutar código JavaScript en el servidor.",
+      "Es la extensión del navegador que permite que se ejecute el código JS en el motor V8.",
+      "Es un add-on que se puede instalar en Chrome para ejecutar programas hechos en Javascript."
+    ],
+    "correct": 1,
+    "explanation": "Node.js permite ejecutar JavaScript fuera del navegador."
+  },
+  {
+    "question": "¿Cuál es el protocolo de comunicación a una API REST?",
+    "options": [
+      "JavaScript",
+      "HTML",
+      "HTTP",
+      "JSON"
+    ],
+    "correct": 2,
+    "explanation": "REST utiliza HTTP como protocolo de comunicación."
+  },
+  {
+    "question": "¿Qué muestra el código en pantalla?",
+    "options": [
+      "[{ name: 'Carne', price: 20, count: 3 }, { name: 'Jugo', price: 15, count: 1 }, { name: 'Leche', price: 12, count: 2 }]",
+      "[{ name: 'Manzana', price: 5, count: 4 }, { name:'Leche', price:12, count:2}, { name:'Pan',price:3,count:5},{ name:'Jugo',price:15,count:1},{ name:'Carne',price:20,count:3}]",
+      "Da error",
+      "[{ name:'Manzana',price:5,count:4},{name:'Pan',price:3,count:5}]"
+    ],
+    "correct": 0,
+    "explanation": "El código ordena y filtra, resultando en la lista Carne, Jugo y Leche."
+  },
+  {
+    "question": "¿Cuál es el propósito del fragmento de código '/books'?",
+    "options": [
+      "Iniciar un servidor web.",
+      "Responder a una solicitud GET en la ruta '/books' con un objeto JSON llamado books.",
+      "Crear una nueva ruta llamada '/books' en una aplicación Node.js.",
+      "Responder a una solicitud POST en la ruta '/books' con un objeto JSON llamado books."
+    ],
+    "correct": 1,
+    "explanation": "El código maneja solicitudes GET devolviendo un JSON."
+  },
+  {
+    "question": "¿Qué sucede si fname está vacío al enviar el formulario?",
+    "options": [
+      "Se muestra una alerta y el formulario se envía.",
+      "Se envía sin alerta.",
+      "Se muestra una alerta y el formulario no se envía.",
+      "El campo se rellena automáticamente."
+    ],
+    "correct": 2,
+    "explanation": "La validación evita el envío si el campo está vacío."
+  },
+  {
+    "question": "¿Cuál es la forma asincrónica de leer un archivo en Node.js?",
+    "options": [
+      "fs.readSync()",
+      "fs.readFile()",
+      "fs.openFile()",
+      "fs.readFileSync()"
+    ],
+    "correct": 1,
+    "explanation": "fs.readFile trabaja de forma asincrónica."
+  },
+  {
+    "question": "¿Qué hace el fragmento de validación del formulario?",
+    "options": [
+      "Siempre muestra alerta.",
+      "Previene el envío si hay campos vacíos.",
+      "Envía el formulario y alerta.",
+      "Envía los datos al servidor."
+    ],
+    "correct": 1,
+    "explanation": "Previene el envío mediante preventDefault()."
+  },
+  {
+    "question": "¿Qué significa 'Recurso eliminado con éxito' en DELETE?",
+    "options": [
+      "La eliminación fue exitosa.",
+      "Hubo un error.",
+      "La eliminación está en proceso.",
+      "La eliminación fue cancelada."
+    ],
+    "correct": 0,
+    "explanation": "Código 204 indica eliminación exitosa."
+  },
+  {
+    "question": "¿Cuál es el propósito principal de PUT?",
+    "options": [
+      "Crear tarea.",
+      "Hacer GET.",
+      "Actualizar un recurso.",
+      "Eliminar tarea."
+    ],
+    "correct": 2,
+    "explanation": "PUT actualiza recursos existentes."
+  },
+  {
+    "question": "¿Cuál es el propósito principal de GET?",
+    "options": [
+      "Eliminar producto.",
+      "Recuperar detalles de un producto.",
+      "Actualizar producto.",
+      "Crear producto."
+    ],
+    "correct": 1,
+    "explanation": "GET obtiene datos."
+  },
+  {
+    "question": "¿Qué clase de Bootstrap crea una fila?",
+    "options": [
+      ".col-12",
+      ".row-12",
+      ".grid",
+      ".row"
+    ],
+    "correct": 3,
+    "explanation": "Bootstrap usa .row para filas."
+  },
+  {
+    "question": "¿Propósito principal de DELETE?",
+    "options": [
+      "Eliminar recurso.",
+      "Actualizar recurso.",
+      "Consultar recurso.",
+      "Crear recurso."
+    ],
+    "correct": 0,
+    "explanation": "DELETE elimina un recurso."
+  },
+  {
+    "question": "¿Cómo crear una columna de ancho completo?",
+    "options": [
+      "<div class='col-sm-4'>",
+      "<div class='col-12'>",
+      "<div class='col-md-6'>",
+      "<div class='col-lg'>"
+    ],
+    "correct": 1,
+    "explanation": "col-12 ocupa el 100%."
+  },
+  {
+    "question": "¿Cómo importar http en Node?",
+    "options": [
+      "const http = import('http');",
+      "require('http')",
+      "const http = require('http')",
+      "require http from 'http';"
+    ],
+    "correct": 2,
+    "explanation": "Forma estándar de importación CommonJS."
+  },
+  {
+    "question": "¿Qué ocurre si dos servidores usan el mismo puerto?",
+    "options": [
+      "Ambos escuchan el puerto.",
+      "El puerto puede ser usado por múltiples procesos.",
+      "Ocurre un error porque el puerto solo puede ser usado por un proceso.",
+      "Ambos responden peticiones."
+    ],
+    "correct": 2,
+    "explanation": "Un puerto solo puede ser usado por un proceso."
+  },
+  {
+    "question": "¿Qué hace preventDefault()?",
+    "options": [
+      "Detiene propagación.",
+      "Bloquea loops.",
+      "Evita comportamiento predeterminado.",
+      "Detiene script."
+    ],
+    "correct": 2,
+    "explanation": "Cancela el comportamiento predeterminado."
+  },
+  {
+    "question": "¿Cuál afirmación sobre MariaDB es falsa?",
+    "options": [
+      "Es un motor relacional.",
+      "Usa SQL.",
+      "CREATE TABLE crea tablas.",
+      "MariaDB es un lenguaje."
+    ],
+    "correct": 3,
+    "explanation": "MariaDB no es un lenguaje."
+  },
+  {
+    "question": "¿Qué comando permite leer datos?",
+    "options": [
+      "DELETE",
+      "READ",
+      "SELECT",
+      "SELECTION"
+    ],
+    "correct": 2,
+    "explanation": "SELECT consulta datos."
+  },
+  {
+    "question": "¿Qué hace SELECT ... WHERE name = 'Jimena'?",
+    "options": [
+      "Trae todas las personas llamadas Jimena.",
+      "Trae personas con nombre distinto a Jimena.",
+      "Inserta una persona.",
+      "Trae solo la primera persona llamada Jimena."
+    ],
+    "correct": 0,
+    "explanation": "WHERE filtra por coincidencia exacta."
+  }
+]
