@@ -1,222 +1,202 @@
 [
   {
-    "question": "¿Qué es el scope (ámbito) en JavaScript?",
+    "question": "¿Qué sucede si un servidor Node.js intenta escuchar en un puerto ocupado?",
     "options": [
-      "El tiempo de ejecución de una función",
-      "El contexto en el que los valores y expresiones son 'visibles' o pueden ser referenciados",
-      "La cantidad de memoria que usa una variable",
-      "Un tipo de variable global"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El scope o ámbito en JavaScript determina la accesibilidad de variables, objetos y funciones desde diferentes partes del código."
+    "explanation": "Node no puede escuchar dos procesos en el mismo puerto."
   },
   {
-    "question": "¿Cuál es la diferencia entre null y undefined en JavaScript?",
+    "question": "¿Qué clase de Bootstrap se usa para ocultar un elemento en pantallas pequeñas?",
     "options": [
-      "Son exactamente lo mismo",
-      "null es un valor asignado, undefined significa que la variable no ha sido asignada",
-      "undefined es un tipo de objeto, null es un valor primitivo",
-      "null solo puede usarse en objetos, undefined en cualquier tipo"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "undefined significa que una variable ha sido declarada pero no tiene un valor asignado, mientras que null es un valor asignado que representa la ausencia intencional de cualquier valor de objeto."
+    "explanation": ".d-sm-none oculta desde sm hacia abajo."
   },
   {
-    "question": "¿Qué es el método filter() en JavaScript?",
+    "question": "¿Qué método de fetch se utiliza para actualizar parcialmente un recurso?",
     "options": [
-      "Un método que elimina elementos duplicados de un array",
-      "Un método que crea un nuevo array con todos los elementos que pasan una prueba",
-      "Un método que ordena un array basado en una condición",
-      "Un método que modifica los elementos de un array en su lugar"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El método filter() crea un nuevo array con todos los elementos que pasan la prueba implementada por la función proporcionada."
+    "explanation": "PATCH actualiza parcialmente un recurso."
   },
   {
-    "question": "¿Qué es el Event Loop en JavaScript?",
+    "question": "En CSS, ¿qué significa min-width en una media query?",
     "options": [
-      "Una biblioteca para manejar eventos",
-      "Un mecanismo que permite a JavaScript manejar operaciones asíncronas a pesar de ser single-threaded",
-      "Un tipo de bucle infinito",
-      "Un patrón de diseño para manejar errores"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El Event Loop es un mecanismo que permite a JavaScript, que es single-threaded, manejar operaciones asíncronas mediante la cola de tareas y la pila de llamadas."
+    "explanation": "min-width activa estilos a partir de un ancho mínimo."
   },
   {
-    "question": "¿Qué es una función auto-invocada (IIFE) en JavaScript?",
+    "question": "¿Qué comando instala una dependencia en Node.js?",
     "options": [
-      "Una función que se llama automáticamente cuando se carga la página",
-      "Una función que se ejecuta inmediatamente después de ser definida",
-      "Una función que solo puede ser llamada una vez",
-      "Una función que invoca a otras funciones"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Una IIFE (Immediately Invoked Function Expression) es una función que se ejecuta inmediatamente después de ser creada, utilizada para crear un ámbito aislado."
+    "explanation": "npm install agrega dependencias al proyecto."
   },
   {
-    "question": "¿Qué es la propagación de eventos (Event Propagation) en JavaScript?",
+    "question": "¿Qué hace fs.readFile() en Node?",
     "options": [
-      "La forma en que se crean nuevos eventos",
-      "El orden en que los eventos se procesan en el DOM",
-      "Un método para detener eventos",
-      "Una técnica para optimizar el manejo de eventos"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "La propagación de eventos describe el orden en que los eventos se reciben en los elementos del DOM, ya sea mediante bubbling (de dentro hacia fuera) o capturing (de fuera hacia dentro)."
+    "explanation": "fs.readFile es asincrónico."
   },
   {
-    "question": "¿Qué método convierte un string a un número en JavaScript?",
+    "question": "¿Qué método HTTP se usa para borrar datos?",
     "options": [
-      "toNumber()",
-      "parseInt() o parseFloat()",
-      "convertToNumber()",
-      "Number()"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "parseInt() convierte un string a un número entero y parseFloat() convierte un string a un número de punto flotante."
+    "explanation": "DELETE elimina recursos."
   },
   {
-    "question": "¿Qué es la sintaxis de desestructuración en JavaScript?",
+    "question": "¿Cuál es la clase Bootstrap para crear un contenedor con ancho dinámico?",
     "options": [
-      "Una forma de eliminar propiedades de un objeto",
-      "Una expresión que permite extraer datos de arrays o objetos en variables independientes",
-      "Un método para combinar varios objetos",
-      "Una técnica para ordenar arrays"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "La sintaxis de desestructuración es una expresión de JavaScript que permite extraer valores de arrays o propiedades de objetos en variables distintas de manera concisa."
+    "explanation": ".container-fluid ocupa todo el ancho disponible."
   },
   {
-    "question": "¿Qué son las arrow functions en JavaScript?",
+    "question": "¿Qué significa JSON.stringify?",
     "options": [
-      "Funciones que solo pueden usarse con arrays",
-      "Una sintaxis más corta para escribir funciones usando =>",
-      "Funciones que siempre devuelven un valor",
-      "Funciones que se ejecutan automáticamente"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Las arrow functions (funciones flecha) son una sintaxis más concisa para escribir funciones en JavaScript, introducidas en ES6, usando =>."
+    "explanation": "Serializa un objeto a cadena JSON."
   },
   {
-    "question": "¿Qué es 'NaN' en JavaScript?",
+    "question": "¿Qué comando se usa para iniciar un proyecto Node.js?",
     "options": [
-      "Un método para verificar si un valor es un número",
-      "Un valor que representa 'Not a Number'",
-      "Un tipo de error",
-      "Una constante que representa el infinito"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "NaN (Not a Number) es un valor especial que indica que un valor no es un número válido, a pesar de que es de tipo 'number'."
+    "explanation": "npm init crea package.json."
   },
   {
-    "question": "¿Qué método se utiliza para agregar elementos al inicio de un array?",
+    "question": "¿Qué es un callback en JavaScript?",
     "options": [
-      "unshift()",
-      "prepend()",
-      "addToStart()",
-      "insert()"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 0,
-    "explanation": "El método unshift() agrega uno o más elementos al inicio de un array y devuelve la nueva longitud del array."
+    "explanation": "Es una función que se ejecuta después de otra."
   },
   {
-    "question": "¿Qué es el método bind() en JavaScript?",
+    "question": "¿Qué método obtiene datos de una API?",
     "options": [
-      "Un método para unir dos arrays",
-      "Un método que crea una nueva función con un contexto 'this' específico",
-      "Un método para enlazar eventos",
-      "Un método para combinar objetos"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El método bind() crea una nueva función que, cuando es llamada, tiene su palabra clave this establecida al valor proporcionado, con una secuencia dada de argumentos."
+    "explanation": "GET obtiene recursos."
   },
   {
-    "question": "¿Qué es una función de callback en JavaScript?",
+    "question": "¿Para qué sirve express.json()?",
     "options": [
-      "Una función que se ejecuta automáticamente",
-      "Una función que se pasa como argumento a otra función y se ejecuta después",
-      "Una función que devuelve otra función",
-      "Una función que maneja errores"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Una función de callback es una función que se pasa como argumento a otra función y se ejecuta después de que ocurra algún evento o se complete alguna operación."
+    "explanation": "Middleware para interpretar JSON."
   },
   {
-    "question": "¿Qué es el método sort() en JavaScript?",
+    "question": "¿Qué comando actualiza paquetes globalmente en npm?",
     "options": [
-      "Un método que ordena los elementos de un array automáticamente en orden numérico",
-      "Un método que ordena los elementos de un array en su lugar",
-      "Un método que devuelve un nuevo array ordenado",
-      "Un método que solo funciona con arrays de strings"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El método sort() ordena los elementos de un array en el mismo array (in-place) y devuelve el array ordenado. Por defecto, ordena según la posición del valor en la secuencia Unicode."
+    "explanation": "El flag -g actualiza paquetes globales."
   },
   {
-    "question": "¿Qué es el evento 'DOMContentLoaded'?",
+    "question": "¿Cuál atributo HTML es necesario para que un input envíe datos?",
     "options": [
-      "Un evento que se dispara cuando el usuario hace clic en un elemento",
-      "Un evento que se dispara cuando el documento HTML ha sido completamente cargado y analizado",
-      "Un evento que se dispara cuando una imagen se ha cargado",
-      "Un evento que se dispara cuando hay un error en el script"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El evento 'DOMContentLoaded' se dispara cuando el documento HTML ha sido completamente cargado y analizado, sin esperar a que hojas de estilo, imágenes y subframes terminen de cargar."
+    "explanation": "name es requerido al enviar formularios."
   },
   {
-    "question": "¿Qué es JSON.stringify() en JavaScript?",
+    "question": "¿Qué significa res.status(404) en Express?",
     "options": [
-      "Un método para validar objetos JSON",
-      "Un método para convertir un objeto JavaScript a una cadena JSON",
-      "Un método para convertir una cadena JSON a un objeto JavaScript",
-      "Un método para formatear cadenas JSON"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "JSON.stringify() convierte un valor JavaScript en una cadena JSON, opcionalmente reemplazando valores si se especifica una función de reemplazo, o incluyendo solo propiedades especificadas."
+    "explanation": "404 indica recurso inexistente."
   },
   {
-    "question": "¿Qué son los módulos ES6 en JavaScript?",
+    "question": "¿Qué operador compara sin convertir tipos?",
     "options": [
-      "Bibliotecas externas",
-      "Funciones integradas en ES6",
-      "Un sistema para importar y exportar código entre archivos JavaScript",
-      "Clases predefinidas en JavaScript"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 2,
-    "explanation": "Los módulos ES6 son un sistema estandarizado para organizar y reutilizar código en JavaScript, permitiendo importar y exportar funciones, objetos o valores primitivos entre diferentes archivos."
+    "explanation": "=== compara tipo y valor."
   },
   {
-    "question": "¿Qué hace el método Object.keys() en JavaScript?",
+    "question": "¿Qué hace preventDefault()?",
     "options": [
-      "Devuelve un array con los valores de un objeto",
-      "Devuelve un array con las propiedades enumerables de un objeto",
-      "Devuelve todas las claves de cifrado de un objeto",
-      "Ordena las propiedades de un objeto"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Object.keys() devuelve un array de las propiedades enumerables de un objeto, en el mismo orden en que se proporcionarían en un bucle for...in."
+    "explanation": "Impide ejecución automática del evento."
   },
   {
-    "question": "¿Qué es el método fetch() en relación con XMLHttpRequest?",
+    "question": "¿Qué sentencia SQL obtiene todos los registros de una tabla?",
     "options": [
-      "Es exactamente lo mismo",
-      "Es una versión más moderna para realizar peticiones HTTP",
-      "Es una versión antigua y obsoleta",
-      "Es un método específico solo para archivos XML"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "fetch() es una API más moderna para realizar peticiones HTTP que utiliza Promises, ofreciendo una alternativa más potente y flexible que XMLHttpRequest."
+    "explanation": "SELECT obtiene datos."
   },
   {
-    "question": "¿Qué es el método every() en arrays de JavaScript?",
+    "question": "¿Cuál es el formato correcto para insertar datos en MariaDB?",
     "options": [
-      "Un método que ejecuta una función para cada elemento del array",
-      "Un método que verifica si todos los elementos de un array cumplen una condición",
-      "Un método que busca el primer elemento que cumple una condición",
-      "Un método que devuelve todos los elementos que cumplen una condición"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El método every() prueba si todos los elementos de un array cumplen la condición implementada por la función proporcionada, devolviendo un valor booleano."
+    "explanation": "INSERT INTO agrega registros."
   }
 ]

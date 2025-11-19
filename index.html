@@ -135,22 +135,48 @@
             height: 200px; /* Añadido para mantener la proporción */
             margin: 20px auto;
         }
+        /* Define la animación @keyframes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Escala al 110% */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Aplica la animación al texto */
+.latido {
+  animation: pulse 2s ease-in-out infinite; /* 2 segundos de duración, repetición infinita */
+}
+#quiz-icon {
+    width: 180px;        /* tamaño de la imagen */
+    height: auto;
+    float: left;        /* hace que flote a la izquierda */
+    margin-right: 10px; /* espacio entre la imagen y el texto */
+    margin-bottom: 10px;
+}
     </style>
 </head>
 <body>
     <div id="progress-container">
         <div id="progress-bar"></div>
     </div>
-    <div id="score-display">Puntaje: <span id="current-score">0</span> / 40</div>
+    <div id="score-display">Puntaje: <span id="current-score">0</span> / 20</div>
     <div class="container">
         <div id="quiz-container" class="fade-in">
+            <img id="quiz-icon" src="images/botito.gif" alt="icon" />
             <h1 style="text-align: center; margin-bottom: 20px;">Cuestionario Javascript</h1>
             <h3 style="text-align: center; margin-bottom: 20px;">Para que entrenes olímpicamente.</h3>
+            <h5 class="latido" style="text-align: center; margin-bottom: 20px; color:green;">Preparatorio para evaluación 3.</h5>
             <div id="question-container"></div>
         </div>
         <div id="results" class="mt-4 hidden fade-in">
             <h2>Resultados Finales</h2>
-            <p>Tu puntuación final: <span id="final-score"></span> / 40</p>
+            <p>Tu puntuación final: <span id="final-score"></span> / 20</p>
             <div id="chartContainer">
                 <canvas id="resultsChart"></canvas>
             </div>
@@ -161,7 +187,7 @@
         const TOTAL_QUESTIONS = 20;
         const POINTS_PER_QUESTION = 2;
         const TOTAL_POINTS = TOTAL_QUESTIONS * POINTS_PER_QUESTION;
-        const TOTAL_QUESTION_SETS = 6;
+        const TOTAL_QUESTION_SETS = 5;
         const BASE_URL =  'https://ferqueve.github.io/interquest/api/';//'http://127.0.0.7:5500/api/';
 
         let questions = [];

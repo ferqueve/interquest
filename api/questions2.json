@@ -1,222 +1,202 @@
 [
   {
-    "question": "¿Qué es JavaScript?",
+    "question": "¿Qué devuelve la función getJSONData en caso de éxito?",
     "options": [
-      "Un lenguaje de programación del lado del servidor",
-      "Un lenguaje de programación orientado a objetos y basado en prototipos",
-      "Un framework para crear aplicaciones web",
-      "Un preprocesador de CSS"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "JavaScript es un lenguaje de programación orientado a objetos basado en prototipos, interpretado y de alto nivel utilizado principalmente para crear páginas web interactivas."
+    "explanation": "getJSONData envuelve fetch y retorna un objeto con 'status' y 'data', no un JSON crudo ni un array."
   },
   {
-    "question": "¿Cuál es la forma correcta de declarar una variable en JavaScript moderno?",
+    "question": "En MariaDB el comando que permite insertar datos en una tabla es...",
     "options": [
-      "var nombre = 'valor';",
-      "let nombre = 'valor';",
-      "const nombre = 'valor';",
-      "Las opciones B y C son correctas"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 3,
-    "explanation": "En JavaScript moderno, se utilizan 'let' para variables que cambiarán su valor y 'const' para constantes. 'var' es la forma antigua de declarar variables."
+    "explanation": "INSERT es la sentencia SQL usada para agregar registros a una tabla."
   },
   {
-    "question": "¿Qué es el DOM en JavaScript?",
+    "question": "¿Cuál es la clase de Bootstrap que se utiliza para crear una fila?",
     "options": [
-      "Un tipo de dato",
-      "Una biblioteca externa",
-      "Una representación en memoria de la estructura HTML",
-      "Un método de encriptación"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 2,
-    "explanation": "El DOM (Document Object Model) es una representación en memoria de la estructura HTML que permite a JavaScript acceder y manipular los elementos de la página."
+    "explanation": "En Bootstrap, las filas se definen con la clase .row."
   },
   {
-    "question": "¿Cómo se declara una función en JavaScript?",
+    "question": "¿Cuál es el protocolo de comunicación a una API REST?",
     "options": [
-      "function nombreFuncion() {}",
-      "const nombreFuncion = function() {}",
-      "const nombreFuncion = () => {}",
-      "Todas las anteriores son correctas"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 3,
-    "explanation": "En JavaScript, las funciones pueden declararse usando la declaración de función, expresiones de función o funciones flecha (arrow functions)."
+    "explanation": "REST utiliza el protocolo HTTP para realizar solicitudes."
   },
   {
-    "question": "¿Qué método se utiliza para agregar un elemento al final de un array en JavaScript?",
+    "question": "¿Cuál es el propósito de este fragmento de código?",
     "options": [
-      "push()",
-      "append()",
-      "addToEnd()",
-      "insert()"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 0,
-    "explanation": "El método push() añade uno o más elementos al final de un array y devuelve la nueva longitud del array."
+    "explanation": "El fragmento corresponde a un handler POST que envía un JSON como respuesta."
   },
   {
-    "question": "¿Qué es el hoisting en JavaScript?",
+    "question": "¿Cuál es el propósito de la función validateForm()?",
     "options": [
-      "Una técnica de optimización",
-      "El comportamiento que mueve las declaraciones al inicio de su contexto",
-      "Un patrón de diseño",
-      "Una característica de ES6"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Hoisting es un comportamiento de JavaScript donde las declaraciones de variables y funciones son movidas al inicio de su contexto de ejecución durante la fase de compilación."
+    "explanation": "La función verifica si el campo está vacío y evita el envío del formulario."
   },
   {
-    "question": "¿Cuál es el operador de igualdad estricta en JavaScript?",
+    "question": "En Node.js, ¿cuál es una forma sincrónica de leer un archivo desde el sistema de archivos?",
     "options": [
-      "==",
-      "===",
-      "=",
-      "!="
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El operador === compara tanto el valor como el tipo de datos, sin realizar conversiones de tipo."
+    "explanation": "La variante Sync indica que es bloqueante y por tanto sincrónica."
   },
   {
-    "question": "¿Qué es una closure en JavaScript?",
+    "question": "¿Cuál es la función del fragmento de código que valida correo electrónico?",
     "options": [
-      "Un error en el código",
-      "Una función que tiene acceso a variables de su contexto externo",
-      "Una variable global",
-      "Un tipo de bucle"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Una closure es una función que tiene acceso al ámbito léxico en el que fue definida, incluso después de que la función externa haya terminado de ejecutarse."
+    "explanation": "El listener revisa el correo con una regex y cancela el envío si no pasa la validación."
   },
   {
-    "question": "¿Cuál es el resultado de 0.1 + 0.2 en JavaScript?",
+    "question": "¿Cuál es el propósito principal de la solicitud fetch en el código dado?",
     "options": [
-      "0.3",
-      "0.30000000000000004",
-      "0.12",
-      "Error"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Debido a cómo JavaScript maneja los números de punto flotante, el resultado de 0.1 + 0.2 es 0.30000000000000004, no exactamente 0.3."
+    "explanation": "El método GET obtiene datos y los transforma con response.json()."
   },
   {
-    "question": "¿Qué método se utiliza para eliminar el último elemento de un array?",
+    "question": "¿Cuál es el propósito principal de la solicitud PUT?",
     "options": [
-      "remove()",
-      "pop()",
-      "delete()",
-      "shift()"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El método pop() elimina el último elemento de un array y devuelve ese elemento."
+    "explanation": "PUT se utiliza para actualizar recursos existentes."
   },
   {
-    "question": "¿Qué es un callback en JavaScript?",
+    "question": "¿Qué método debería utilizarse para obtener las últimas noticias?",
     "options": [
-      "Una función que se pasa como argumento a otra función",
-      "Un evento del navegador",
-      "Un tipo de variable",
-      "Un método de array"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 0,
-    "explanation": "Un callback es una función que se pasa como argumento a otra función y se ejecuta después de que ocurra algún evento o se complete alguna operación."
+    "explanation": "GET es el método estándar para solicitar información."
   },
   {
-    "question": "¿Qué método se utiliza para convertir un objeto JSON en JavaScript?",
+    "question": "¿Qué clase de Bootstrap sirve para crear una columna de la mitad de tamaño en un dispositivo pequeño?",
     "options": [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.convert()",
-      "JSON.toObject()"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 0,
-    "explanation": "JSON.parse() analiza una cadena de texto como JSON y transforma el valor producido por el análisis a un objeto JavaScript."
+    "explanation": "sm representa dispositivos pequeños; 6 equivale a la mitad del ancho."
   },
   {
-    "question": "¿Qué es el objeto 'this' en JavaScript?",
+    "question": "Para iniciar un servidor en Node.js, ¿qué puerto debes usar siempre?",
     "options": [
-      "Una variable global",
-      "Una referencia al elemento HTML actual",
-      "Una referencia al contexto de ejecución actual",
-      "Un puntero a una función"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 2,
-    "explanation": "En JavaScript, 'this' hace referencia al contexto de ejecución actual y su valor depende de cómo se invoca la función."
+    "explanation": "Node puede ejecutarse en cualquier puerto libre, aunque 3000 es común."
   },
   {
-    "question": "¿Qué son las promesas en JavaScript?",
+    "question": "¿Cuál afirmación sobre Bootstrap es FALSA?",
     "options": [
-      "Funciones asíncronas",
-      "Objetos que representan la eventual finalización o fallo de una operación asíncrona",
-      "Métodos de manipulación del DOM",
-      "Variables globales"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Las promesas son objetos que representan la eventual finalización (o fallo) de una operación asíncrona y su valor resultante."
+    "explanation": ".col-sm-6 ocupa solo la mitad, no el total del contenedor."
   },
   {
-    "question": "¿Cuál es la diferencia entre let y const?",
+    "question": "¿Cuál es la forma correcta de importar el módulo express?",
     "options": [
-      "No hay diferencia",
-      "let permite reasignar el valor, const no",
-      "const es para funciones, let para variables",
-      "let es global, const es local"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Las variables declaradas con let pueden ser reasignadas, mientras que las declaradas con const son constantes y no pueden cambiar su valor después de la asignación inicial."
+    "explanation": "CommonJS usa require asignado a una constante."
   },
   {
-    "question": "¿Qué es el operador spread (...) en JavaScript?",
+    "question": "¿Qué comando se usa para ejecutar una aplicación Node.js?",
     "options": [
-      "Un operador de asignación",
-      "Un operador que permite expandir elementos iterables",
-      "Un operador de comparación",
-      "Un operador lógico"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El operador spread (...) permite expandir elementos iterables como arrays o strings en lugares donde se esperan cero o más argumentos o elementos."
+    "explanation": "El comando básico para ejecutar Node es 'node archivo.js'."
   },
   {
-    "question": "¿Qué es la desestructuración en JavaScript?",
+    "question": "¿Qué es el sistema de enrutamiento de Express.js?",
     "options": [
-      "Una técnica para eliminar objetos",
-      "Una forma de extraer valores de arrays o propiedades de objetos",
-      "Un método de encriptación",
-      "Un patrón de diseño"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "La desestructuración es una expresión de JavaScript que permite extraer datos de arrays o objetos en variables individuales de forma más concisa."
+    "explanation": "Express usa métodos HTTP para mapear rutas a controladores."
   },
   {
-    "question": "¿Qué método utilizarías para ejecutar una función después de un cierto tiempo?",
+    "question": "¿Qué muestra como resultado el código dado?",
     "options": [
-      "setInterval()",
-      "setTimeout()",
-      "delay()",
-      "wait()"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "setTimeout() establece un temporizador que ejecuta una función o un código específico una vez que expira el temporizador."
+    "explanation": "El filtrado o resultado final mostrado contiene solo esos valores."
   },
   {
-    "question": "¿Qué es AJAX en JavaScript?",
+    "question": "En MariaDB el comando que permite insertar datos en una tabla es...",
     "options": [
-      "Un nuevo lenguaje de programación",
-      "Una biblioteca de JavaScript",
-      "Una técnica para actualizar partes de una página web sin recargarla completamente",
-      "Un framework de JavaScript"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 2,
-    "explanation": "AJAX (Asynchronous JavaScript and XML) es una técnica que permite actualizar partes de una página web sin necesidad de recargar la página completa."
+    "explanation": "INSERT agrega registros nuevos a una tabla."
   },
   {
-    "question": "¿Cuál es la función de 'use strict' en JavaScript?",
+    "question": "¿Qué consulta selecciona registros de Products con precio mayor a 50?",
     "options": [
-      "Mejorar el rendimiento",
-      "Activar el modo estricto que detecta errores comunes y acciones inseguras",
-      "Hacer el código compatible con navegadores antiguos",
-      "Permitir el uso de características nuevas"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "'use strict' activa el modo estricto en JavaScript, que ayuda a detectar errores comunes y previene acciones que podrían llevar a comportamientos inesperados."
+    "explanation": "La sintaxis correcta para seleccionar columnas y filtrar por precio es SELECT * FROM tabla WHERE condición."
   }
 ]

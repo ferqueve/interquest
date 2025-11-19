@@ -1,0 +1,222 @@
+[
+  {
+    "question": "¿Qué es la API de Fetch en JavaScript?",
+    "options": [
+      "Una API para buscar elementos en el DOM",
+      "Una API para realizar peticiones HTTP más simple que XMLHttpRequest",
+      "Una API para filtrar arrays",
+      "Una API para buscar archivos en el sistema"
+    ],
+    "correct": 1,
+    "explanation": "La API de Fetch proporciona una manera más sencilla y flexible de realizar peticiones HTTP que la antigua XMLHttpRequest, devolviendo Promesas que facilitan el manejo de respuestas."
+  },
+  {
+    "question": "¿Cómo se convierte un objeto JavaScript a formato JSON?",
+    "options": [
+      "object.toJSON()",
+      "JSON.stringify(object)",
+      "object.stringify()",
+      "JSON.parse(object)"
+    ],
+    "correct": 1,
+    "explanation": "El método JSON.stringify() convierte un objeto JavaScript en una cadena de texto JSON, que puede ser enviada a un servidor o almacenada localmente."
+  },
+  {
+    "question": "¿Cuál es la diferencia entre innerHTML y textContent?",
+    "options": [
+      "No hay diferencia",
+      "innerHTML interpreta HTML, textContent trata todo como texto plano",
+      "textContent es más rápido pero no está disponible en todos los navegadores",
+      "innerHTML solo funciona en elementos div"
+    ],
+    "correct": 1,
+    "explanation": "innerHTML permite insertar y leer HTML dentro de un elemento, interpretando las etiquetas HTML, mientras que textContent trata todo como texto plano, sin interpretar HTML."
+  },
+  {
+    "question": "¿Qué método se utiliza para programar la ejecución repetitiva de una función?",
+    "options": [
+      "setTimeout()",
+      "setInterval()",
+      "requestAnimationFrame()",
+      "repeat()"
+    ],
+    "correct": 1,
+    "explanation": "El método setInterval() ejecuta una función o un fragmento de código repetidamente, con un retraso de tiempo fijo entre cada llamada."
+  },
+  {
+    "question": "¿Cómo se selecciona un elemento HTML por su id en JavaScript?",
+    "options": [
+      "getElementByName('id')",
+      "document.getElementById('id')",
+      "document.querySelector('#id')",
+      "Las opciones B y C son correctas"
+    ],
+    "correct": 3,
+    "explanation": "Se puede seleccionar un elemento por su id utilizando tanto document.getElementById('id') como document.querySelector('#id'), siendo ambas formas válidas en JavaScript moderno."
+  },
+  {
+    "question": "¿Qué es el método preventDefault() en eventos?",
+    "options": [
+      "Impide que un evento se ejecute",
+      "Evita que la acción predeterminada asociada a un evento ocurra",
+      "Previene la creación de eventos personalizados",
+      "Elimina todos los eventos de un elemento"
+    ],
+    "correct": 1,
+    "explanation": "El método preventDefault() cancela el evento si es cancelable, lo que significa que la acción predeterminada que pertenece al evento no ocurrirá, como evitar que un formulario se envíe al hacer clic en submit."
+  },
+  {
+    "question": "¿Qué método se utiliza para eliminar espacios en blanco al inicio y final de un string?",
+    "options": [
+      "clean()",
+      "trim()",
+      "strip()",
+      "removeSpaces()"
+    ],
+    "correct": 1,
+    "explanation": "El método trim() elimina los espacios en blanco del principio y del final de una cadena de texto."
+  },
+  {
+    "question": "¿Cómo se accede al primer elemento de un array en JavaScript?",
+    "options": [
+      "array(0)",
+      "array[0]",
+      "array.first()",
+      "array.get(0)"
+    ],
+    "correct": 1,
+    "explanation": "En JavaScript, se accede a los elementos de un array mediante índices numéricos que comienzan en 0, por lo que array[0] accede al primer elemento."
+  },
+  {
+    "question": "¿Qué propiedad se utiliza para conocer la longitud de un array?",
+    "options": [
+      "array.size",
+      "array.length",
+      "array.count",
+      "array.items"
+    ],
+    "correct": 1,
+    "explanation": "La propiedad length de un array devuelve la cantidad de elementos que contiene."
+  },
+  {
+    "question": "¿Qué método se utiliza para transformar un string en un array en JavaScript?",
+    "options": [
+      "string.toArray()",
+      "string.split()",
+      "Array.from(string)",
+      "string.divide()"
+    ],
+    "correct": 1,
+    "explanation": "El método split() divide un string en un array de substrings según un separador especificado y devuelve el nuevo array."
+  },
+  {
+    "question": "¿Cómo se declara una variable que no puede ser reasignada en JavaScript moderno?",
+    "options": [
+      "final variable = valor;",
+      "const variable = valor;",
+      "let variable = valor;",
+      "static variable = valor;"
+    ],
+    "correct": 1,
+    "explanation": "En JavaScript moderno, las variables declaradas con const no pueden ser reasignadas después de su inicialización, aunque si contienen objetos, el contenido del objeto sí puede modificarse."
+  },
+  {
+    "question": "¿Cuál es la forma correcta de agregar un evento click a un elemento?",
+    "options": [
+      "element.addEventListener('click', function() { })",
+      "element.onClick = function() { }",
+      "element.attachEvent('click', function() { })",
+      "Las opciones A y B son correctas"
+    ],
+    "correct": 0,
+    "explanation": "addEventListener es el método estándar para registrar un manejador de eventos en un elemento específico, permitiendo agregar múltiples listeners para el mismo evento."
+  },
+  {
+    "question": "¿Qué método se utiliza para unir todos los elementos de un array en un string?",
+    "options": [
+      "array.combine()",
+      "array.join()",
+      "array.concat()",
+      "array.toString()"
+    ],
+    "correct": 1,
+    "explanation": "El método join() une todos los elementos de un array en una cadena de texto, pudiendo especificar un separador entre los elementos."
+  },
+  {
+    "question": "¿Qué es el localStorage en JavaScript?",
+    "options": [
+      "Una variable local",
+      "Un mecanismo para almacenar datos en el navegador que persisten incluso después de cerrar la página",
+      "Una forma de almacenar variables temporalmente",
+      "Un tipo de variable global"
+    ],
+    "correct": 1,
+    "explanation": "localStorage es una propiedad que permite almacenar datos en el navegador del usuario de forma persistente, siendo accesibles incluso después de cerrar y volver a abrir el navegador."
+  },
+  {
+    "question": "¿Cómo se escribe un comentario de una línea en JavaScript?",
+    "options": [
+      "// Comentario",
+      "/* Comentario */",
+      "# Comentario",
+      "-- Comentario"
+    ],
+    "correct": 0,
+    "explanation": "En JavaScript, los comentarios de una sola línea se escriben comenzando con dos barras diagonales (//)."
+  },
+  {
+    "question": "¿Qué devuelve el operador typeof cuando se usa con un array?",
+    "options": [
+      "'array'",
+      "'object'",
+      "'function'",
+      "'undefined'"
+    ],
+    "correct": 1,
+    "explanation": "El operador typeof devuelve 'object' cuando se utiliza con un array, ya que en JavaScript los arrays son, técnicamente, objetos con características especiales."
+  },
+  {
+    "question": "¿Cuál es la manera correcta de verificar si una variable es un array?",
+    "options": [
+      "typeof variable === 'array'",
+      "Array.isArray(variable)",
+      "variable instanceof Array",
+      "Las opciones B y C son correctas"
+    ],
+    "correct": 3,
+    "explanation": "Para verificar si una variable es un array, se puede utilizar Array.isArray(variable) o variable instanceof Array, siendo ambas formas correctas."
+  },
+  {
+    "question": "¿Cómo se establece un tiempo de espera antes de ejecutar una función en JavaScript?",
+    "options": [
+      "delay(function, time)",
+      "setTimeout(function, time)",
+      "wait(time, function)",
+      "sleep(time).then(function)"
+    ],
+    "correct": 1,
+    "explanation": "setTimeout() establece un temporizador que ejecuta una función o un fragmento de código una vez que expira el temporizador especificado en milisegundos."
+  },
+  {
+    "question": "¿Qué método se utiliza para hacer una copia superficial de un array?",
+    "options": [
+      "array.duplicate()",
+      "array.slice()",
+      "array.copy()",
+      "array.clone()"
+    ],
+    "correct": 1,
+    "explanation": "El método slice() devuelve una copia superficial de una porción del array original, sin modificar el array original."
+  },
+  {
+    "question": "¿Cómo se comprueba si una propiedad existe en un objeto?",
+    "options": [
+      "object.exists('property')",
+      "'property' in object",
+      "object.hasProperty('property')",
+      "object.contains('property')"
+    ],
+    "correct": 1,
+    "explanation": "El operador 'in' devuelve true si la propiedad especificada está en el objeto o en su cadena de prototipos."
+  }
+]

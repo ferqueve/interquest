@@ -1,222 +1,202 @@
 [
   {
-    "question": "¿Qué significa 'API' en el contexto de JavaScript?",
+    "question": "¿Qué puede suceder si se ejecutan dos servidores Node.js en el puerto 3001 al mismo tiempo?",
     "options": [
-      "Application Programming Interface",
-      "Advanced Programming Instruction",
-      "Automated Processing Interface",
-      "Application Protocol Integration"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 0,
-    "explanation": "API (Application Programming Interface) es un conjunto de definiciones y protocolos que permiten que un software se comunique con otro."
+    "explanation": "Dos procesos no pueden escuchar simultáneamente en el mismo puerto TCP; el segundo genera error."
   },
   {
-    "question": "¿Qué es el método map() en JavaScript?",
+    "question": "¿Cuál de las siguientes afirmaciones respecto a Bootstrap es FALSA?",
     "options": [
-      "Un método que crea un objeto Map",
-      "Un método que crea un nuevo array con los resultados de llamar a una función para cada elemento",
-      "Un método para obtener la longitud de un array",
-      "Un método para unir dos arrays"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos."
+    "explanation": ".col nunca es padre de .row; siempre es al revés."
   },
   {
-    "question": "¿Qué hace el método addEventListener en JavaScript?",
+    "question": "Observa el código y responde: ¿cuál afirmación es FALSA?",
     "options": [
-      "Agrega un nuevo elemento al DOM",
-      "Registra un manejador de eventos para un elemento específico",
-      "Crea un nuevo evento personalizado",
-      "Modifica el comportamiento predeterminado de un elemento"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "addEventListener() registra un manejador de eventos en un elemento específico, permitiendo que se ejecute una función cuando ocurra el evento especificado."
+    "explanation": "El media query mostraba lo contrario: el tamaño cambia según el ancho mayor o menor a 600px."
   },
   {
-    "question": "¿Qué es una expresión regular en JavaScript?",
+    "question": "Completa los espacios para que el código funcione correctamente.",
     "options": [
-      "Un tipo de variable",
-      "Un patrón utilizado para hacer coincidir combinaciones de caracteres en strings",
-      "Una función que se ejecuta regularmente",
-      "Un método para regular el flujo de ejecución"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Las expresiones regulares son patrones utilizados para hacer coincidir combinaciones de caracteres en strings, útiles para validación y búsqueda de texto."
+    "explanation": "Las referencias deben coincidir con los IDs reales de los elementos."
   },
   {
-    "question": "¿Qué método se utiliza para encontrar el primer elemento que cumple con una condición en un array?",
+    "question": "¿Cuál es el propósito del fragmento de código?",
     "options": [
-      "findIndex()",
-      "filter()",
-      "find()",
-      "search()"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 2,
-    "explanation": "El método find() devuelve el primer elemento de un array que cumple con la función de prueba proporcionada."
+    "explanation": "El método usado es PUT, por lo que actualiza el recurso."
   },
   {
-    "question": "¿Qué es el Event Bubbling en JavaScript?",
+    "question": "¿Qué sucede si el campo input no está vacío al enviar el formulario?",
     "options": [
-      "Una técnica de animación",
-      "Un error en el código",
-      "La propagación de eventos desde el elemento hijo hasta sus ancestros",
-      "Un método para crear nuevos eventos"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 2,
-    "explanation": "Event Bubbling es un mecanismo de propagación de eventos en el que un evento primero es capturado y manejado por el elemento más interno y luego se propaga hacia los elementos ancestros."
+    "explanation": "La validación solo evita enviar si el campo está vacío."
   },
   {
-    "question": "¿Qué es una función de orden superior en JavaScript?",
+    "question": "¿Cuál es forma asincrónica de escribir archivo en Node.js?",
     "options": [
-      "Una función que toma otras funciones como argumentos o devuelve funciones",
-      "Una función con mayor prioridad de ejecución",
-      "Una función que requiere más recursos",
-      "Una función definida dentro de otra función"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 0,
-    "explanation": "Una función de orden superior es aquella que puede tomar otras funciones como argumentos o devolver una función como resultado."
+    "explanation": "fs.writeFile es la versión no bloqueante."
   },
   {
-    "question": "¿Qué hace el método reduce() en JavaScript?",
+    "question": "¿Qué hace este código en la validación de formularios?",
     "options": [
-      "Reduce el tamaño de un array",
-      "Ejecuta una función reductora en cada elemento de un array, resultando en un único valor",
-      "Filtra elementos de un array",
-      "Ordena los elementos de un array"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El método reduce() ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor."
+    "explanation": "Previene envío si el campo no cumple condiciones."
   },
   {
-    "question": "¿Qué es el método fetch() en JavaScript?",
+    "question": "Sobre fetch DELETE, ¿qué sucede?",
     "options": [
-      "Un método para obtener elementos del DOM",
-      "Una API para hacer peticiones HTTP",
-      "Un método para obtener valores de un array",
-      "Una función para recuperar datos almacenados localmente"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "fetch() es una API para realizar peticiones HTTP, que devuelve una promesa que se resuelve con la respuesta a la solicitud."
+    "explanation": "DELETE típicamente retorna 204 si elimina correctamente."
   },
   {
-    "question": "¿Qué es el Local Storage en JavaScript?",
+    "question": "¿Cuál es el propósito principal del PUT en el código?",
     "options": [
-      "Una base de datos local",
-      "Una API que permite almacenar datos en el navegador del usuario",
-      "Una variable local",
-      "Un tipo de caché del navegador"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Local Storage es una API que permite almacenar datos de manera persistente en el navegador del usuario, sin fecha de expiración."
+    "explanation": "PUT actualiza un recurso existente."
   },
   {
-    "question": "¿Qué significa la sigla 'JSON'?",
+    "question": "Para enviar nuevo artículo, ¿qué método usar?",
     "options": [
-      "JavaScript Object Notation",
-      "JavaScript Online Network",
-      "Java Standard Object Naming",
-      "JavaScript Open Network"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 0,
-    "explanation": "JSON (JavaScript Object Notation) es un formato ligero de intercambio de datos, fácil de leer y escribir para humanos y fácil de analizar y generar para máquinas."
+    "explanation": "POST se usa para crear nuevos recursos."
   },
   {
-    "question": "¿Qué es una función anónima en JavaScript?",
+    "question": "Clase Bootstrap para centrar texto horizontalmente:",
     "options": [
-      "Una función que no tiene nombre",
-      "Una función que no acepta parámetros",
-      "Una función que no devuelve valor",
-      "Una función que se ejecuta automáticamente"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 0,
-    "explanation": "Una función anónima es una función que se define sin un nombre identificador, a menudo utilizada como argumento para otras funciones o en asignaciones de variables."
+    "explanation": ".text-center es la clase oficial."
   },
   {
-    "question": "¿Qué método se utiliza para eliminar el primer elemento de un array?",
+    "question": "Clase para mostrar columnas como una sola en móviles:",
     "options": [
-      "pop()",
-      "shift()",
-      "unshift()",
-      "remove()"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El método shift() elimina el primer elemento de un array y devuelve ese elemento."
+    "explanation": ".col-12 ocupa el ancho completo en cualquier breakpoint."
   },
   {
-    "question": "¿Qué es el operador ternario en JavaScript?",
+    "question": "Fila de cuatro columnas iguales en Bootstrap:",
     "options": [
-      "Un operador que siempre devuelve tres valores",
-      "Un operador que toma tres operandos y funciona como un if...else condicional",
-      "Un operador que combina tres arrays",
-      "Un operador que divide un valor en tres partes"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El operador ternario (condición ? expr1 : expr2) es el único operador de JavaScript que toma tres operandos y funciona como una versión abreviada de la declaración if-else."
+    "explanation": "col-3 x4 suma 12 unidades, cuadrícula perfecta."
   },
   {
-    "question": "¿Qué es una Promise en JavaScript?",
+    "question": "¿Qué es un endpoint en Node.js?",
     "options": [
-      "Una garantía de que el código funcionará",
-      "Un objeto que representa la eventual finalización o fallo de una operación asíncrona",
-      "Una declaración de que una variable no cambiará",
-      "Una función que siempre devuelve el mismo valor"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "Una Promise es un objeto que representa la eventual finalización (o fallo) de una operación asíncrona y su valor resultante."
+    "explanation": "Endpoint es una ruta que responde a solicitudes."
   },
   {
-    "question": "¿Qué es el método forEach() en JavaScript?",
+    "question": "Afirmación correcta sobre npm:",
     "options": [
-      "Un método que devuelve un nuevo array",
-      "Un método que ejecuta una función una vez por cada elemento de un array",
-      "Un método que combina todos los elementos de un array",
-      "Un método que ordena un array"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "El método forEach() ejecuta una función proporcionada una vez por cada elemento del array, sin devolver un nuevo array."
+    "explanation": "npm maneja paquetes en Node.js."
   },
   {
-    "question": "¿Qué significa la palabra clave 'async' en una declaración de función?",
+    "question": "Función de stopPropagation():",
     "options": [
-      "Que la función se ejecutará en un hilo separado",
-      "Que la función siempre devolverá un valor",
-      "Que la función devolverá una promesa",
-      "Que la función no aceptará parámetros"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 2,
-    "explanation": "La palabra clave 'async' en una declaración de función significa que la función devolverá implícitamente una promesa, y permite el uso de 'await' dentro de la función."
+    "explanation": "Evita que el evento siga burbujeando."
   },
   {
-    "question": "¿Qué es la palabra clave 'await' en JavaScript?",
+    "question": "Eliminar registro id=3 en MariaDB:",
     "options": [
-      "Una forma de pausar la ejecución hasta que una promesa se resuelva",
-      "Una palabra reservada para crear esperas forzadas",
-      "Un operador para manejar errores",
-      "Una función para detener la ejecución de un bucle"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 0,
-    "explanation": "La palabra clave 'await' hace que JavaScript espere hasta que una promesa se resuelva y devuelva su resultado, solo puede usarse dentro de funciones async."
+    "explanation": "DELETE FROM tabla WHERE id=3 es la sintaxis correcta."
   },
   {
-    "question": "¿Qué es el objeto XMLHttpRequest?",
+    "question": "Comando para modificar datos en MariaDB:",
     "options": [
-      "Un formato de archivo XML",
-      "Un objeto para realizar peticiones HTTP y AJAX",
-      "Una biblioteca externa de JavaScript",
-      "Un objeto para manipular archivos XML"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 1,
-    "explanation": "XMLHttpRequest es un objeto de JavaScript que proporciona funcionalidad para transferir datos entre un cliente y un servidor, utilizado principalmente para realizar peticiones AJAX."
+    "explanation": "UPDATE modifica registros existentes."
   },
   {
-    "question": "¿Qué es el patrón de diseño 'Module' en JavaScript?",
+    "question": "Completar espacio en blanco para agregar registro con POST:",
     "options": [
-      "Una biblioteca externa",
-      "Un sistema de organización de archivos",
-      "Un patrón que encapsula 'privacidad', estado y organización",
-      "Un método de carga asíncrona"
+      "",
+      "",
+      "",
+      ""
     ],
-    "correct": 2,
-    "explanation": "El patrón Module es un patrón de diseño que proporciona encapsulación y organización del código, permitiendo crear variables y métodos privados y públicos."
+    "explanation": "INSERT INTO tabla (...) VALUES (...) se usa para agregar filas."
   }
 ]

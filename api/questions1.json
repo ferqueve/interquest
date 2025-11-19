@@ -1,222 +1,222 @@
 [
   {
-    "question": "¿Qué es la API de Fetch en JavaScript?",
+    "question": "¿Qué es una API?",
     "options": [
-      "Una API para buscar elementos en el DOM",
-      "Una API para realizar peticiones HTTP más simple que XMLHttpRequest",
-      "Una API para filtrar arrays",
-      "Una API para buscar archivos en el sistema"
+      "Una API es un conjunto de fallas que se dan en la comunicación entre balanceadores de carga.",
+      "Una API es una serie de respuestas que reciben los servidores de parte de los clientes DNS cuando hacen solicitudes.",
+      "Una API es un conjunto de reglas que permite a diferentes aplicaciones comunicarse entre sí.",
+      "Una API es una función de backend."
+    ],
+    "correct": 2,
+    "explanation": "Una API permite la comunicación entre aplicaciones mediante reglas y protocolos."
+  },
+  {
+    "question": "¿Qué es Node.js?",
+    "options": [
+      "Es una extensión de VSCode para crear servidores web en Javascript.",
+      "Node.js es un entorno de ejecución de JavaScript de código abierto que permite ejecutar código JavaScript en el servidor.",
+      "Es la extensión del navegador que permite que se ejecute el código JS en el motor V8.",
+      "Es un add-on que se puede instalar en Chrome para ejecutar programas hechos en Javascript."
     ],
     "correct": 1,
-    "explanation": "La API de Fetch proporciona una manera más sencilla y flexible de realizar peticiones HTTP que la antigua XMLHttpRequest, devolviendo Promesas que facilitan el manejo de respuestas."
+    "explanation": "Node.js permite ejecutar JavaScript fuera del navegador."
   },
   {
-    "question": "¿Cómo se convierte un objeto JavaScript a formato JSON?",
+    "question": "¿Cuál es el protocolo de comunicación a una API REST?",
     "options": [
-      "object.toJSON()",
-      "JSON.stringify(object)",
-      "object.stringify()",
-      "JSON.parse(object)"
+      "JavaScript",
+      "HTML",
+      "HTTP",
+      "JSON"
     ],
-    "correct": 1,
-    "explanation": "El método JSON.stringify() convierte un objeto JavaScript en una cadena de texto JSON, que puede ser enviada a un servidor o almacenada localmente."
+    "correct": 2,
+    "explanation": "REST utiliza HTTP como protocolo de comunicación."
   },
   {
-    "question": "¿Cuál es la diferencia entre innerHTML y textContent?",
+    "question": "¿Qué muestra el código en pantalla?",
     "options": [
-      "No hay diferencia",
-      "innerHTML interpreta HTML, textContent trata todo como texto plano",
-      "textContent es más rápido pero no está disponible en todos los navegadores",
-      "innerHTML solo funciona en elementos div"
-    ],
-    "correct": 1,
-    "explanation": "innerHTML permite insertar y leer HTML dentro de un elemento, interpretando las etiquetas HTML, mientras que textContent trata todo como texto plano, sin interpretar HTML."
-  },
-  {
-    "question": "¿Qué método se utiliza para programar la ejecución repetitiva de una función?",
-    "options": [
-      "setTimeout()",
-      "setInterval()",
-      "requestAnimationFrame()",
-      "repeat()"
-    ],
-    "correct": 1,
-    "explanation": "El método setInterval() ejecuta una función o un fragmento de código repetidamente, con un retraso de tiempo fijo entre cada llamada."
-  },
-  {
-    "question": "¿Cómo se selecciona un elemento HTML por su id en JavaScript?",
-    "options": [
-      "getElementByName('id')",
-      "document.getElementById('id')",
-      "document.querySelector('#id')",
-      "Las opciones B y C son correctas"
-    ],
-    "correct": 3,
-    "explanation": "Se puede seleccionar un elemento por su id utilizando tanto document.getElementById('id') como document.querySelector('#id'), siendo ambas formas válidas en JavaScript moderno."
-  },
-  {
-    "question": "¿Qué es el método preventDefault() en eventos?",
-    "options": [
-      "Impide que un evento se ejecute",
-      "Evita que la acción predeterminada asociada a un evento ocurra",
-      "Previene la creación de eventos personalizados",
-      "Elimina todos los eventos de un elemento"
-    ],
-    "correct": 1,
-    "explanation": "El método preventDefault() cancela el evento si es cancelable, lo que significa que la acción predeterminada que pertenece al evento no ocurrirá, como evitar que un formulario se envíe al hacer clic en submit."
-  },
-  {
-    "question": "¿Qué método se utiliza para eliminar espacios en blanco al inicio y final de un string?",
-    "options": [
-      "clean()",
-      "trim()",
-      "strip()",
-      "removeSpaces()"
-    ],
-    "correct": 1,
-    "explanation": "El método trim() elimina los espacios en blanco del principio y del final de una cadena de texto."
-  },
-  {
-    "question": "¿Cómo se accede al primer elemento de un array en JavaScript?",
-    "options": [
-      "array(0)",
-      "array[0]",
-      "array.first()",
-      "array.get(0)"
-    ],
-    "correct": 1,
-    "explanation": "En JavaScript, se accede a los elementos de un array mediante índices numéricos que comienzan en 0, por lo que array[0] accede al primer elemento."
-  },
-  {
-    "question": "¿Qué propiedad se utiliza para conocer la longitud de un array?",
-    "options": [
-      "array.size",
-      "array.length",
-      "array.count",
-      "array.items"
-    ],
-    "correct": 1,
-    "explanation": "La propiedad length de un array devuelve la cantidad de elementos que contiene."
-  },
-  {
-    "question": "¿Qué método se utiliza para transformar un string en un array en JavaScript?",
-    "options": [
-      "string.toArray()",
-      "string.split()",
-      "Array.from(string)",
-      "string.divide()"
-    ],
-    "correct": 1,
-    "explanation": "El método split() divide un string en un array de substrings según un separador especificado y devuelve el nuevo array."
-  },
-  {
-    "question": "¿Cómo se declara una variable que no puede ser reasignada en JavaScript moderno?",
-    "options": [
-      "final variable = valor;",
-      "const variable = valor;",
-      "let variable = valor;",
-      "static variable = valor;"
-    ],
-    "correct": 1,
-    "explanation": "En JavaScript moderno, las variables declaradas con const no pueden ser reasignadas después de su inicialización, aunque si contienen objetos, el contenido del objeto sí puede modificarse."
-  },
-  {
-    "question": "¿Cuál es la forma correcta de agregar un evento click a un elemento?",
-    "options": [
-      "element.addEventListener('click', function() { })",
-      "element.onClick = function() { }",
-      "element.attachEvent('click', function() { })",
-      "Las opciones A y B son correctas"
+      "[{ name: 'Carne', price: 20, count: 3 }, { name: 'Jugo', price: 15, count: 1 }, { name: 'Leche', price: 12, count: 2 }]",
+      "[{ name: 'Manzana', price: 5, count: 4 }, { name:'Leche', price:12, count:2}, { name:'Pan',price:3,count:5},{ name:'Jugo',price:15,count:1},{ name:'Carne',price:20,count:3}]",
+      "Da error",
+      "[{ name:'Manzana',price:5,count:4},{name:'Pan',price:3,count:5}]"
     ],
     "correct": 0,
-    "explanation": "addEventListener es el método estándar para registrar un manejador de eventos en un elemento específico, permitiendo agregar múltiples listeners para el mismo evento."
+    "explanation": "El código ordena y filtra, resultando en la lista Carne, Jugo y Leche."
   },
   {
-    "question": "¿Qué método se utiliza para unir todos los elementos de un array en un string?",
+    "question": "¿Cuál es el propósito del fragmento de código '/books'?",
     "options": [
-      "array.combine()",
-      "array.join()",
-      "array.concat()",
-      "array.toString()"
+      "Iniciar un servidor web.",
+      "Responder a una solicitud GET en la ruta '/books' con un objeto JSON llamado books.",
+      "Crear una nueva ruta llamada '/books' en una aplicación Node.js.",
+      "Responder a una solicitud POST en la ruta '/books' con un objeto JSON llamado books."
     ],
     "correct": 1,
-    "explanation": "El método join() une todos los elementos de un array en una cadena de texto, pudiendo especificar un separador entre los elementos."
+    "explanation": "El código maneja solicitudes GET devolviendo un JSON."
   },
   {
-    "question": "¿Qué es el localStorage en JavaScript?",
+    "question": "¿Qué sucede si fname está vacío al enviar el formulario?",
     "options": [
-      "Una variable local",
-      "Un mecanismo para almacenar datos en el navegador que persisten incluso después de cerrar la página",
-      "Una forma de almacenar variables temporalmente",
-      "Un tipo de variable global"
+      "Se muestra una alerta y el formulario se envía.",
+      "Se envía sin alerta.",
+      "Se muestra una alerta y el formulario no se envía.",
+      "El campo se rellena automáticamente."
+    ],
+    "correct": 2,
+    "explanation": "La validación evita el envío si el campo está vacío."
+  },
+  {
+    "question": "¿Cuál es la forma asincrónica de leer un archivo en Node.js?",
+    "options": [
+      "fs.readSync()",
+      "fs.readFile()",
+      "fs.openFile()",
+      "fs.readFileSync()"
     ],
     "correct": 1,
-    "explanation": "localStorage es una propiedad que permite almacenar datos en el navegador del usuario de forma persistente, siendo accesibles incluso después de cerrar y volver a abrir el navegador."
+    "explanation": "fs.readFile trabaja de forma asincrónica."
   },
   {
-    "question": "¿Cómo se escribe un comentario de una línea en JavaScript?",
+    "question": "¿Qué hace el fragmento de validación del formulario?",
     "options": [
-      "// Comentario",
-      "/* Comentario */",
-      "# Comentario",
-      "-- Comentario"
+      "Siempre muestra alerta.",
+      "Previene el envío si hay campos vacíos.",
+      "Envía el formulario y alerta.",
+      "Envía los datos al servidor."
+    ],
+    "correct": 1,
+    "explanation": "Previene el envío mediante preventDefault()."
+  },
+  {
+    "question": "¿Qué significa 'Recurso eliminado con éxito' en DELETE?",
+    "options": [
+      "La eliminación fue exitosa.",
+      "Hubo un error.",
+      "La eliminación está en proceso.",
+      "La eliminación fue cancelada."
     ],
     "correct": 0,
-    "explanation": "En JavaScript, los comentarios de una sola línea se escriben comenzando con dos barras diagonales (//)."
+    "explanation": "Código 204 indica eliminación exitosa."
   },
   {
-    "question": "¿Qué devuelve el operador typeof cuando se usa con un array?",
+    "question": "¿Cuál es el propósito principal de PUT?",
     "options": [
-      "'array'",
-      "'object'",
-      "'function'",
-      "'undefined'"
+      "Crear tarea.",
+      "Hacer GET.",
+      "Actualizar un recurso.",
+      "Eliminar tarea."
+    ],
+    "correct": 2,
+    "explanation": "PUT actualiza recursos existentes."
+  },
+  {
+    "question": "¿Cuál es el propósito principal de GET?",
+    "options": [
+      "Eliminar producto.",
+      "Recuperar detalles de un producto.",
+      "Actualizar producto.",
+      "Crear producto."
     ],
     "correct": 1,
-    "explanation": "El operador typeof devuelve 'object' cuando se utiliza con un array, ya que en JavaScript los arrays son, técnicamente, objetos con características especiales."
+    "explanation": "GET obtiene datos."
   },
   {
-    "question": "¿Cuál es la manera correcta de verificar si una variable es un array?",
+    "question": "¿Qué clase de Bootstrap crea una fila?",
     "options": [
-      "typeof variable === 'array'",
-      "Array.isArray(variable)",
-      "variable instanceof Array",
-      "Las opciones B y C son correctas"
+      ".col-12",
+      ".row-12",
+      ".grid",
+      ".row"
     ],
     "correct": 3,
-    "explanation": "Para verificar si una variable es un array, se puede utilizar Array.isArray(variable) o variable instanceof Array, siendo ambas formas correctas."
+    "explanation": "Bootstrap usa .row para filas."
   },
   {
-    "question": "¿Cómo se establece un tiempo de espera antes de ejecutar una función en JavaScript?",
+    "question": "¿Propósito principal de DELETE?",
     "options": [
-      "delay(function, time)",
-      "setTimeout(function, time)",
-      "wait(time, function)",
-      "sleep(time).then(function)"
+      "Eliminar recurso.",
+      "Actualizar recurso.",
+      "Consultar recurso.",
+      "Crear recurso."
     ],
-    "correct": 1,
-    "explanation": "setTimeout() establece un temporizador que ejecuta una función o un fragmento de código una vez que expira el temporizador especificado en milisegundos."
+    "correct": 0,
+    "explanation": "DELETE elimina un recurso."
   },
   {
-    "question": "¿Qué método se utiliza para hacer una copia superficial de un array?",
+    "question": "¿Cómo crear una columna de ancho completo?",
     "options": [
-      "array.duplicate()",
-      "array.slice()",
-      "array.copy()",
-      "array.clone()"
+      "<div class='col-sm-4'>",
+      "<div class='col-12'>",
+      "<div class='col-md-6'>",
+      "<div class='col-lg'>"
     ],
     "correct": 1,
-    "explanation": "El método slice() devuelve una copia superficial de una porción del array original, sin modificar el array original."
+    "explanation": "col-12 ocupa el 100%."
   },
   {
-    "question": "¿Cómo se comprueba si una propiedad existe en un objeto?",
+    "question": "¿Cómo importar http en Node?",
     "options": [
-      "object.exists('property')",
-      "'property' in object",
-      "object.hasProperty('property')",
-      "object.contains('property')"
+      "const http = import('http');",
+      "require('http')",
+      "const http = require('http')",
+      "require http from 'http';"
     ],
-    "correct": 1,
-    "explanation": "El operador 'in' devuelve true si la propiedad especificada está en el objeto o en su cadena de prototipos."
+    "correct": 2,
+    "explanation": "Forma estándar de importación CommonJS."
+  },
+  {
+    "question": "¿Qué ocurre si dos servidores usan el mismo puerto?",
+    "options": [
+      "Ambos escuchan el puerto.",
+      "El puerto puede ser usado por múltiples procesos.",
+      "Ocurre un error porque el puerto solo puede ser usado por un proceso.",
+      "Ambos responden peticiones."
+    ],
+    "correct": 2,
+    "explanation": "Un puerto solo puede ser usado por un proceso."
+  },
+  {
+    "question": "¿Qué hace preventDefault()?",
+    "options": [
+      "Detiene propagación.",
+      "Bloquea loops.",
+      "Evita comportamiento predeterminado.",
+      "Detiene script."
+    ],
+    "correct": 2,
+    "explanation": "Cancela el comportamiento predeterminado."
+  },
+  {
+    "question": "¿Cuál afirmación sobre MariaDB es falsa?",
+    "options": [
+      "Es un motor relacional.",
+      "Usa SQL.",
+      "CREATE TABLE crea tablas.",
+      "MariaDB es un lenguaje."
+    ],
+    "correct": 3,
+    "explanation": "MariaDB no es un lenguaje."
+  },
+  {
+    "question": "¿Qué comando permite leer datos?",
+    "options": [
+      "DELETE",
+      "READ",
+      "SELECT",
+      "SELECTION"
+    ],
+    "correct": 2,
+    "explanation": "SELECT consulta datos."
+  },
+  {
+    "question": "¿Qué hace SELECT ... WHERE name = 'Jimena'?",
+    "options": [
+      "Trae todas las personas llamadas Jimena.",
+      "Trae personas con nombre distinto a Jimena.",
+      "Inserta una persona.",
+      "Trae solo la primera persona llamada Jimena."
+    ],
+    "correct": 0,
+    "explanation": "WHERE filtra por coincidencia exacta."
   }
 ]
